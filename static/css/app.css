@@ -247,6 +247,7 @@ img {
 .app-footer {
   -ms-flex: none;
       flex: none;
+  background-color: rgba(210,210,202,0.1);
 }
 .app-footer__section {
   padding-top: 60px;
@@ -283,8 +284,6 @@ img {
   display: flex;
   -ms-flex-align: center;
       align-items: center;
-  padding: 5px 15px 5px 25px;
-  border-left: 1px solid #f2f2f2;
 }
 .app-footer__additional-link .svg-icon {
   margin-right: 15px;
@@ -1477,9 +1476,6 @@ h6 {
   }
   .app-footer__info {
     display: block;
-  }
-  .app-footer__additional-link {
-    padding-left: 0;
   }
   .footer-menu {
     display: none;
