@@ -1,0 +1,38 @@
+<div block="mobile-panel">
+    <div elem="section">
+        <div elem="panel-items">
+            <div elem="panel-item">
+                <div elem="menu">
+                    <button elem="btn-burger" class="js-btn-burger" type="button">
+                        <span></span>
+                    </button>
+                    <div elem="overlay-menu" class="js-overlay-menu"></div>
+                    <div elem="sidebar-menu" class="js-sidebar-menu">
+                        {% include "mobile-menu.html" %}
+                        {% include "mobile-main-menu.html" %}
+                        <div elem="additional-links">
+                            <a elem="additional-link" href="#">
+                                {{ _icon('discounts-icon', { tag: 'i' }) }}
+                                скидки и бонусы
+                            </a>
+                            <a elem="additional-link" mods="phone" href="tel:+88005553535">
+                                {{ _icon('phone-icon', { tag: 'i' }) }}
+                                8 800 555 35 35
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div elem="panel-item">
+                {% include "logo.html" %}
+            </div>
+            <div elem="panel-item">
+                <div elem="search">
+                    <button elem="btn-mobile-search" class="js-btn-mobile-search" type="button"></button>
+                    {% include "search.html" %}
+                </div>
+                {% include "cart-mini.html" %}
+            </div>
+        </div>
+    </div>
+</div><!-- mobile-panel -->

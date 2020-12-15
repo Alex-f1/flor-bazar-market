@@ -1,0 +1,83 @@
+<!doctype html>
+<html lang="{{ app.lang }}">
+
+    <head>
+
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+        <meta name="theme-color" content="{{ app.stylus.colors.theme }}">
+
+        <meta name="SKYPE_TOOLBAR" content="SKYPE_TOOLBAR_PARSER_COMPATIBLE" />
+        <meta name="format-detection" content="telephone=no">
+
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+
+		<link type="image/png" href="favicon.png" rel="icon">
+
+        <meta name="msapplication-tap-highlight" content="no">
+
+        <meta name="mobile-web-app-capable" content="yes">
+        <meta name="apple-mobile-web-app-capable" content="yes">
+
+        <meta name="MobileOptimized" content="320">
+        <meta name="HandheldFriendly" content="True">
+
+        <title>{{ pageTitle }} - {{ app.package.name | capitalize }} v{{ app.package.version }} / {{ git.branch }}</title>
+        
+        <link rel="preconnect" href="https://fonts.gstatic.com">
+        <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@700&family=Playfair+Display&display=swap" rel="stylesheet">
+
+        <link rel="stylesheet" href="css/plugins.min.css">
+        <link rel="stylesheet" href="css/app.css">
+
+        {% block inlineStyles %}{% endblock %}
+
+    </head>
+
+    <body block="app" class="{{ bodyClasses }} contain-full">
+
+        {% include "mobile-panel.html" %}
+
+		{{ inlineSvgSprite() }}
+
+        <div elem="wrapper">
+
+            {% if layout.header %}
+            	{% include 'app-header.html' %}
+            {% endif %}
+
+            <div elem="content">
+
+                <main elem="main">
+                    {% block main %}{% endblock %}
+                </main><!-- app__main -->
+
+                {% if layout.left %}
+                <aside elem="aside" mods="left">
+                    {% block asideLeft %}{% endblock %}
+                </aside><!-- app__aside left -->
+                {% endif %}
+
+                {% if layout.right %}
+                <aside elem="aside" mods="right">
+                    {% block asideRight %}{% endblock %}
+                </aside><!-- app__aside right -->
+                {% endif %}
+
+            </div><!-- app__content -->
+
+            {% if layout.footer %}
+            	{% include 'app-footer.html' %}
+            {% endif %}
+
+        </div><!-- app__wrapper -->
+
+        {#% include 'page-scroller.html' %#}
+
+        <script src="js/vendors/jquery-3.4.1.min.js"></script>
+        <script src="js/plugins.min.js"></script>
+        <script src="js/app.js"></script>
+
+    </body><!-- app -->
+</html>

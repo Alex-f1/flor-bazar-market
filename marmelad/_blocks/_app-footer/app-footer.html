@@ -1,0 +1,39 @@
+<footer block="app-footer">
+    <div elem="section" class="contain">
+        <div elem="cols">
+            <div elem="col">
+                <div elem="info">
+                    {% include "logo.html" %}
+                    {% include "social-links.html" %}
+                </div>
+            </div>
+            <div elem="col">
+                <div block="footer-menu">
+                    <nav elem="nav">
+                        <ul>
+                            <li><a href="#">Доставка</a></li>
+                            <li><a href="#">Оплата</a></li>
+                            <li><a href="#">О компании</a></li>
+                            <li><a href="#">Вопросы и ответы</a></li>
+                        </ul>
+                    </nav>
+                    <nav elem="nav">
+                        <ul>
+                            <li><a href="#">Конфиденциальность</a></li>
+                            <li><a href="#">Персональные данные</a></li>
+                            <li><a href="#">Публичная оферта</a></li>
+                        </ul>
+                    </nav>
+                </div><!-- footer-menu -->
+            </div>
+            <div elem="col">
+                <div elem="contacts">
+                    <a elem="additional-link" mods="phone" href="tel:+88005553535">
+                        {{ _icon('phone-icon', { tag: 'i' }) }}
+                        8 800 555 35 35
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+</footer><!-- app-footer -->

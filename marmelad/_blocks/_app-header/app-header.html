@@ -1,0 +1,44 @@
+<header block="app-header">
+    <div elem="section">
+        <div block="top-line">
+            <div elem="section">
+                <div elem="inner">
+                    {% include "logo.html" %}
+                    <div elem="cols">
+                        <div elem="col">
+                            <div elem="additional-links">
+                                <a elem="additional-link" href="#">
+                                    {{ _icon('discounts-icon', { tag: 'i' }) }}
+                                    скидки и бонусы
+                                </a>
+                                <a elem="additional-link" mods="phone" href="tel:+88005553535">
+                                    {{ _icon('phone-icon', { tag: 'i' }) }}
+                                    8 800 555 35 35
+                                </a>
+                            </div>
+                        </div>
+                        <div elem="col">
+                            <div block="top-menu">
+                                <nav elem="nav">
+                                    <ul>
+                                        <li><a href="#">О нас</a></li>
+                                        <li><a href="#">Вопросы и ответы</a></li>
+                                        <li><a href="#">Доставка и оплата</a></li>
+                                    </ul>
+                                </nav>
+                            </div><!-- top-menu -->
+                            {% include "cart-mini.html" %}
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div elem="middle" class="contain">
+                {% include "main-menu.html" %}
+                {% include "search.html" %}
+            </div>
+        </div><!-- top-line -->
+        <div elem="first-screen">
+            {% include "hero.html" %}
+        </div>
+    </div>
+</header><!-- b:app-header -->

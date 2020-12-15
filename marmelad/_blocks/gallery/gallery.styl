@@ -1,0 +1,166 @@
+.gallery
+    padding-top 95px
+    padding-bottom 95px
+    background-color #663d37
+
+    @media (max-width 1024px)
+        padding-top 50px
+        padding-bottom 50px
+
+    &__inner
+        display flex
+
+        @media (max-width 1279px)
+            display block
+    
+    &__head
+        margin-right 105px
+        display flex
+        flex-direction column
+        justify-content space-around
+
+        @media (max-width 1279px)
+            text-align center
+            display block
+            margin-right 0
+            margin-bottom 25px
+
+    &__title
+        font-size 36px
+        color #FFF  
+        font-weight 400
+        line-height 1.1
+        margin-top 0
+        margin-bottom 10px
+
+    &__btn-sign-up
+        display block    
+        min-width 210px
+        
+        @media (max-width 1279px)
+            display none
+
+        &--color
+            color #333
+            background-color #d2d2ca
+            &:hover
+                background-color lighten(#d2d2ca, 15%)
+
+            &:after
+                background-image url("data:image/svg+xml,%3Csvg width='10' height='18' viewBox='0 0 10 18' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M1 17L9 9L1 1' stroke='%23333333'/%3E%3C/svg%3E%0A")
+
+        &.btn-mobile
+            display none
+
+            @media (max-width 1279px)
+                display inline-block !important
+
+    &__desc
+        font-size 13px
+        color #FFFFFF    
+        font-weight 400
+        line-height 1.2
+        width 150px
+        max-width 100%
+
+        @media (max-width 1279px)
+            width 100%
+
+    &__items
+        width 815px
+        max-width 100%    
+
+        @media (max-width 1279px)
+            margin 0 auto
+
+        @media (max-width 959px)
+            width 680px    
+
+        @media (max-width 767px)
+            width 100%
+
+        .splide__arrow
+            background-image url("data:image/svg+xml,%3Csvg width='14' height='26' viewBox='0 0 14 26' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M1 25L13 13L1 1' stroke='white' stroke-linecap='round'/%3E%3C/svg%3E%0A")
+            background-repeat no-repeat
+            background-color transparent
+            background-size contain
+
+        .splide__arrow--prev
+            left -55px
+            transform rotate(180deg) translateY(50%)  
+
+            @media (max-width 959px)
+                left 0
+
+            @media (max-width 767px)
+                left -15px    
+
+        .splide__arrow--next
+            right -40px    
+
+            @media (max-width 959px)
+                right 0
+
+            @media (max-width 767px)
+                right -15px    
+
+    &__item
+        color #fff
+        text-decoration none
+        display flex
+        &:hover
+
+            & ^[0]
+
+                &__bottom
+                    background-color #6e031f
+
+        span 
+            display block
+
+        @media (max-width 959px)
+            justify-content center    
+
+    &__body
+        display flex
+        flex-direction column    
+
+    &__img
+        overflow hidden
+
+        img
+            display inline-block
+            vertical-align top   
+
+    &__bottom
+        padding 15px        
+        background-color #1B110F
+        transition background-color .3s
+        position relative
+        &:after
+            content ''
+            position absolute
+            right 15px
+            bottom 15px
+            width 16px
+            height 16px
+            background-image url("data:image/svg+xml,%3Csvg width='16' height='16' viewBox='0 0 16 16' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M8.15747 16.0005C8.10449 16.0005 8.05151 16.0005 7.99817 16.0002C6.74402 16.0033 5.58521 15.9714 4.45825 15.9028C3.42505 15.8399 2.48193 15.4829 1.73071 14.8703C1.00586 14.2793 0.510864 13.4801 0.259522 12.4952C0.0407715 11.6378 0.0291748 10.7961 0.0180664 9.98202C0.0100097 9.39791 0.00170898 8.70577 0 8.00191C0.00170898 7.29513 0.0100097 6.60299 0.0180664 6.01888C0.0291748 5.20492 0.0407715 4.36324 0.259522 3.5057C0.510864 2.52083 1.00586 1.72164 1.73071 1.13057C2.48193 0.518022 3.42505 0.160966 4.45837 0.0980997C5.58533 0.0296182 6.74438 -0.00236423 8.00122 0.000687535C9.25574 -0.00199801 10.4142 0.0296182 11.5411 0.0980997C12.5743 0.160966 13.5175 0.518022 14.2687 1.13057C14.9937 1.72164 15.4885 2.52083 15.7399 3.5057C15.9586 4.36312 15.9702 5.20492 15.9813 6.01888C15.9894 6.60299 15.9978 7.29513 15.9994 7.99898C15.9978 8.70577 15.9894 9.39791 15.9813 9.98202C15.9767 10.3272 15.6915 10.6031 15.3479 10.5985C15.0027 10.5937 14.7268 10.31 14.7314 9.96493C14.7394 9.38424 14.7478 8.69662 14.7494 7.99898C14.7478 7.30428 14.7394 6.61666 14.7314 6.03597C14.7213 5.29488 14.7108 4.52852 14.5287 3.81478C14.345 3.09481 13.9917 2.51766 13.4788 2.09932C12.924 1.64681 12.2465 1.39327 11.4652 1.34578C10.3647 1.27889 9.23193 1.248 8.00122 1.25057C6.76758 1.24764 5.63464 1.27889 4.53418 1.34578C3.75293 1.39327 3.07556 1.64681 2.52063 2.0992C2.00769 2.51754 1.65442 3.09468 1.4707 3.81478C1.28857 4.52852 1.27808 5.29488 1.26794 6.03597C1.26001 6.61666 1.25171 7.30428 1.25 8.00191C1.25171 8.69662 1.26001 9.38424 1.26794 9.96493C1.27808 10.706 1.28857 11.4724 1.4707 12.1861C1.65442 12.9061 2.00769 13.4832 2.52063 13.9016C3.07556 14.3541 3.75293 14.6076 4.53418 14.6551C5.63464 14.722 6.76782 14.7533 7.99829 14.7502C9.23206 14.7531 10.3647 14.722 11.4652 14.6551C12.2465 14.6076 12.9238 14.3541 13.4788 13.9016C13.8483 13.6002 14.137 13.2135 14.3368 12.752C14.474 12.4354 14.8419 12.2898 15.1587 12.427C15.4755 12.5642 15.621 12.9321 15.4839 13.2489C15.2037 13.8957 14.7949 14.4412 14.2687 14.8703C13.5175 15.483 12.5743 15.8399 11.5411 15.9028C10.4619 15.9685 9.35327 16.0005 8.15747 16.0005ZM11.8746 8.00045C11.8746 5.84652 10.1223 4.0942 7.96838 4.0942C5.81458 4.0942 4.06213 5.84652 4.06213 8.00045C4.06213 10.1544 5.81458 11.9067 7.96838 11.9067C10.1223 11.9067 11.8746 10.1544 11.8746 8.00045ZM10.6246 8.00045C10.6246 9.46505 9.43311 10.6567 7.96838 10.6567C6.50378 10.6567 5.31213 9.46505 5.31213 8.00045C5.31213 6.53585 6.50378 5.3442 7.96838 5.3442C9.43311 5.3442 10.6246 6.53585 10.6246 8.00045ZM12.3121 2.8442C11.7944 2.8442 11.3746 3.26387 11.3746 3.7817C11.3746 4.29952 11.7944 4.7192 12.3121 4.7192C12.83 4.7192 13.2496 4.29952 13.2496 3.7817C13.2496 3.26387 12.83 2.8442 12.3121 2.8442Z' fill='white'/%3E%3C/svg%3E")
+            background-repeat no-repeat
+            background-size contain
+
+    &__name
+        font-size 11px
+        font-weight bold
+        line-height 1.1
+        margin-bottom 15px    
+
+    &__date
+        font-size 11px
+        font-weight normal
+        line-height 1.1
+        text-transform uppercase
+        opacity 0.5   
+
+    &__content-bottom
+        text-align center
+        margin-top 35px     

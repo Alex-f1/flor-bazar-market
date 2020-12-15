@@ -1,0 +1,159 @@
+.mobile-panel
+    position fixed
+    top 0
+    left 0
+    width 100%
+    background-color #fff
+    border-bottom 1px solid #F2F2F2
+    box-shadow 0px -2px 20px 0px rgba(0, 0, 0, .1)
+    z-index 50
+
+    @media (min-width 1025px)
+        display none
+
+    .logo
+        margin-right 0    
+
+    .cart-mini
+
+        &__btn-cart
+            margin-left 15px    
+
+    &__section
+        padding 10px 15px
+
+    &__panel-items
+        display flex
+        align-items center
+        justify-content space-between    
+
+    &__panel-item
+        display flex
+        align-items center    
+
+    &__btn-burger
+        display block
+        width 30px
+        padding 0
+        background-color transparent
+        position relative
+        border none
+        cursor pointer
+        outline none !important
+
+        span
+            &:before
+                transform translateY(-8px)
+            &:after
+                transform translateY(8px)
+
+    &__btn-burger span,
+    &__btn-burger span:before,
+    &__btn-burger span:after
+        position absolute
+        top 0
+        left 0
+        width 30px
+        height 1px
+        background-color #333
+
+    &__btn-burger span:before,
+    &__btn-burger span:after
+        content ''
+        display block
+        transition 0.2s
+
+    .btn-burger-is-active
+        span
+            height 0
+            &:before
+                transform rotate(45deg)
+            &:after
+                transform rotate(-45deg)
+
+    &__search
+        margin-right 15px
+
+        .search
+            position absolute
+            top 100%
+            right 0
+            background-color #fff     
+            width 100%
+            border-top 1px solid #F2F2F2
+            opacity 0
+            visibility hidden
+            transition opacity .3s
+            z-index 15
+            
+            &__input
+                width 100%
+                padding 10px 15px
+
+            &.is-active-search
+                opacity 1
+                visibility visible    
+
+    &__btn-mobile-search
+        width 25px
+        height 25px
+        display block
+        padding 0
+        background-color transparent
+        border none
+        background-image: url("data:image/svg+xml,%3Csvg width='13' height='14' viewBox='0 0 13 14' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath fill-rule='evenodd' clip-rule='evenodd' d='M7.76807 10.0956C10.2169 10.0956 12.2022 8.05945 12.2022 5.54778C12.2022 3.03611 10.2169 1 7.76807 1C5.31919 1 3.33398 3.03611 3.33398 5.54778C3.33398 8.05945 5.31919 10.0956 7.76807 10.0956Z' stroke='%23D2D2CA'/%3E%3Cpath d='M4.76533 9.13812L1 13' stroke='%23D2D2CA' stroke-linecap='round'/%3E%3C/svg%3E%0A")
+        background-size cover
+        background-repeat no-repeat
+        outline none
+        cursor pointer
+
+    &__sidebar-menu
+        width 320px
+        height 100vh
+        overflow-y auto
+        position absolute
+        z-index 35
+        top 100%
+        left -320px
+        background-color #fff    
+        padding-bottom 75px
+        transition left .3s
+
+        &.menu-is-active
+            left 0
+
+    &__overlay-menu
+        position absolute
+        top 100%
+        // right -5000px
+        width 100%
+        bottom -5000px
+        left 0
+        background: rgba(43, 46, 56, 0.9);
+        z-index 25
+        visibility hidden
+        opacity 0
+        transition opacity .3s
+        
+        &.overlay-is-active
+            visibility visible
+            transition opacity .3s
+            opacity 1
+
+    &__additional-link
+        font-size 11px
+        color #333   
+        font-weight bold
+        line-height 1.1
+        text-transform uppercase
+        text-decoration none
+        display flex
+        align-items center     
+        padding 5px 15px 5px 15px
+        margin-bottom 10px
+        border-left 1px solid #F2F2F2   
+        &:hover
+            color #6e031f
+
+        .svg-icon
+            margin-right 15px    

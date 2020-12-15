@@ -1,0 +1,84 @@
+.app-header
+    flex none
+
+.top-line
+
+    @media (max-width 1024px)
+        display none
+
+    &__section  
+        border-bottom 1px solid #F2F2F2
+
+    &__inner
+        width 1440px + 25px + 25px
+        max-width 100%
+        padding 15px 25px
+        display flex
+        align-items center
+        margin 0 auto
+
+    &__cols
+        display flex
+        align-items center    
+        justify-content space-between
+        width 100%
+
+    &__col
+        display flex
+        align-items center    
+
+    &__additional-links
+        display flex
+        align-items center
+
+    &__additional-link
+        font-size 11px
+        color #333   
+        font-weight bold
+        line-height 1.1
+        text-transform uppercase
+        text-decoration none
+        display flex
+        align-items center     
+        padding 5px 15px 5px 25px
+        border-left 1px solid #F2F2F2   
+        &:hover
+            color #6e031f
+
+        &--phone
+
+            @media (min-width 1025px)
+                pointer-events none
+
+        .svg-icon
+            margin-right 15px
+
+    &__middle
+        display flex
+        align-items center
+
+        @media (max-width 1279px)
+            justify-content space-between
+
+.top-menu
+
+    &__nav
+
+        ul
+            list-style-type none
+            display flex
+            padding-left 0
+            margin 0
+
+            li
+                margin-right 25px
+
+                a
+                    font-size 11px
+                    color #333
+                    font-weight 400
+                    line-height 1.1
+                    text-transform uppercase
+                    text-decoration none
+                    &:hover
+                        text-decoration underline

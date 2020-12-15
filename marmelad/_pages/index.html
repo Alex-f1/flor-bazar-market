@@ -1,0 +1,24 @@
+= yaml =
+pageTitle: Главная
+bodyClasses: home
+layout: !!map
+    header: true
+    footer: true
+    left: false
+    right: false
+= yaml =
+
+{% extends 'app.html' %}
+
+
+{% block main %}
+
+    {% include "catalog-main.html" %}
+
+    {% include "subscribe.html" %}
+
+    {% include "our-advantages.html" %}
+
+    {% include "gallery.html" %}
+
+{% endblock %}
