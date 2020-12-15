@@ -32,13 +32,17 @@
                     </div>
                 </div>
             </div>
-            <div elem="middle" class="contain">
-                {% include "main-menu.html" %}
-                {% include "search.html" %}
+            <div elem="middle">
+                <div elem="middle-inner" class="contain">
+                    {% include "main-menu.html" %}
+                    {% include "search.html" %}
+                </div>
             </div>
         </div><!-- top-line -->
+        {% if pageTitle == "Главная" %}
         <div elem="first-screen">
             {% include "hero.html" %}
         </div>
+        {% endif %}
     </div>
 </header><!-- b:app-header -->
