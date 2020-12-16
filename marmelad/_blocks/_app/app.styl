@@ -29,6 +29,15 @@ html
     &__main
         flex 1
 
+    &__aside
+
+        &--left
+            flex 0 0 240px
+            width 240px
+            max-width 240px  
+            margin-right 60px  
+            order -1
+
 img
     max-width 100%
     height auto        
@@ -36,6 +45,23 @@ img
 h1, h2, h3, h4, h5, h6
     font-family : $headings-font
     font-weight 400
+
+h1
+    font-size 48px
+    color #333
+    line-height 1.1
+    margin-top 0
+    margin-bottom 30px
+
+p
+    font-size 14px
+    color #000
+    font-weight 400
+    line-height 1.2
+    margin-top 0
+    margin-bottom 15px
+    &:last-child
+        margin-bottom 0
 
 .contain-full
     width 1920px
@@ -78,3 +104,103 @@ h1, h2, h3, h4, h5, h6
 
     &:hover
         background-color lighten(#6E031F, 10%)   
+
+.inner-page-head
+    width 1160px
+    margin 0 auto
+    flex none
+    padding-top 60px
+    padding-bottom 10px
+    margin-bottom 40px
+    border-bottom 1px solid #D2D2CA
+
+    @media (max-width 1024px)
+        padding-top 30px
+        margin-bottom 15px
+
+.label-elem-interface
+    display flex
+    align-items center
+    cursor pointer
+    margin-bottom 15px
+    &:last-child
+        margin-bottom 0
+
+    &--checkbox
+
+        & ^[0]
+            &__name
+                &:before
+                    border-radius 2px
+
+    &--radio
+
+        & ^[0]
+            &__name
+                &:before
+                    border-radius 50%             
+
+    &:hover
+
+        .label-elem-interface__name
+            &:before
+                background-color #6E031F
+                border-color #6E031F
+
+            &:after
+                opacity 1
+                visibility visible
+
+    input[type=checkbox],
+    input[type=radio]
+        display none
+
+    &__name
+        font-size 13px
+        color #1B110F    
+        font-weight 400
+        line-height 1.2
+        padding-left 25px
+        position relative
+
+        &:hover
+            &:before
+                background-color #6E031F
+                border-color #6E031F
+
+            &:after
+                opacity 1
+                visibility visible    
+
+        &:before
+            content ''
+            position absolute
+            top 0
+            left 0
+            width 16px
+            height 16px
+            border 1px solid #D2D2CA
+            transition background-color .3s, border-color .3s
+
+        &:after
+            content ''
+            position absolute
+            top 4px
+            left 3px
+            width 10px
+            height 7px
+            background-image url("data:image/svg+xml,%3Csvg width='10' height='7' viewBox='0 0 10 7' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M1 2.66667L4.2 6L9 1' stroke='white' stroke-linecap='round' stroke-linejoin='round'/%3E%3C/svg%3E%0A")    
+            background-repeat no-repeat
+            background-size contain
+            opacity 0
+            visibility hidden
+            transition opacity .3s
+
+    input:checked ~ .label-elem-interface__name
+        &:before
+            background-color #6E031F
+            border-color #6E031F
+
+        &:after
+            opacity 1
+            visibility visible

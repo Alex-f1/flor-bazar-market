@@ -1,0 +1,7 @@
+<div block="s-path" {% if pathPos == 1 %}mods="pathPos"{% endif %}>
+	{% for item in path %}
+		<a elem="link" href="#">{{item.title}}</a><!-- <= link -->
+		<span elem="separator">-</span><!-- <= separator -->
+	{% endfor %}
+	{{pageTitle}}
+</div><!-- s-path -->

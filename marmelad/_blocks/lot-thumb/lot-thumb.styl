@@ -1,0 +1,185 @@
+.lot-thumb
+    display flex
+
+    .amount
+        position absolute
+        bottom -5px
+        right -25px
+        z-index 5
+        opacity 0
+        visibility hidden
+        transition opacity .1s, right .3s
+        
+        &.is-amount-show
+            opacity 1
+            visibility visible
+            right 0
+            
+
+    &__body
+        width 275px
+        max-width 100%
+        display flex
+        flex-direction column
+        box-shadow 10px 10px 50px rgba(155, 155, 155, 0.1)
+
+    &__top
+        position relative    
+        border-bottom 1px solid #F2F2F2
+
+    &__img-link
+        display block
+        height 257px
+    
+    &__img
+        display block
+        overflow hidden
+
+        &:hover
+
+            img 
+                transform scale(1.1)
+
+        img 
+            display inline-block
+            vertical-align top
+            width 100%
+            height 100%
+            object-fit contain
+            transition transform 1.5s
+
+    &__labels
+        position absolute
+        left 25px
+        bottom -5px        
+
+    &__label
+        font-size 13px
+        color #333
+        font-weight 400
+        line-height 1.1px
+        text-transform uppercase
+        padding 12px 15px
+
+        &--share
+            background-color #f9dce7
+
+        &--discount
+            background-color #b6e3f2    
+
+    &__middle
+        flex 1 1 auto    
+        padding 25px 25px 0 25px
+        background-color #fff
+        overflow hidden
+
+    &__bottom    
+        padding 0 25px 25px 25px
+        background-color #fff
+        overflow hidden
+
+    &__info
+        
+        &--out-lot
+            pointer-events none    
+            user-select none
+
+            & ^[0]
+
+                &__name,
+                &__current-price,
+                &__old-prace,
+                &__btn-to-cart
+                    color #d2d2ca !important
+
+                &__btn-to-cart
+                    &:after
+                        background-image url("data:image/svg+xml,%3Csvg width='9' height='15' viewBox='0 0 9 15' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M1 14L8 7.5L1 1' stroke='%23d2d2ca'/%3E%3C/svg%3E%0A")
+
+    &__name
+        font-size 16px
+        color #333
+        font-weight normal
+        line-height 1.2
+        text-decoration none
+        width 165px
+        max-width 100%
+        display block
+        margin-bottom 25px
+        transition color .3s
+        &:hover
+            color #6e031f
+
+    &__prices
+        margin-bottom 8px        
+
+    &__current-price
+        font-size 20px
+        color #1B110F
+        font-weight 400
+        line-height 1.1
+
+    &__old-prace
+        font-size 16px
+        color #D2D2CA
+        font-weight 400
+        line-height 1.1
+        text-decoration line-through
+        margin-left 8px    
+
+    &__manage
+        position relative
+
+    &__btn-to-cart
+        font-size 14px
+        color #6E031F
+        font-weight 400
+        line-height 1.1
+        text-transform uppercase
+        background-color transparent
+        width 100%
+        padding 0
+        border none
+        cursor pointer    
+        display flex
+        align-items center
+        transition color .3s
+        outline none !important
+        &:after
+            content ''
+            width 7px
+            height 13px
+            background-image url("data:image/svg+xml,%3Csvg width='9' height='15' viewBox='0 0 9 15' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M1 14L8 7.5L1 1' stroke='%236E031F'/%3E%3C/svg%3E%0A")
+            background-repeat no-repeat
+            background-size contain
+            margin-left auto
+            transition background-image .3s
+
+        &:hover  
+            color #a79186  
+            &:after
+                background-image url("data:image/svg+xml,%3Csvg width='9' height='15' viewBox='0 0 9 15' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M1 14L8 7.5L1 1' stroke='%23a79186'/%3E%3C/svg%3E%0A")
+
+        .svg-icon
+            width 20px
+            height 20px
+            margin-right 10px
+
+        .svg-icon--completed-icon
+            display none    
+
+            .svg-icon__link
+                fill transparent
+
+        &.is-added-to-cart
+            color #a79186
+            cursor default
+
+            &:after
+                background-image url("data:image/svg+xml,%3Csvg width='9' height='15' viewBox='0 0 9 15' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M1 14L8 7.5L1 1' stroke='%23a79186'/%3E%3C/svg%3E%0A")
+
+            .svg-icon--mini-cart-icon
+                display none
+
+            .svg-icon--completed-icon
+                display block

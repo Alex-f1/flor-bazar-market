@@ -47,7 +47,9 @@
             	{% include 'app-header.html' %}
             {% endif %}
 
-            <div elem="content">
+            {% block beforeContent %}{% endblock %}
+
+            <div elem="content" {% if pageTitle != "Главная" %}class="contain"{% endif %}>
 
                 <main elem="main">
                     {% block main %}{% endblock %}

@@ -1,0 +1,168 @@
+.filter-products
+    
+    &__head
+        display flex
+        margin-bottom 15px
+
+    &__title
+        font-size 24px
+        color #333  
+        font-family : $headings-font
+        font-weight 400
+        line-height 1.1
+
+    &__btn-reset
+        font-size 14px
+        color #333
+        font-weight 400
+        line-height 1.1
+        margin-right 10px
+        transition color .3s, border-color .3s    
+        padding 0 0 1px 0
+        background-color transparent
+        border none
+        border-bottom 1px dashed #333    
+        align-self flex-end
+        margin-left 10px
+        cursor pointer
+        &:hover
+            border-bottom 1px dashed #6e031f
+
+    &__item
+        border-bottom 1px solid #D2D2CA        
+
+        &--without-category
+            border-bottom none
+
+            & ^[0]
+                &__options
+                    padding-top 25px
+                    padding-bottom 0
+                    display block !important
+
+                        
+    &__item-name
+        font-size 14px
+        color #1B110F    
+        font-weight 400
+        line-height 1.1
+        padding-top 25px
+        padding-bottom 25px
+        display flex
+        align-items center
+        justify-content space-between
+        cursor pointer 
+
+        &:after
+            content ''
+            width 14px
+            height 8px
+            background-image url("data:image/svg+xml,%3Csvg width='10' height='6' viewBox='0 0 10 6' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M1 1L5 5L9 1' stroke='%23333333'/%3E%3C/svg%3E%0A")
+            background-repeat no-repeat
+            background-size contain
+            transition transform .3s
+
+        &.is-active-name
+
+            &:after
+                transform rotate(180deg)    
+
+    &__options
+        padding-bottom 25px      
+        display none       
+
+    &__range-controlls
+        margin-bottom 30px
+
+        .irs--flat .irs-line
+            height 1px
+            background-color #6E031F
+            opacity .2
+
+        .irs--flat .irs-bar    
+            height 1px
+            background-color #6E031F
+
+        .irs--flat .irs-handle
+            top 18px
+            width 16px
+            height 16px
+            border-radius 50%
+            background-color #fff
+            border 1px solid #6E031F
+            transition background-color .3s
+            &:hover
+                background-color #6e031f  
+                cursor grab
+            &:active
+                cursor grabbing    
+
+            i 
+                display none
+
+        .irs--flat .irs-from, .irs--flat .irs-to, .irs--flat .irs-single
+            font-size 13px
+            color #000000        
+            font-weight 400
+            line-height 1.1
+            background-color transparent
+            
+            &:before
+                display none
+
+           
+
+        .irs-from, .irs-to, .irs-single
+            top 40px        
+            transform translateX(10px)
+
+
+        .irs--flat .irs-min, .irs--flat .irs-max
+            display none    
+
+    &__range-inputs
+        display flex
+        align-items center
+
+        input 
+            font-size 13px
+            color #BDBDBD
+            font-weight 400
+            line-height 1.1
+            width 110px
+            height 35px    
+            border 1px solid #E0E0E0
+            border-radius 4px        
+            padding 10px
+        
+        span
+            font-size 13px    
+            color #000
+            margin-right 6px
+            margin-left 6px  
+
+    &__inputs
+        height 170px
+
+        &.ss-container
+            border-right 2px solid #D2D2CA
+
+        .ss-scroll
+            width 2px
+            background #6E031F
+            transform translateX(2px)
+            opacity 1 !important
+            height 50%
+            top 0% 
+            right -236px !important
+            transition height .3s
+
+    &__bottom
+        margin-top 30px        
+
+    &__btn-show
+        min-width auto
+        max-width 240px
+        width 100%     
+        padding-top 17px
+        padding-bottom 17px   

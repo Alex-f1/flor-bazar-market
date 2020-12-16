@@ -1,0 +1,98 @@
+.catalog-products
+
+    &__top
+        display flex
+        justify-content space-between
+        margin-bottom 25px
+
+    &__faund
+        font-size 14px
+        color #333
+        font-weight 400
+        line-height 1.1
+        margin-right 15px
+
+    &__items    
+        display flex
+        flex-wrap wrap
+        margin-left -20px
+
+    &__item     
+        padding-left 20px
+        margin-bottom 20px
+        display flex
+
+    &__bottom
+        padding-top 15px    
+
+    &__btn-show-more
+        font-size 14px
+        color #A79186
+        font-weight 400
+        line-height 17px
+        text-transform uppercase
+        text-align center
+        width 100%
+        padding 12px 25px
+        margin-bottom 25px
+        display block
+        background-color transparent
+        border 1px solid #A79186    
+        cursor pointer
+        transition color .3s, background-color .3s, border-color .3s
+        &:hover
+            color #fff
+            border-color #6e031f
+            background-color #6e031f
+
+    &__content
+        padding-top 50px        
+
+.sorting-products
+
+    &__section
+        display flex
+        align-items center
+
+    &__title
+        font-size 14px
+        color #333
+        font-weight 400
+        line-height 1.1
+        margin-right 15px
+
+    &__btn
+        font-size 14px
+        color #333
+        font-weight 400
+        line-height 1.1
+        margin-right 10px
+        transition color .3s
+        display flex
+        align-items center
+        text-decoration none
+        &:after
+            content ''
+            width 10px
+            height 6px
+            background-image url("data:image/svg+xml,%3Csvg width='10' height='6' viewBox='0 0 10 6' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M1 1L5 5L9 1' stroke='%23333333'/%3E%3C/svg%3E%0A")
+            background-repeat no-repeat
+            background-size contain
+            margin-left 4px
+
+        &:hover
+            span
+                border-bottom 1px dashed #6e031f
+
+        &.is-active-sorting
+            color #6e031f
+            cursor default
+            pointer-events none
+            span
+                border-bottom 1px dashed transparent
+
+        span
+            display block
+            padding-bottom 1px
+            border-bottom 1px dashed #333    
+            transition border-color .3s

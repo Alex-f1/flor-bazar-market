@@ -1,0 +1,50 @@
+.pogination
+    margin-bottom 15px
+
+    &__links
+        display flex
+        align-items center
+        justify-content center
+
+        a
+            font-size 13px
+            color #A79186
+            font-weight 400
+            line-height 1.1
+            text-align center
+            text-decoration none
+            border 1px solid #A79186
+            padding 8px
+            width 45px
+            margin-right 8px
+            transition color .3s, background-color .3s
+            &:hover
+                color #fff
+                background-color #a79186
+
+            &.is-active-pagination
+                color #fff
+                background-color #a79186
+                cursor default
+                pointer-events none
+
+        span 
+            font-size 13px
+            color #A79186
+            font-weight 400
+            line-height 1.1
+            text-align center
+            width 25px
+            margin-right 5px
+            padding-top 5px
+            cursor default
+    
+    &__link-prev,
+    &__link-next
+        width 110px !important
+
+    &__link-prev
+        margin-right 15px  
+
+    &__link-next
+        margin-left 4px      

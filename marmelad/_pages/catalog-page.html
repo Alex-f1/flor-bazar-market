@@ -4,14 +4,31 @@ bodyClasses:
 layout: !!map
     header: true
     footer: true
-    left: false
+    left: true
     right: false
+path: [
+    {"title":Главная},
+]
 = yaml =
 
 {% extends 'app.html' %}
 
+{% block asideLeft %}
+
+    {% include "filter-products.html" %}
+
+{% endblock %}
+
+
+{% block beforeContent %}
+    <div class="inner-page-head">
+        {% include "s-path.html" %}
+        <h1>Каталог цветов</h1>
+    </div>
+{% endblock %}
 
 {% block main %}
 
+    {% include "catalog-products.html" %}
 
 {% endblock %}
