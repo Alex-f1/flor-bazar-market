@@ -1,0 +1,341 @@
+<div block="shares">
+    <div elem="section" class="contain">
+        <form elem="form">
+            <div elem="head">
+                <h2>Акции</h2>
+                <div elem="filter">
+                    <div elem="inner">
+                        <div elem="inputs">
+                            <div elem="input">
+                                <label block="label-elem-interface" mods="checkbox">
+                                    <input type="checkbox" checked>
+                                    <span elem="name">Все</span>
+                                </label>
+                            </div>
+                            <div elem="input">
+                                <label block="label-elem-interface" mods="checkbox">
+                                    <input type="checkbox">
+                                    <span elem="name">Розы</span>
+                                </label>
+                            </div>
+                            <div elem="input">
+                                <label block="label-elem-interface" mods="checkbox">
+                                    <input type="checkbox">
+                                    <span elem="name">Хризантемы</span>
+                                </label>
+                            </div>
+                            <div elem="input">
+                                <label block="label-elem-interface" mods="checkbox">
+                                    <input type="checkbox">
+                                    <span elem="name">Герберы</span>
+                                </label>
+                            </div>
+                            <div elem="input">
+                                <label block="label-elem-interface" mods="checkbox">
+                                    <input type="checkbox">
+                                    <span elem="name">Прочие цветы</span>
+                                </label>
+                            </div>
+                            <div elem="input">
+                                <label block="label-elem-interface" mods="checkbox">
+                                    <input type="checkbox">
+                                    <span elem="name">Сборные букеты</span>
+                                </label>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div elem="items" class="js-shares-slider splide">
+                <div class="splide__arrows">
+                    <div class="splide__arrow splide__arrow--prev"></div>
+                    <div class="splide__arrow splide__arrow--next"></div>
+                </div>
+                <div elem="slider-track" class="splide__track">
+                    <div elem="slider-list" class="splide__list">
+                        <div elem="item" class="splide__slide">
+                            <div block="lot-thumb">
+                                <div elem="body">
+                                    <div elem="top">
+                                        <a elem="img-link" href="#">
+                                            <span elem="img">
+                                                <img src="img/lot-thumb-img.jpg" alt="">
+                                            </span>
+                                        </a>
+                                        <div elem="labels">
+                                            <span elem="label" mods="share">Акция</span>
+                                        </div>
+                                    </div>
+                                    <div elem="middle">
+                                        <a elem="name" href="#">101 красная роза (россия) в бел корзине с зеленью</a>
+                                    </div>
+                                    <div elem="bottom">
+                                        <div elem="info">
+                                            <div elem="prices">
+                                                <span elem="current-price">5 650 ₽</span>
+                                                <span elem="old-prace">7 060 ₽</span>
+                                            </div>
+                                            <div elem="manage">
+                                                <button elem="btn-to-cart" class="js-add-to-cart" data-text="В корзине" type="button">
+                                                    {{ _icon('mini-cart-icon', { tag: 'i' }) }}
+                                                    {{ _icon('completed-icon', { tag: 'i' }) }}
+                                                    <span>В корзину</span>
+                                                </button>
+                                                {% include "amount.html" %}
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div><!-- lot-thumb -->
+                        </div>
+                        <div elem="item" class="splide__slide">
+                            <div block="lot-thumb">
+                                <div elem="body">
+                                    <div elem="top">
+                                        <a elem="img-link" href="#">
+                                            <span elem="img">
+                                                <img src="img/lot-thumb2-img.jpg" alt="">
+                                            </span>
+                                        </a>
+                                        <div elem="labels">
+                                            <span elem="label" mods="share">Акция</span>
+                                        </div>
+                                    </div>
+                                    <div elem="middle">
+                                        <a elem="name" href="#">5 белых гортензий в шляпной коробке</a>
+                                    </div>
+                                    <div elem="bottom">
+                                        <div elem="info">
+                                            <div elem="prices">
+                                                <span elem="current-price">5 650 ₽</span>
+                                                <span elem="old-prace">7 060 ₽</span>
+                                            </div>
+                                            <div elem="manage">
+                                                <button elem="btn-to-cart" class="js-add-to-cart" type="button">
+                                                    {{ _icon('mini-cart-icon', { tag: 'i' }) }}
+                                                    {{ _icon('completed-icon', { tag: 'i' }) }}
+                                                    <span>В корзину</span>
+                                                </button>
+                                                {% include "amount.html" %}
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div><!-- lot-thumb -->
+                        </div>
+                        <div elem="item" class="splide__slide">
+                            <div block="lot-thumb">
+                                <div elem="body">
+                                    <div elem="top">
+                                        <a elem="img-link" href="#">
+                                            <span elem="img">
+                                                <img src="img/lot-thumb3-img.jpg" alt="">
+                                            </span>
+                                        </a>
+                                        <div elem="labels">
+                                            <span elem="label" mods="discount">Суперскидка</span>
+                                        </div>
+                                    </div>
+                                    <div elem="middle">
+                                        <a elem="name" href="#">Букет из 21 кустовой хризантемы</a>
+                                    </div>
+                                    <div elem="bottom">
+                                        <div elem="info">
+                                            <div elem="prices">
+                                                <span elem="current-price">5 650 ₽</span>
+                                                <span elem="old-prace">7 060 ₽</span>
+                                            </div>
+                                            <div elem="manage">
+                                                <button elem="btn-to-cart" class="js-add-to-cart" type="button">
+                                                    {{ _icon('mini-cart-icon', { tag: 'i' }) }}
+                                                    {{ _icon('completed-icon', { tag: 'i' }) }}
+                                                    <span>В корзину</span>
+                                                </button>
+                                                {% include "amount.html" %}
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div><!-- lot-thumb -->
+                        </div>
+                        <div elem="item" class="splide__slide">
+                            <div block="lot-thumb">
+                                <div elem="body">
+                                    <div elem="top">
+                                        <a elem="img-link" href="#">
+                                            <span elem="img">
+                                                <img src="img/lot-thumb4-img.jpg" alt="">
+                                            </span>
+                                        </a>
+                                        <div elem="labels">
+                                            <span elem="label" mods="discount">Суперскидка</span>
+                                        </div>
+                                    </div>
+                                    <div elem="middle">
+                                        <a elem="name" href="#">Букет из 21 кустовой хризантемы</a>
+                                    </div>
+                                    <div elem="bottom">
+                                        <div elem="info">
+                                            <div elem="prices">
+                                                <span elem="current-price">5 650 ₽</span>
+                                                <span elem="old-prace">7 060 ₽</span>
+                                            </div>
+                                            <div elem="manage">
+                                                <button elem="btn-to-cart" class="js-add-to-cart" type="button">
+                                                    {{ _icon('mini-cart-icon', { tag: 'i' }) }}
+                                                    {{ _icon('completed-icon', { tag: 'i' }) }}
+                                                    <span>В корзину</span>
+                                                </button>
+                                                {% include "amount.html" %}
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div><!-- lot-thumb -->
+                        </div>
+                        <div elem="item" class="splide__slide">
+                            <div block="lot-thumb">
+                                <div elem="body">
+                                    <div elem="top">
+                                        <a elem="img-link" href="#">
+                                            <span elem="img">
+                                                <img src="img/lot-thumb-img.jpg" alt="">
+                                            </span>
+                                        </a>
+                                        <div elem="labels">
+                                            <span elem="label" mods="share">Акция</span>
+                                        </div>
+                                    </div>
+                                    <div elem="middle">
+                                        <a elem="name" href="#">101 красная роза (россия) в бел корзине с зеленью</a>
+                                    </div>
+                                    <div elem="bottom">
+                                        <div elem="info">
+                                            <div elem="prices">
+                                                <span elem="current-price">5 650 ₽</span>
+                                                <span elem="old-prace">7 060 ₽</span>
+                                            </div>
+                                            <div elem="manage">
+                                                <button elem="btn-to-cart" class="js-add-to-cart" data-text="В корзине" type="button">
+                                                    {{ _icon('mini-cart-icon', { tag: 'i' }) }}
+                                                    {{ _icon('completed-icon', { tag: 'i' }) }}
+                                                    <span>В корзину</span>
+                                                </button>
+                                                {% include "amount.html" %}
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div><!-- lot-thumb -->
+                        </div>
+                        <div elem="item" class="splide__slide">
+                            <div block="lot-thumb">
+                                <div elem="body">
+                                    <div elem="top">
+                                        <a elem="img-link" href="#">
+                                            <span elem="img">
+                                                <img src="img/lot-thumb2-img.jpg" alt="">
+                                            </span>
+                                        </a>
+                                        <div elem="labels">
+                                            <span elem="label" mods="share">Акция</span>
+                                        </div>
+                                    </div>
+                                    <div elem="middle">
+                                        <a elem="name" href="#">5 белых гортензий в шляпной коробке</a>
+                                    </div>
+                                    <div elem="bottom">
+                                        <div elem="info">
+                                            <div elem="prices">
+                                                <span elem="current-price">5 650 ₽</span>
+                                                <span elem="old-prace">7 060 ₽</span>
+                                            </div>
+                                            <div elem="manage">
+                                                <button elem="btn-to-cart" class="js-add-to-cart" type="button">
+                                                    {{ _icon('mini-cart-icon', { tag: 'i' }) }}
+                                                    {{ _icon('completed-icon', { tag: 'i' }) }}
+                                                    <span>В корзину</span>
+                                                </button>
+                                                {% include "amount.html" %}
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div><!-- lot-thumb -->
+                        </div>
+                        <div elem="item" class="splide__slide">
+                            <div block="lot-thumb">
+                                <div elem="body">
+                                    <div elem="top">
+                                        <a elem="img-link" href="#">
+                                            <span elem="img">
+                                                <img src="img/lot-thumb3-img.jpg" alt="">
+                                            </span>
+                                        </a>
+                                        <div elem="labels">
+                                            <span elem="label" mods="discount">Суперскидка</span>
+                                        </div>
+                                    </div>
+                                    <div elem="middle">
+                                        <a elem="name" href="#">Букет из 21 кустовой хризантемы</a>
+                                    </div>
+                                    <div elem="bottom">
+                                        <div elem="info">
+                                            <div elem="prices">
+                                                <span elem="current-price">5 650 ₽</span>
+                                                <span elem="old-prace">7 060 ₽</span>
+                                            </div>
+                                            <div elem="manage">
+                                                <button elem="btn-to-cart" class="js-add-to-cart" type="button">
+                                                    {{ _icon('mini-cart-icon', { tag: 'i' }) }}
+                                                    {{ _icon('completed-icon', { tag: 'i' }) }}
+                                                    <span>В корзину</span>
+                                                </button>
+                                                {% include "amount.html" %}
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div><!-- lot-thumb -->
+                        </div>
+                        <div elem="item" class="splide__slide">
+                            <div block="lot-thumb">
+                                <div elem="body">
+                                    <div elem="top">
+                                        <a elem="img-link" href="#">
+                                            <span elem="img">
+                                                <img src="img/lot-thumb4-img.jpg" alt="">
+                                            </span>
+                                        </a>
+                                        <div elem="labels">
+                                            <span elem="label" mods="discount">Суперскидка</span>
+                                        </div>
+                                    </div>
+                                    <div elem="middle">
+                                        <a elem="name" href="#">Букет из 21 кустовой хризантемы</a>
+                                    </div>
+                                    <div elem="bottom">
+                                        <div elem="info">
+                                            <div elem="prices">
+                                                <span elem="current-price">5 650 ₽</span>
+                                                <span elem="old-prace">7 060 ₽</span>
+                                            </div>
+                                            <div elem="manage">
+                                                <button elem="btn-to-cart" class="js-add-to-cart" type="button">
+                                                    {{ _icon('mini-cart-icon', { tag: 'i' }) }}
+                                                    {{ _icon('completed-icon', { tag: 'i' }) }}
+                                                    <span>В корзину</span>
+                                                </button>
+                                                {% include "amount.html" %}
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div><!-- lot-thumb -->
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </form>
+    </div>
+</div><!-- shares -->
