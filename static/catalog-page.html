@@ -606,250 +606,253 @@
     <div class="filter-products">
     <div class="filter-products__section">
         <form class="filter-products__form">
-            <div class="filter-products__head">
+            <div class="filter-products__head js-filter-head">
                 <div class="filter-products__title">Фильтр</div>
                 <button type="reset" class="filter-products__btn-reset">Очистить</button>
             </div>
-            <div class="filter-products__items">
-                <div class="filter-products__item">
-                    <div class="filter-products__item-name js-filter-name">Цена, ₽</div>
-                    <div class="filter-products__options js-filter-options">
-                        <div class="filter-products__range-controlls">
-                            <div class="filter-products__range-inputs">
-                                <input type="text" class="from">
-                                <span>-</span>
-                                <input type="text" class="to">
+            <div class="filter-products__container js-filter-container">
+                <div class="filter-products__items">
+                    <div class="filter-products__item">
+                        <div class="filter-products__item-name js-filter-name">Цена, ₽</div>
+                        <div class="filter-products__options js-filter-options">
+                            <div class="filter-products__range-controlls">
+                                <div class="filter-products__range-inputs">
+                                    <input type="text" class="from">
+                                    <span>-</span>
+                                    <input type="text" class="to">
+                                </div>
+                                <div data-type="double" data-min="0" data-max="20000" data-from="800" data-to="12000" data-step="100" class="filter-products__range"></div>
                             </div>
-                            <div data-type="double" data-min="0" data-max="20000" data-from="800" data-to="12000" data-step="100" class="filter-products__range"></div>
+                            <div class="filter-products__inputs">
+                                <label class="label-elem-interface label-elem-interface--checkbox">
+                                    <input type="checkbox">
+                                    <span class="label-elem-interface__name">до 1000 ₽</span>
+                                </label>
+                                <label class="label-elem-interface label-elem-interface--checkbox">
+                                    <input type="checkbox">
+                                    <span class="label-elem-interface__name">1000-2000 ₽</span>
+                                </label>
+                                <label class="label-elem-interface label-elem-interface--checkbox">
+                                    <input type="checkbox">
+                                    <span class="label-elem-interface__name">2000-5000 ₽</span>
+                                </label>
+                                <label class="label-elem-interface label-elem-interface--checkbox">
+                                    <input type="checkbox">
+                                    <span class="label-elem-interface__name">от 5000 ₽</span>
+                                </label>
+                            </div>
                         </div>
-                        <div class="filter-products__inputs">
-                            <label class="label-elem-interface label-elem-interface--checkbox">
-                                <input type="checkbox">
-                                <span class="label-elem-interface__name">до 1000 ₽</span>
-                            </label>
-                            <label class="label-elem-interface label-elem-interface--checkbox">
-                                <input type="checkbox">
-                                <span class="label-elem-interface__name">1000-2000 ₽</span>
-                            </label>
-                            <label class="label-elem-interface label-elem-interface--checkbox">
-                                <input type="checkbox">
-                                <span class="label-elem-interface__name">2000-5000 ₽</span>
-                            </label>
-                            <label class="label-elem-interface label-elem-interface--checkbox">
-                                <input type="checkbox">
-                                <span class="label-elem-interface__name">от 5000 ₽</span>
-                            </label>
+                    </div>
+                    <div class="filter-products__item">
+                        <div class="filter-products__item-name js-filter-name">Цветы</div>
+                        <div class="filter-products__options js-filter-options">
+                            <div class="filter-products__inputs">
+                                <label class="label-elem-interface label-elem-interface--checkbox">
+                                    <input type="checkbox">
+                                    <span class="label-elem-interface__name">Розы</span>
+                                </label>
+                                <label class="label-elem-interface label-elem-interface--checkbox">
+                                    <input type="checkbox">
+                                    <span class="label-elem-interface__name">Тюльпаны</span>
+                                </label>
+                                <label class="label-elem-interface label-elem-interface--checkbox">
+                                    <input type="checkbox">
+                                    <span class="label-elem-interface__name">Герберы</span>
+                                </label>
+                                <label class="label-elem-interface label-elem-interface--checkbox">
+                                    <input type="checkbox">
+                                    <span class="label-elem-interface__name">Пионы</span>
+                                </label>
+                                <label class="label-elem-interface label-elem-interface--checkbox">
+                                    <input type="checkbox">
+                                    <span class="label-elem-interface__name">Гвоздики</span>
+                                </label>
+                                <label class="label-elem-interface label-elem-interface--checkbox">
+                                    <input type="checkbox">
+                                    <span class="label-elem-interface__name">Лилии</span>
+                                </label>
+                                <label class="label-elem-interface label-elem-interface--checkbox">
+                                    <input type="checkbox">
+                                    <span class="label-elem-interface__name">Хризантемы</span>
+                                </label>
+                                <label class="label-elem-interface label-elem-interface--checkbox">
+                                    <input type="checkbox">
+                                    <span class="label-elem-interface__name">Другие</span>
+                                </label>
+                                <label class="label-elem-interface label-elem-interface--checkbox">
+                                    <input type="checkbox">
+                                    <span class="label-elem-interface__name">Другие</span>
+                                </label>
+                                <label class="label-elem-interface label-elem-interface--checkbox">
+                                    <input type="checkbox">
+                                    <span class="label-elem-interface__name">Другие</span>
+                                </label>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="filter-products__item">
+                        <div class="filter-products__item-name js-filter-name">Цвет</div>
+                        <div class="filter-products__options js-filter-options">
+                            <div class="filter-products__inputs">
+                                <label class="label-elem-interface label-elem-interface--checkbox">
+                                    <input type="checkbox">
+                                    <span class="label-elem-interface__name">Красный</span>
+                                </label>
+                                <label class="label-elem-interface label-elem-interface--checkbox">
+                                    <input type="checkbox">
+                                    <span class="label-elem-interface__name">Белый</span>
+                                </label>
+                                <label class="label-elem-interface label-elem-interface--checkbox">
+                                    <input type="checkbox">
+                                    <span class="label-elem-interface__name">Розовый</span>
+                                </label>
+                                <label class="label-elem-interface label-elem-interface--checkbox">
+                                    <input type="checkbox">
+                                    <span class="label-elem-interface__name">Желтый</span>
+                                </label>
+                                <label class="label-elem-interface label-elem-interface--checkbox">
+                                    <input type="checkbox">
+                                    <span class="label-elem-interface__name">Оранжевый</span>
+                                </label>
+                                <label class="label-elem-interface label-elem-interface--checkbox">
+                                    <input type="checkbox">
+                                    <span class="label-elem-interface__name">Фиолетовый</span>
+                                </label>
+                                <label class="label-elem-interface label-elem-interface--checkbox">
+                                    <input type="checkbox">
+                                    <span class="label-elem-interface__name">Синий</span>
+                                </label>
+                                <label class="label-elem-interface label-elem-interface--checkbox">
+                                    <input type="checkbox">
+                                    <span class="label-elem-interface__name">Другой</span>
+                                </label>
+                                <label class="label-elem-interface label-elem-interface--checkbox">
+                                    <input type="checkbox">
+                                    <span class="label-elem-interface__name">Другой</span>
+                                </label>
+                                <label class="label-elem-interface label-elem-interface--checkbox">
+                                    <input type="checkbox">
+                                    <span class="label-elem-interface__name">Другой</span>
+                                </label>
+                                <label class="label-elem-interface label-elem-interface--checkbox">
+                                    <input type="checkbox">
+                                    <span class="label-elem-interface__name">Другой</span>
+                                </label>
+                                <label class="label-elem-interface label-elem-interface--checkbox">
+                                    <input type="checkbox">
+                                    <span class="label-elem-interface__name">Другой</span>
+                                </label>
+                                <label class="label-elem-interface label-elem-interface--checkbox">
+                                    <input type="checkbox">
+                                    <span class="label-elem-interface__name">Другой</span>
+                                </label>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="filter-products__item">
+                        <div class="filter-products__item-name js-filter-name">Количество</div>
+                        <div class="filter-products__options js-filter-options">
+                            <div class="filter-products__inputs">
+                                <label class="label-elem-interface label-elem-interface--checkbox">
+                                    <input type="checkbox">
+                                    <span class="label-elem-interface__name">5</span>
+                                </label>
+                                <label class="label-elem-interface label-elem-interface--checkbox">
+                                    <input type="checkbox">
+                                    <span class="label-elem-interface__name">10</span>
+                                </label>
+                                <label class="label-elem-interface label-elem-interface--checkbox">
+                                    <input type="checkbox">
+                                    <span class="label-elem-interface__name">15</span>
+                                </label>
+                                <label class="label-elem-interface label-elem-interface--checkbox">
+                                    <input type="checkbox">
+                                    <span class="label-elem-interface__name">20</span>
+                                </label>
+                                <label class="label-elem-interface label-elem-interface--checkbox">
+                                    <input type="checkbox">
+                                    <span class="label-elem-interface__name">25</span>
+                                </label>
+                                <label class="label-elem-interface label-elem-interface--checkbox">
+                                    <input type="checkbox">
+                                    <span class="label-elem-interface__name">30</span>
+                                </label>
+                                <label class="label-elem-interface label-elem-interface--checkbox">
+                                    <input type="checkbox">
+                                    <span class="label-elem-interface__name">35</span>
+                                </label>
+                                <label class="label-elem-interface label-elem-interface--checkbox">
+                                    <input type="checkbox">
+                                    <span class="label-elem-interface__name">40</span>
+                                </label>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="filter-products__item">
+                        <div class="filter-products__item-name js-filter-name">Кому</div>
+                        <div class="filter-products__options js-filter-options">
+                            <div class="filter-products__inputs">
+                                <label class="label-elem-interface label-elem-interface--checkbox">
+                                    <input type="checkbox">
+                                    <span class="label-elem-interface__name">Маме</span>
+                                </label>
+                                <label class="label-elem-interface label-elem-interface--checkbox">
+                                    <input type="checkbox">
+                                    <span class="label-elem-interface__name">Бабушке</span>
+                                </label>
+                                <label class="label-elem-interface label-elem-interface--checkbox">
+                                    <input type="checkbox">
+                                    <span class="label-elem-interface__name">Сестре</span>
+                                </label>
+                                <label class="label-elem-interface label-elem-interface--checkbox">
+                                    <input type="checkbox">
+                                    <span class="label-elem-interface__name">Жене</span>
+                                </label>
+                                <label class="label-elem-interface label-elem-interface--checkbox">
+                                    <input type="checkbox">
+                                    <span class="label-elem-interface__name">Теще</span>
+                                </label>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="filter-products__item">
+                        <div class="filter-products__item-name js-filter-name">Повод</div>
+                        <div class="filter-products__options js-filter-options">
+                            <div class="filter-products__inputs">
+                                <label class="label-elem-interface label-elem-interface--checkbox">
+                                    <input type="checkbox">
+                                    <span class="label-elem-interface__name">Годовщина</span>
+                                </label>
+                                <label class="label-elem-interface label-elem-interface--checkbox">
+                                    <input type="checkbox">
+                                    <span class="label-elem-interface__name">Свадьба</span>
+                                </label>
+                                <label class="label-elem-interface label-elem-interface--checkbox">
+                                    <input type="checkbox">
+                                    <span class="label-elem-interface__name">День рождения</span>
+                                </label>
+                                <label class="label-elem-interface label-elem-interface--checkbox">
+                                    <input type="checkbox">
+                                    <span class="label-elem-interface__name">Просто так</span>
+                                </label>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="filter-products__item filter-products__item--without-category">
+                        <div class="filter-products__options">
+                            <div class="filter-products__inputs">
+                                <label class="label-elem-interface label-elem-interface--checkbox">
+                                    <input type="checkbox">
+                                    <span class="label-elem-interface__name">Есть в наличии</span>
+                                </label>
+                            </div>
                         </div>
                     </div>
                 </div>
-                <div class="filter-products__item">
-                    <div class="filter-products__item-name js-filter-name">Цветы</div>
-                    <div class="filter-products__options js-filter-options">
-                        <div class="filter-products__inputs">
-                            <label class="label-elem-interface label-elem-interface--checkbox">
-                                <input type="checkbox">
-                                <span class="label-elem-interface__name">Розы</span>
-                            </label>
-                            <label class="label-elem-interface label-elem-interface--checkbox">
-                                <input type="checkbox">
-                                <span class="label-elem-interface__name">Тюльпаны</span>
-                            </label>
-                            <label class="label-elem-interface label-elem-interface--checkbox">
-                                <input type="checkbox">
-                                <span class="label-elem-interface__name">Герберы</span>
-                            </label>
-                            <label class="label-elem-interface label-elem-interface--checkbox">
-                                <input type="checkbox">
-                                <span class="label-elem-interface__name">Пионы</span>
-                            </label>
-                            <label class="label-elem-interface label-elem-interface--checkbox">
-                                <input type="checkbox">
-                                <span class="label-elem-interface__name">Гвоздики</span>
-                            </label>
-                            <label class="label-elem-interface label-elem-interface--checkbox">
-                                <input type="checkbox">
-                                <span class="label-elem-interface__name">Лилии</span>
-                            </label>
-                            <label class="label-elem-interface label-elem-interface--checkbox">
-                                <input type="checkbox">
-                                <span class="label-elem-interface__name">Хризантемы</span>
-                            </label>
-                            <label class="label-elem-interface label-elem-interface--checkbox">
-                                <input type="checkbox">
-                                <span class="label-elem-interface__name">Другие</span>
-                            </label>
-                            <label class="label-elem-interface label-elem-interface--checkbox">
-                                <input type="checkbox">
-                                <span class="label-elem-interface__name">Другие</span>
-                            </label>
-                            <label class="label-elem-interface label-elem-interface--checkbox">
-                                <input type="checkbox">
-                                <span class="label-elem-interface__name">Другие</span>
-                            </label>
-                        </div>
-                    </div>
+                <div class="filter-products__bottom">
+                    <button class="filter-products__btn-show btn-general" type="submit">Показать</button>
+                    <button class="filter-products__btn-reset-in-mobile btn-general" type="reset">Очистить</button>
                 </div>
-                <div class="filter-products__item">
-                    <div class="filter-products__item-name js-filter-name">Цвет</div>
-                    <div class="filter-products__options js-filter-options">
-                        <div class="filter-products__inputs">
-                            <label class="label-elem-interface label-elem-interface--checkbox">
-                                <input type="checkbox">
-                                <span class="label-elem-interface__name">Красный</span>
-                            </label>
-                            <label class="label-elem-interface label-elem-interface--checkbox">
-                                <input type="checkbox">
-                                <span class="label-elem-interface__name">Белый</span>
-                            </label>
-                            <label class="label-elem-interface label-elem-interface--checkbox">
-                                <input type="checkbox">
-                                <span class="label-elem-interface__name">Розовый</span>
-                            </label>
-                            <label class="label-elem-interface label-elem-interface--checkbox">
-                                <input type="checkbox">
-                                <span class="label-elem-interface__name">Желтый</span>
-                            </label>
-                            <label class="label-elem-interface label-elem-interface--checkbox">
-                                <input type="checkbox">
-                                <span class="label-elem-interface__name">Оранжевый</span>
-                            </label>
-                            <label class="label-elem-interface label-elem-interface--checkbox">
-                                <input type="checkbox">
-                                <span class="label-elem-interface__name">Фиолетовый</span>
-                            </label>
-                            <label class="label-elem-interface label-elem-interface--checkbox">
-                                <input type="checkbox">
-                                <span class="label-elem-interface__name">Синий</span>
-                            </label>
-                            <label class="label-elem-interface label-elem-interface--checkbox">
-                                <input type="checkbox">
-                                <span class="label-elem-interface__name">Другой</span>
-                            </label>
-                            <label class="label-elem-interface label-elem-interface--checkbox">
-                                <input type="checkbox">
-                                <span class="label-elem-interface__name">Другой</span>
-                            </label>
-                            <label class="label-elem-interface label-elem-interface--checkbox">
-                                <input type="checkbox">
-                                <span class="label-elem-interface__name">Другой</span>
-                            </label>
-                            <label class="label-elem-interface label-elem-interface--checkbox">
-                                <input type="checkbox">
-                                <span class="label-elem-interface__name">Другой</span>
-                            </label>
-                            <label class="label-elem-interface label-elem-interface--checkbox">
-                                <input type="checkbox">
-                                <span class="label-elem-interface__name">Другой</span>
-                            </label>
-                            <label class="label-elem-interface label-elem-interface--checkbox">
-                                <input type="checkbox">
-                                <span class="label-elem-interface__name">Другой</span>
-                            </label>
-                        </div>
-                    </div>
-                </div>
-                <div class="filter-products__item">
-                    <div class="filter-products__item-name js-filter-name">Количество</div>
-                    <div class="filter-products__options js-filter-options">
-                        <div class="filter-products__inputs">
-                            <label class="label-elem-interface label-elem-interface--checkbox">
-                                <input type="checkbox">
-                                <span class="label-elem-interface__name">5</span>
-                            </label>
-                            <label class="label-elem-interface label-elem-interface--checkbox">
-                                <input type="checkbox">
-                                <span class="label-elem-interface__name">10</span>
-                            </label>
-                            <label class="label-elem-interface label-elem-interface--checkbox">
-                                <input type="checkbox">
-                                <span class="label-elem-interface__name">15</span>
-                            </label>
-                            <label class="label-elem-interface label-elem-interface--checkbox">
-                                <input type="checkbox">
-                                <span class="label-elem-interface__name">20</span>
-                            </label>
-                            <label class="label-elem-interface label-elem-interface--checkbox">
-                                <input type="checkbox">
-                                <span class="label-elem-interface__name">25</span>
-                            </label>
-                            <label class="label-elem-interface label-elem-interface--checkbox">
-                                <input type="checkbox">
-                                <span class="label-elem-interface__name">30</span>
-                            </label>
-                            <label class="label-elem-interface label-elem-interface--checkbox">
-                                <input type="checkbox">
-                                <span class="label-elem-interface__name">35</span>
-                            </label>
-                            <label class="label-elem-interface label-elem-interface--checkbox">
-                                <input type="checkbox">
-                                <span class="label-elem-interface__name">40</span>
-                            </label>
-                        </div>
-                    </div>
-                </div>
-                <div class="filter-products__item">
-                    <div class="filter-products__item-name js-filter-name">Кому</div>
-                    <div class="filter-products__options js-filter-options">
-                        <div class="filter-products__inputs">
-                            <label class="label-elem-interface label-elem-interface--checkbox">
-                                <input type="checkbox">
-                                <span class="label-elem-interface__name">Маме</span>
-                            </label>
-                            <label class="label-elem-interface label-elem-interface--checkbox">
-                                <input type="checkbox">
-                                <span class="label-elem-interface__name">Бабушке</span>
-                            </label>
-                            <label class="label-elem-interface label-elem-interface--checkbox">
-                                <input type="checkbox">
-                                <span class="label-elem-interface__name">Сестре</span>
-                            </label>
-                            <label class="label-elem-interface label-elem-interface--checkbox">
-                                <input type="checkbox">
-                                <span class="label-elem-interface__name">Жене</span>
-                            </label>
-                            <label class="label-elem-interface label-elem-interface--checkbox">
-                                <input type="checkbox">
-                                <span class="label-elem-interface__name">Теще</span>
-                            </label>
-                        </div>
-                    </div>
-                </div>
-                <div class="filter-products__item">
-                    <div class="filter-products__item-name js-filter-name">Повод</div>
-                    <div class="filter-products__options js-filter-options">
-                        <div class="filter-products__inputs">
-                            <label class="label-elem-interface label-elem-interface--checkbox">
-                                <input type="checkbox">
-                                <span class="label-elem-interface__name">Годовщина</span>
-                            </label>
-                            <label class="label-elem-interface label-elem-interface--checkbox">
-                                <input type="checkbox">
-                                <span class="label-elem-interface__name">Свадьба</span>
-                            </label>
-                            <label class="label-elem-interface label-elem-interface--checkbox">
-                                <input type="checkbox">
-                                <span class="label-elem-interface__name">День рождения</span>
-                            </label>
-                            <label class="label-elem-interface label-elem-interface--checkbox">
-                                <input type="checkbox">
-                                <span class="label-elem-interface__name">Просто так</span>
-                            </label>
-                        </div>
-                    </div>
-                </div>
-                <div class="filter-products__item filter-products__item--without-category">
-                    <div class="filter-products__options">
-                        <div class="filter-products__inputs">
-                            <label class="label-elem-interface label-elem-interface--checkbox">
-                                <input type="checkbox">
-                                <span class="label-elem-interface__name">Есть в наличии</span>
-                            </label>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="filter-products__bottom">
-                <button class="filter-products__btn-show btn-general" type="submit">Показать</button>
             </div>
         </form>
     </div>

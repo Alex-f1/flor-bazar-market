@@ -1,250 +1,253 @@
 <div block="filter-products">
     <div elem="section">
         <form elem="form">
-            <div elem="head">
+            <div elem="head" class="js-filter-head">
                 <div elem="title">Фильтр</div>
                 <button elem="btn-reset" type="reset">Очистить</button>
             </div>
-            <div elem="items">
-                <div elem="item">
-                    <div elem="item-name" class="js-filter-name">Цена, ₽</div>
-                    <div elem="options" class="js-filter-options">
-                        <div elem="range-controlls">
-                            <div elem="range-inputs">
-                                <input type="text" class="from">
-                                <span>-</span>
-                                <input type="text" class="to">
+            <div elem="container" class="js-filter-container">
+                <div elem="items">
+                    <div elem="item">
+                        <div elem="item-name" class="js-filter-name">Цена, ₽</div>
+                        <div elem="options" class="js-filter-options">
+                            <div elem="range-controlls">
+                                <div elem="range-inputs">
+                                    <input type="text" class="from">
+                                    <span>-</span>
+                                    <input type="text" class="to">
+                                </div>
+                                <div elem="range" data-type="double" data-min="0" data-max="20000" data-from="800" data-to="12000" data-step="100"></div>
                             </div>
-                            <div elem="range" data-type="double" data-min="0" data-max="20000" data-from="800" data-to="12000" data-step="100"></div>
+                            <div elem="inputs">
+                                <label block="label-elem-interface" mods="checkbox">
+                                    <input type="checkbox">
+                                    <span elem="name">до 1000 ₽</span>
+                                </label>
+                                <label block="label-elem-interface" mods="checkbox">
+                                    <input type="checkbox">
+                                    <span elem="name">1000-2000 ₽</span>
+                                </label>
+                                <label block="label-elem-interface" mods="checkbox">
+                                    <input type="checkbox">
+                                    <span elem="name">2000-5000 ₽</span>
+                                </label>
+                                <label block="label-elem-interface" mods="checkbox">
+                                    <input type="checkbox">
+                                    <span elem="name">от 5000 ₽</span>
+                                </label>
+                            </div>
                         </div>
-                        <div elem="inputs">
-                            <label block="label-elem-interface" mods="checkbox">
-                                <input type="checkbox">
-                                <span elem="name">до 1000 ₽</span>
-                            </label>
-                            <label block="label-elem-interface" mods="checkbox">
-                                <input type="checkbox">
-                                <span elem="name">1000-2000 ₽</span>
-                            </label>
-                            <label block="label-elem-interface" mods="checkbox">
-                                <input type="checkbox">
-                                <span elem="name">2000-5000 ₽</span>
-                            </label>
-                            <label block="label-elem-interface" mods="checkbox">
-                                <input type="checkbox">
-                                <span elem="name">от 5000 ₽</span>
-                            </label>
+                    </div>
+                    <div elem="item">
+                        <div elem="item-name" class="js-filter-name">Цветы</div>
+                        <div elem="options" class="js-filter-options">
+                            <div elem="inputs">
+                                <label block="label-elem-interface" mods="checkbox">
+                                    <input type="checkbox">
+                                    <span elem="name">Розы</span>
+                                </label>
+                                <label block="label-elem-interface" mods="checkbox">
+                                    <input type="checkbox">
+                                    <span elem="name">Тюльпаны</span>
+                                </label>
+                                <label block="label-elem-interface" mods="checkbox">
+                                    <input type="checkbox">
+                                    <span elem="name">Герберы</span>
+                                </label>
+                                <label block="label-elem-interface" mods="checkbox">
+                                    <input type="checkbox">
+                                    <span elem="name">Пионы</span>
+                                </label>
+                                <label block="label-elem-interface" mods="checkbox">
+                                    <input type="checkbox">
+                                    <span elem="name">Гвоздики</span>
+                                </label>
+                                <label block="label-elem-interface" mods="checkbox">
+                                    <input type="checkbox">
+                                    <span elem="name">Лилии</span>
+                                </label>
+                                <label block="label-elem-interface" mods="checkbox">
+                                    <input type="checkbox">
+                                    <span elem="name">Хризантемы</span>
+                                </label>
+                                <label block="label-elem-interface" mods="checkbox">
+                                    <input type="checkbox">
+                                    <span elem="name">Другие</span>
+                                </label>
+                                <label block="label-elem-interface" mods="checkbox">
+                                    <input type="checkbox">
+                                    <span elem="name">Другие</span>
+                                </label>
+                                <label block="label-elem-interface" mods="checkbox">
+                                    <input type="checkbox">
+                                    <span elem="name">Другие</span>
+                                </label>
+                            </div>
+                        </div>
+                    </div>
+                    <div elem="item">
+                        <div elem="item-name" class="js-filter-name">Цвет</div>
+                        <div elem="options" class="js-filter-options">
+                            <div elem="inputs">
+                                <label block="label-elem-interface" mods="checkbox">
+                                    <input type="checkbox">
+                                    <span elem="name">Красный</span>
+                                </label>
+                                <label block="label-elem-interface" mods="checkbox">
+                                    <input type="checkbox">
+                                    <span elem="name">Белый</span>
+                                </label>
+                                <label block="label-elem-interface" mods="checkbox">
+                                    <input type="checkbox">
+                                    <span elem="name">Розовый</span>
+                                </label>
+                                <label block="label-elem-interface" mods="checkbox">
+                                    <input type="checkbox">
+                                    <span elem="name">Желтый</span>
+                                </label>
+                                <label block="label-elem-interface" mods="checkbox">
+                                    <input type="checkbox">
+                                    <span elem="name">Оранжевый</span>
+                                </label>
+                                <label block="label-elem-interface" mods="checkbox">
+                                    <input type="checkbox">
+                                    <span elem="name">Фиолетовый</span>
+                                </label>
+                                <label block="label-elem-interface" mods="checkbox">
+                                    <input type="checkbox">
+                                    <span elem="name">Синий</span>
+                                </label>
+                                <label block="label-elem-interface" mods="checkbox">
+                                    <input type="checkbox">
+                                    <span elem="name">Другой</span>
+                                </label>
+                                <label block="label-elem-interface" mods="checkbox">
+                                    <input type="checkbox">
+                                    <span elem="name">Другой</span>
+                                </label>
+                                <label block="label-elem-interface" mods="checkbox">
+                                    <input type="checkbox">
+                                    <span elem="name">Другой</span>
+                                </label>
+                                <label block="label-elem-interface" mods="checkbox">
+                                    <input type="checkbox">
+                                    <span elem="name">Другой</span>
+                                </label>
+                                <label block="label-elem-interface" mods="checkbox">
+                                    <input type="checkbox">
+                                    <span elem="name">Другой</span>
+                                </label>
+                                <label block="label-elem-interface" mods="checkbox">
+                                    <input type="checkbox">
+                                    <span elem="name">Другой</span>
+                                </label>
+                            </div>
+                        </div>
+                    </div>
+                    <div elem="item">
+                        <div elem="item-name" class="js-filter-name">Количество</div>
+                        <div elem="options" class="js-filter-options">
+                            <div elem="inputs">
+                                <label block="label-elem-interface" mods="checkbox">
+                                    <input type="checkbox">
+                                    <span elem="name">5</span>
+                                </label>
+                                <label block="label-elem-interface" mods="checkbox">
+                                    <input type="checkbox">
+                                    <span elem="name">10</span>
+                                </label>
+                                <label block="label-elem-interface" mods="checkbox">
+                                    <input type="checkbox">
+                                    <span elem="name">15</span>
+                                </label>
+                                <label block="label-elem-interface" mods="checkbox">
+                                    <input type="checkbox">
+                                    <span elem="name">20</span>
+                                </label>
+                                <label block="label-elem-interface" mods="checkbox">
+                                    <input type="checkbox">
+                                    <span elem="name">25</span>
+                                </label>
+                                <label block="label-elem-interface" mods="checkbox">
+                                    <input type="checkbox">
+                                    <span elem="name">30</span>
+                                </label>
+                                <label block="label-elem-interface" mods="checkbox">
+                                    <input type="checkbox">
+                                    <span elem="name">35</span>
+                                </label>
+                                <label block="label-elem-interface" mods="checkbox">
+                                    <input type="checkbox">
+                                    <span elem="name">40</span>
+                                </label>
+                            </div>
+                        </div>
+                    </div>
+                    <div elem="item">
+                        <div elem="item-name" class="js-filter-name">Кому</div>
+                        <div elem="options" class="js-filter-options">
+                            <div elem="inputs">
+                                <label block="label-elem-interface" mods="checkbox">
+                                    <input type="checkbox">
+                                    <span elem="name">Маме</span>
+                                </label>
+                                <label block="label-elem-interface" mods="checkbox">
+                                    <input type="checkbox">
+                                    <span elem="name">Бабушке</span>
+                                </label>
+                                <label block="label-elem-interface" mods="checkbox">
+                                    <input type="checkbox">
+                                    <span elem="name">Сестре</span>
+                                </label>
+                                <label block="label-elem-interface" mods="checkbox">
+                                    <input type="checkbox">
+                                    <span elem="name">Жене</span>
+                                </label>
+                                <label block="label-elem-interface" mods="checkbox">
+                                    <input type="checkbox">
+                                    <span elem="name">Теще</span>
+                                </label>
+                            </div>
+                        </div>
+                    </div>
+                    <div elem="item">
+                        <div elem="item-name" class="js-filter-name">Повод</div>
+                        <div elem="options" class="js-filter-options">
+                            <div elem="inputs">
+                                <label block="label-elem-interface" mods="checkbox">
+                                    <input type="checkbox">
+                                    <span elem="name">Годовщина</span>
+                                </label>
+                                <label block="label-elem-interface" mods="checkbox">
+                                    <input type="checkbox">
+                                    <span elem="name">Свадьба</span>
+                                </label>
+                                <label block="label-elem-interface" mods="checkbox">
+                                    <input type="checkbox">
+                                    <span elem="name">День рождения</span>
+                                </label>
+                                <label block="label-elem-interface" mods="checkbox">
+                                    <input type="checkbox">
+                                    <span elem="name">Просто так</span>
+                                </label>
+                            </div>
+                        </div>
+                    </div>
+                    <div elem="item" mods="without-category">
+                        <div elem="options">
+                            <div elem="inputs">
+                                <label block="label-elem-interface" mods="checkbox">
+                                    <input type="checkbox">
+                                    <span elem="name">Есть в наличии</span>
+                                </label>
+                            </div>
                         </div>
                     </div>
                 </div>
-                <div elem="item">
-                    <div elem="item-name" class="js-filter-name">Цветы</div>
-                    <div elem="options" class="js-filter-options">
-                        <div elem="inputs">
-                            <label block="label-elem-interface" mods="checkbox">
-                                <input type="checkbox">
-                                <span elem="name">Розы</span>
-                            </label>
-                            <label block="label-elem-interface" mods="checkbox">
-                                <input type="checkbox">
-                                <span elem="name">Тюльпаны</span>
-                            </label>
-                            <label block="label-elem-interface" mods="checkbox">
-                                <input type="checkbox">
-                                <span elem="name">Герберы</span>
-                            </label>
-                            <label block="label-elem-interface" mods="checkbox">
-                                <input type="checkbox">
-                                <span elem="name">Пионы</span>
-                            </label>
-                            <label block="label-elem-interface" mods="checkbox">
-                                <input type="checkbox">
-                                <span elem="name">Гвоздики</span>
-                            </label>
-                            <label block="label-elem-interface" mods="checkbox">
-                                <input type="checkbox">
-                                <span elem="name">Лилии</span>
-                            </label>
-                            <label block="label-elem-interface" mods="checkbox">
-                                <input type="checkbox">
-                                <span elem="name">Хризантемы</span>
-                            </label>
-                            <label block="label-elem-interface" mods="checkbox">
-                                <input type="checkbox">
-                                <span elem="name">Другие</span>
-                            </label>
-                            <label block="label-elem-interface" mods="checkbox">
-                                <input type="checkbox">
-                                <span elem="name">Другие</span>
-                            </label>
-                            <label block="label-elem-interface" mods="checkbox">
-                                <input type="checkbox">
-                                <span elem="name">Другие</span>
-                            </label>
-                        </div>
-                    </div>
+                <div elem="bottom">
+                    <button elem="btn-show" class="btn-general" type="submit">Показать</button>
+                    <button elem="btn-reset-in-mobile" class="btn-general" type="reset">Очистить</button>
                 </div>
-                <div elem="item">
-                    <div elem="item-name" class="js-filter-name">Цвет</div>
-                    <div elem="options" class="js-filter-options">
-                        <div elem="inputs">
-                            <label block="label-elem-interface" mods="checkbox">
-                                <input type="checkbox">
-                                <span elem="name">Красный</span>
-                            </label>
-                            <label block="label-elem-interface" mods="checkbox">
-                                <input type="checkbox">
-                                <span elem="name">Белый</span>
-                            </label>
-                            <label block="label-elem-interface" mods="checkbox">
-                                <input type="checkbox">
-                                <span elem="name">Розовый</span>
-                            </label>
-                            <label block="label-elem-interface" mods="checkbox">
-                                <input type="checkbox">
-                                <span elem="name">Желтый</span>
-                            </label>
-                            <label block="label-elem-interface" mods="checkbox">
-                                <input type="checkbox">
-                                <span elem="name">Оранжевый</span>
-                            </label>
-                            <label block="label-elem-interface" mods="checkbox">
-                                <input type="checkbox">
-                                <span elem="name">Фиолетовый</span>
-                            </label>
-                            <label block="label-elem-interface" mods="checkbox">
-                                <input type="checkbox">
-                                <span elem="name">Синий</span>
-                            </label>
-                            <label block="label-elem-interface" mods="checkbox">
-                                <input type="checkbox">
-                                <span elem="name">Другой</span>
-                            </label>
-                            <label block="label-elem-interface" mods="checkbox">
-                                <input type="checkbox">
-                                <span elem="name">Другой</span>
-                            </label>
-                            <label block="label-elem-interface" mods="checkbox">
-                                <input type="checkbox">
-                                <span elem="name">Другой</span>
-                            </label>
-                            <label block="label-elem-interface" mods="checkbox">
-                                <input type="checkbox">
-                                <span elem="name">Другой</span>
-                            </label>
-                            <label block="label-elem-interface" mods="checkbox">
-                                <input type="checkbox">
-                                <span elem="name">Другой</span>
-                            </label>
-                            <label block="label-elem-interface" mods="checkbox">
-                                <input type="checkbox">
-                                <span elem="name">Другой</span>
-                            </label>
-                        </div>
-                    </div>
-                </div>
-                <div elem="item">
-                    <div elem="item-name" class="js-filter-name">Количество</div>
-                    <div elem="options" class="js-filter-options">
-                        <div elem="inputs">
-                            <label block="label-elem-interface" mods="checkbox">
-                                <input type="checkbox">
-                                <span elem="name">5</span>
-                            </label>
-                            <label block="label-elem-interface" mods="checkbox">
-                                <input type="checkbox">
-                                <span elem="name">10</span>
-                            </label>
-                            <label block="label-elem-interface" mods="checkbox">
-                                <input type="checkbox">
-                                <span elem="name">15</span>
-                            </label>
-                            <label block="label-elem-interface" mods="checkbox">
-                                <input type="checkbox">
-                                <span elem="name">20</span>
-                            </label>
-                            <label block="label-elem-interface" mods="checkbox">
-                                <input type="checkbox">
-                                <span elem="name">25</span>
-                            </label>
-                            <label block="label-elem-interface" mods="checkbox">
-                                <input type="checkbox">
-                                <span elem="name">30</span>
-                            </label>
-                            <label block="label-elem-interface" mods="checkbox">
-                                <input type="checkbox">
-                                <span elem="name">35</span>
-                            </label>
-                            <label block="label-elem-interface" mods="checkbox">
-                                <input type="checkbox">
-                                <span elem="name">40</span>
-                            </label>
-                        </div>
-                    </div>
-                </div>
-                <div elem="item">
-                    <div elem="item-name" class="js-filter-name">Кому</div>
-                    <div elem="options" class="js-filter-options">
-                        <div elem="inputs">
-                            <label block="label-elem-interface" mods="checkbox">
-                                <input type="checkbox">
-                                <span elem="name">Маме</span>
-                            </label>
-                            <label block="label-elem-interface" mods="checkbox">
-                                <input type="checkbox">
-                                <span elem="name">Бабушке</span>
-                            </label>
-                            <label block="label-elem-interface" mods="checkbox">
-                                <input type="checkbox">
-                                <span elem="name">Сестре</span>
-                            </label>
-                            <label block="label-elem-interface" mods="checkbox">
-                                <input type="checkbox">
-                                <span elem="name">Жене</span>
-                            </label>
-                            <label block="label-elem-interface" mods="checkbox">
-                                <input type="checkbox">
-                                <span elem="name">Теще</span>
-                            </label>
-                        </div>
-                    </div>
-                </div>
-                <div elem="item">
-                    <div elem="item-name" class="js-filter-name">Повод</div>
-                    <div elem="options" class="js-filter-options">
-                        <div elem="inputs">
-                            <label block="label-elem-interface" mods="checkbox">
-                                <input type="checkbox">
-                                <span elem="name">Годовщина</span>
-                            </label>
-                            <label block="label-elem-interface" mods="checkbox">
-                                <input type="checkbox">
-                                <span elem="name">Свадьба</span>
-                            </label>
-                            <label block="label-elem-interface" mods="checkbox">
-                                <input type="checkbox">
-                                <span elem="name">День рождения</span>
-                            </label>
-                            <label block="label-elem-interface" mods="checkbox">
-                                <input type="checkbox">
-                                <span elem="name">Просто так</span>
-                            </label>
-                        </div>
-                    </div>
-                </div>
-                <div elem="item" mods="without-category">
-                    <div elem="options">
-                        <div elem="inputs">
-                            <label block="label-elem-interface" mods="checkbox">
-                                <input type="checkbox">
-                                <span elem="name">Есть в наличии</span>
-                            </label>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div elem="bottom">
-                <button elem="btn-show" class="btn-general" type="submit">Показать</button>
             </div>
         </form>
     </div>

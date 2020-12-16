@@ -33,7 +33,6 @@ $('.filter-products__item').each(function () {
 });
 
 
-
 $.fn.digitsFilter = function () {
 
     $(this).on('keydown', function (e) {
@@ -133,3 +132,8 @@ $('.filter-products__range').each(function () {
     });
 
 });
+
+$('.js-filter-head').on('click', function () {
+    $(this).toggleClass('is-active-head');
+    $('.js-filter-container').stop().slideToggle();
+})

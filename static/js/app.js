@@ -198,6 +198,10 @@ $(function () {
       });
     });
   });
+  $('.js-filter-head').on('click', function () {
+    $(this).toggleClass('is-active-head');
+    $('.js-filter-container').stop().slideToggle();
+  });
 
   if ($.exists('.js-gallery-slider')) {
     new Splide('.js-gallery-slider', {

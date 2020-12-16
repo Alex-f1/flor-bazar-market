@@ -1,15 +1,49 @@
 .filter-products
+
+    @media (max-width 959px)
+        padding-bottom 25px
+
+    &__section
+        @media (max-width 959px)
+            width 290px
+            max-width 100%
+            margin 0 auto
     
     &__head
         display flex
         margin-bottom 15px
+
+        @media (max-width 959px)
+            align-items center
+            justify-content space-between
+            padding-bottom 15px
+            border-bottom 1px solid #D2D2CA
+        
+        &:after
+            content ''
+            width 20px
+            height 14px
+            background-image url("data:image/svg+xml,%3Csvg width='10' height='6' viewBox='0 0 10 6' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M1 1L5 5L9 1' stroke='%23333333'/%3E%3C/svg%3E%0A")
+            background-repeat no-repeat
+            background-size contain
+            transition transform .3s
+            display none
+
+            @media (max-width 959px)
+                display block    
+
+        &.is-active-head
+
+            &:after
+                transform rotate(180deg)
+            
 
     &__title
         font-size 24px
         color #333  
         font-family : $headings-font
         font-weight 400
-        line-height 1.1
+        line-height 1.1     
 
     &__btn-reset
         font-size 14px
@@ -27,6 +61,14 @@
         cursor pointer
         &:hover
             border-bottom 1px dashed #6e031f
+
+        @media (max-width 959px)
+            display none    
+
+    &__container
+
+        @media (max-width 959px)
+            display none             
 
     &__item
         border-bottom 1px solid #D2D2CA        
@@ -52,6 +94,10 @@
         align-items center
         justify-content space-between
         cursor pointer 
+
+        @media (max-width 959px)
+            padding-top 15px
+            padding-bottom 15px
 
         &:after
             content ''
@@ -157,6 +203,9 @@
             right -236px !important
             transition height .3s
 
+            @media (max-width 959px)
+                right -284px !important
+
     &__bottom
         margin-top 30px        
 
@@ -166,3 +215,23 @@
         width 100%     
         padding-top 17px
         padding-bottom 17px   
+
+        @media (max-width 959px)
+            max-width 290px
+
+    &__btn-reset-in-mobile
+        display none      
+        color #333
+        background-color #d2d2ca
+        &:hover
+            background-color lighten(#d2d2ca, 15%)
+
+        &:after
+            background-image url("data:image/svg+xml,%3Csvg width='10' height='18' viewBox='0 0 10 18' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M1 17L9 9L1 1' stroke='%23333333'/%3E%3C/svg%3E%0A")
+
+        @media (max-width 959px)
+            margin-top 15px
+            display block  
+            min-width auto
+            max-width 290px
+            width 100% 
