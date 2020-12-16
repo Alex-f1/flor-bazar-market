@@ -15,6 +15,10 @@
         position relative
         outline none !important
         margin-left 25px
+        &:hover
+            + .cart-mini__container
+                opacity 1
+                visibility visible
 
     &__count-prudacts
         font-size 10px
@@ -30,11 +34,62 @@
         background-color #D2D2CA
         border-radius 50%
 
-    &__items
+    &__container
         width 390px
         padding 40px
         background-color #fff
+        box-shadow 0px 10px 50px rgba(249, 220, 231, 0.2)
         position absolute
         top 71px
         right 0
         z-index 10
+        opacity 0
+        visibility hidden
+        transition opacity .3s, ease .5s
+        &:hover
+            opacity 1
+            visibility visible
+
+        &.is-cart-mini-items-show
+            opacity 1
+            visibility visible
+
+        @media (max-width 1024px)
+            top 61px
+            overflow-y auto
+            height 100vh
+            padding-bottom 100px !important
+            display none
+
+        @media (max-width 479px)    
+            padding 20px
+            width 320px
+    
+    &__bottom
+        margin-top 30px
+        padding-top 25px
+        border-top 1px solid #D2D2CA
+    
+    &__total
+        display flex
+        justify-content space-between
+
+    &__total-prace-name
+        font-size 13px
+        color #A79186    
+        font-weight 400
+        line-height 1.1
+        margin-bottom 10px
+
+    &__total-prace
+        font-size 24px
+        color #333
+        font-weight 400 
+        line-height 1.1
+
+    &__btn-to-cart
+        min-width auto
+        width 180px
+        max-width 100%    
+        padding-top 17px
+        padding-bottom 17px

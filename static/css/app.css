@@ -339,6 +339,7 @@ img {
   -ms-flex-align: center;
       align-items: center;
   margin: 0 auto;
+  position: relative;
 }
 .top-line__cols {
   display: -ms-flexbox;
@@ -682,6 +683,10 @@ p:last-child {
   outline: none !important;
   margin-left: 25px;
 }
+.cart-mini__btn-cart:hover + .cart-mini__container {
+  opacity: 1;
+  visibility: visible;
+}
 .cart-mini__count-prudacts {
   font-size: 10px;
   font-weight: bold;
@@ -696,14 +701,57 @@ p:last-child {
   background-color: #d2d2ca;
   border-radius: 50%;
 }
-.cart-mini__items {
+.cart-mini__container {
   width: 390px;
   padding: 40px;
   background-color: #fff;
+  box-shadow: 0px 10px 50px rgba(249,220,231,0.2);
   position: absolute;
   top: 71px;
   right: 0;
   z-index: 10;
+  opacity: 0;
+  visibility: hidden;
+  transition: opacity 0.3s, ease 0.5s;
+}
+.cart-mini__container:hover {
+  opacity: 1;
+  visibility: visible;
+}
+.cart-mini__container.is-cart-mini-items-show {
+  opacity: 1;
+  visibility: visible;
+}
+.cart-mini__bottom {
+  margin-top: 30px;
+  padding-top: 25px;
+  border-top: 1px solid #d2d2ca;
+}
+.cart-mini__total {
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: justify;
+      justify-content: space-between;
+}
+.cart-mini__total-prace-name {
+  font-size: 13px;
+  color: #a79186;
+  font-weight: 400;
+  line-height: 1.1;
+  margin-bottom: 10px;
+}
+.cart-mini__total-prace {
+  font-size: 24px;
+  color: #333;
+  font-weight: 400;
+  line-height: 1.1;
+}
+.cart-mini__btn-to-cart {
+  min-width: auto;
+  width: 180px;
+  max-width: 100%;
+  padding-top: 17px;
+  padding-bottom: 17px;
 }
 .catalog-main__section {
   padding-top: 120px;
@@ -2360,6 +2408,15 @@ p:last-child {
     padding-top: 100px;
     margin-bottom: 30px;
   }
+  .cart-mini__container {
+    top: 61px;
+    overflow-y: auto;
+    height: 100vh;
+    height: calc(var(--vh, 1vh) * 100);
+    padding-bottom: 100px !important;
+    display: none;
+    -webkit-overflow-scrolling: touch;
+  }
   .gallery {
     padding-top: 50px;
     padding-bottom: 50px;
@@ -2641,6 +2698,10 @@ p:last-child {
   }
 }
 @media (max-width: 479px) {
+  .cart-mini__container {
+    padding: 20px;
+    width: 320px;
+  }
   .our-advantages__item {
     -ms-flex: none;
         flex: none;

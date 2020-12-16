@@ -4,59 +4,70 @@
             {{ _icon('mini-cart-icon', { tag: 'i' }) }}
             <span elem="count-prudacts">1</span>
         </a>
-        <div elem="items">
-            <div block="lot-thumb-cart">
-                <div elem="body">
-                    <div elem="info">
-                        <a elem="img" href="#"><img src="img/lot-thumb-img.jpg" alt=""></a>
-                        <div elem="options">
-                            <a elem="name" href="#">101 красная роза (россия) в бел корзине...</a>
-                            <div elem="prices">
-                                <span elem="current-price">5 650 ₽</span>
-                                <span elem="old-prace">7 060 ₽</span>
+        <div elem="container">
+            <div elem="items">
+                <div block="lot-thumb-cart">
+                    <div elem="body">
+                        <div elem="info">
+                            <a elem="img" href="#"><img src="img/lot-thumb-img.jpg" alt=""></a>
+                            <div elem="options">
+                                <a elem="name" href="#">101 красная роза (россия) в бел корзине...</a>
+                                <div elem="prices">
+                                    <span elem="current-price">5 650 ₽</span>
+                                    <span elem="old-prace">7 060 ₽</span>
+                                </div>
                             </div>
                         </div>
-                    </div>
-                    <div elem="handling">
-                        <button elem="btn-close" type="button">{{ _icon('close-icon', { tag: 'i' }) }}</button>
-                        {% include "amount.html" %}
-                    </div>
-                </div>
-            </div><!-- lot-thumb-cart -->
-            <div block="lot-thumb-cart">
-                <div elem="body">
-                    <div elem="info">
-                        <a elem="img" href="#"><img src="img/lot-thumb2-img.jpg" alt=""></a>
-                        <div elem="options">
-                            <a elem="name" href="#">5 белых гортензий в шляпной коробке</a>
-                            <div elem="prices">
-                                <span elem="current-price">3 680 ₽</span>
-                            </div>
+                        <div elem="handling">
+                            <button elem="btn-close" type="button">{{ _icon('close-icon', { tag: 'i' }) }}</button>
+                            {% include "amount.html" %}
                         </div>
                     </div>
-                    <div elem="handling">
-                        <button elem="btn-close" type="button">{{ _icon('close-icon', { tag: 'i' }) }}</button>
-                        {% include "amount.html" %}
-                    </div>
-                </div>
-            </div><!-- lot-thumb-cart -->
-            <div block="lot-thumb-cart">
-                <div elem="body">
-                    <div elem="info">
-                        <a elem="img" href="#"><img src="img/lot-thumb3-img.jpg" alt=""></a>
-                        <div elem="options">
-                            <a elem="name" href="#">Букет из 21 кустовой хризантемы</a>
-                            <div elem="prices">
-                                <span elem="current-price">3 680 ₽</span>
+                </div><!-- lot-thumb-cart -->
+                <div block="lot-thumb-cart">
+                    <div elem="body">
+                        <div elem="info">
+                            <a elem="img" href="#"><img src="img/lot-thumb2-img.jpg" alt=""></a>
+                            <div elem="options">
+                                <a elem="name" href="#">5 белых гортензий в шляпной коробке</a>
+                                <div elem="prices">
+                                    <span elem="current-price">3 680 ₽</span>
+                                </div>
                             </div>
                         </div>
+                        <div elem="handling">
+                            <button elem="btn-close" type="button">{{ _icon('close-icon', { tag: 'i' }) }}</button>
+                            {% include "amount.html" %}
+                        </div>
                     </div>
-                    <div elem="handling">
-                        <button elem="btn-close" type="button">{{ _icon('close-icon', { tag: 'i' }) }}</button>
-                        {% include "amount.html" %}
+                </div><!-- lot-thumb-cart -->
+                <div block="lot-thumb-cart">
+                    <div elem="body">
+                        <div elem="info">
+                            <a elem="img" href="#"><img src="img/lot-thumb3-img.jpg" alt=""></a>
+                            <div elem="options">
+                                <a elem="name" href="#">Букет из 21 кустовой хризантемы</a>
+                                <div elem="prices">
+                                    <span elem="current-price">3 680 ₽</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div elem="handling">
+                            <button elem="btn-close" type="button">{{ _icon('close-icon', { tag: 'i' }) }}</button>
+                            {% include "amount.html" %}
+                        </div>
                     </div>
+                </div><!-- lot-thumb-cart -->
+            </div>
+            <div elem="bottom">
+                <div elem="total">
+                    <div elem="total-prace-wrp">
+                        <div elem="total-prace-name">Итого:</div>
+                        <div elem="total-prace">13 650 ₽</div>
+                    </div>
+                    <a elem="btn-to-cart" class="btn-general" href="#">в корзину</и>
                 </div>
-            </div><!-- lot-thumb-cart -->
+            </div>
         </div>
     </div>
 </div><!-- cart-mini -->
