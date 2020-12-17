@@ -679,6 +679,75 @@ p:last-child {
 .label-elem-interface__color-item:hover {
   box-shadow: 0px 0px 10px 0px #000;
 }
+.remodal {
+  max-width: 480px;
+  padding: 45px;
+  text-align: left;
+}
+.remodal-close {
+  top: 10px;
+  right: 10px;
+}
+.remodal-close:before {
+  content: '';
+  background-image: url("data:image/svg+xml,%3Csvg width='16' height='16' viewBox='0 0 16 16' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cg clip-path='url(%23clip0)'%3E%3Cpath d='M8.88368 8.00079L15.8167 1.06774C16.0608 0.823644 16.0608 0.427895 15.8167 0.183833C15.5726 -0.0602291 15.1769 -0.0602604 14.9328 0.183833L7.99975 7.11688L1.06673 0.183833C0.822637 -0.0602604 0.426888 -0.0602604 0.182826 0.183833C-0.0612362 0.427926 -0.0612675 0.823675 0.182826 1.06774L7.11584 8.00076L0.182826 14.9338C-0.0612675 15.1779 -0.0612675 15.5736 0.182826 15.8177C0.304857 15.9397 0.464825 16.0007 0.624794 16.0007C0.784762 16.0007 0.944699 15.9397 1.06676 15.8177L7.99975 8.88469L14.9328 15.8177C15.0548 15.9397 15.2148 16.0007 15.3747 16.0007C15.5347 16.0007 15.6946 15.9397 15.8167 15.8177C16.0608 15.5736 16.0608 15.1779 15.8167 14.9338L8.88368 8.00079Z' fill='black'/%3E%3C/g%3E%3Cdefs%3E%3CclipPath id='clip0'%3E%3Crect width='16' height='16' fill='white'/%3E%3C/clipPath%3E%3C/defs%3E%3C/svg%3E%0A");
+  background-repeat: no-repeat;
+  background-size: contain;
+  top: 10px;
+  right: 10px;
+  width: 16px;
+  height: 16px;
+}
+input[type=text] {
+  font-size: 14px;
+  color: #333;
+  font-weight: 400;
+  line-height: 1.1;
+  width: 100%;
+  height: 25px;
+  border: none;
+  border-bottom: 1px solid #a79186;
+}
+::-webkit-input-placeholder {
+  font-size: 14px;
+  color: #a79186;
+  font-weight: 400;
+  line-height: 1.1;
+}
+::-moz-placeholder {
+  font-size: 14px;
+  color: #a79186;
+  font-weight: 400;
+  line-height: 1.1;
+}
+:-ms-input-placeholder {
+  font-size: 14px;
+  color: #a79186;
+  font-weight: 400;
+  line-height: 1.1;
+}
+::-ms-input-placeholder {
+  font-size: 14px;
+  color: #a79186;
+  font-weight: 400;
+  line-height: 1.1;
+}
+::placeholder {
+  font-size: 14px;
+  color: #a79186;
+  font-weight: 400;
+  line-height: 1.1;
+}
+textarea {
+  font-size: 14px;
+  color: #333;
+  font-weight: 400;
+  line-height: 1.1;
+  padding: 12px;
+  border: 1px solid #a79186;
+  width: 100%;
+  min-height: 80px;
+}
 .amount {
   width: 70px;
   height: 30px;
@@ -2597,6 +2666,71 @@ p:last-child {
   transition: transform 0.5s;
   transition: transform 0.5s, -webkit-transform 0.5s;
 }
+.subscribe-popup__section.success {
+  display: none;
+}
+.subscribe-popup__title {
+  font-size: 24px;
+  color: #333;
+  font-weight: 400;
+  line-height: 1.1;
+  text-transform: uppercase;
+  margin-bottom: 20px;
+}
+.subscribe-popup__group {
+  margin-bottom: 25px;
+}
+.subscribe-popup__group:last-child {
+  margin-bottom: 0;
+}
+.subscribe-popup__name {
+  font-size: 18px;
+  color: #1b110f;
+  font-weight: 400;
+  line-height: 1.3;
+  margin-bottom: 15px;
+}
+.subscribe-popup__input {
+  margin-bottom: 15px;
+}
+.subscribe-popup__input input {
+  outline: none;
+}
+.subscribe-popup__textarea {
+  margin-top: 40px;
+}
+.subscribe-popup__textarea textarea {
+  outline: none;
+  max-width: 100%;
+}
+.subscribe-popup__btn-send {
+  min-width: auto;
+  width: 100%;
+  margin-top: 30px;
+}
+.popup-success {
+  padding: 50px;
+  color: #fff;
+  background-color: #6e031f;
+  text-align: center;
+  display: none;
+}
+.popup-success__desc {
+  font-size: 20px;
+  font-weight: 400;
+}
+.popup-success__desc span {
+  line-height: 16px;
+  width: 230px;
+  display: block;
+  margin: 0 auto 15px;
+}
+.popup-success__desc strong {
+  font-size: 24px;
+  font-weight: 400;
+  line-height: 1.1;
+  display: block;
+}
 .subscribe {
   -ms-flex: none;
       flex: none;
@@ -3032,6 +3166,9 @@ p:last-child {
   }
 }
 @media (max-width: 639px) {
+  .remodal {
+    padding: 25px;
+  }
   .card-product-desc__tab-content {
     padding-top: 25px;
   }
@@ -3085,6 +3222,9 @@ p:last-child {
   }
   .shares__input {
     margin-bottom: 15px;
+  }
+  .popup-success {
+    padding: 15px;
   }
   .subscribe__section {
     height: 200px;

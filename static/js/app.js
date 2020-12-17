@@ -89,30 +89,30 @@ $(function () {
     $(this).addClass('is-active-btn-tab-card').siblings().removeClass('is-active-btn-tab-card');
     $('.card-product-desc__tabs-container').find('.js-tab-content-card').removeClass('is-active-tab-content').hide().eq($(this).index()).fadeIn();
   });
-  var secondarySlider = new Splide('.js-card-preview-secondary-slider', {
-    rewind: true,
-    fixedWidth: 52,
-    fixedHeight: 52,
-    isNavigation: true,
-    gap: 25,
-    focus: 'center',
-    pagination: false,
-    breakpoints: {
-      '479': {
-        focus: false
+
+  if ($.exists('.js-card-preview-secondary-slider')) {
+    var secondarySlider = new Splide('.js-card-preview-secondary-slider', {
+      rewind: true,
+      fixedWidth: 52,
+      fixedHeight: 52,
+      isNavigation: true,
+      gap: 25,
+      focus: 'center',
+      pagination: false,
+      breakpoints: {
+        '479': {
+          focus: false
+        }
       }
-    }
-  }).mount(); // Create the main slider.
+    }).mount();
+    var primarySlider = new Splide('.js-card-preview-primary-slider', {
+      type: 'fade',
+      pagination: false,
+      arrows: false
+    });
+    primarySlider.sync(secondarySlider).mount();
+  }
 
-  var primarySlider = new Splide('.js-card-preview-primary-slider', {
-    type: 'fade',
-    // heightRatio: 0.5,
-    pagination: false,
-    arrows: false // cover: true,
-
-  }); // Set the thumbnails slider as a sync target and then call mount.
-
-  primarySlider.sync(secondarySlider).mount();
   $('.label-elem-interface').on('click', function () {
     if (!$(this).hasClass('js-color-pick-interface')) {
       $('.js-color-pick').removeClass('is-active-color-pick');
@@ -367,4 +367,19 @@ $(function () {
       }
     }).mount();
   }
+
+  $('.js-subscribe-popup').on('submit', function (event) {
+    var $this = $(this);
+    event.preventDefault();
+    $this.closest('.subscribe-popup__section').addClass('success');
+    $this.closest('.subscribe-popup').addClass('success-form').find('.popup-success').fadeIn();
+    setTimeout(function () {
+      $this.closest('.app').find('.remodal-overlay').css('display', 'none');
+      $this.closest('.app').find('.remodal-wrapper').css('display', 'none');
+      $this.closest('.subscribe-popup__section').removeClass('success');
+      $this.closest('.subscribe-popup').removeClass('success-form').find('.popup-success').fadeOut();
+      $('html').removeClass('remodal-is-locked');
+      $('body').css('padding-right', 0);
+    }, 3000);
+  });
 });

@@ -1,0 +1,83 @@
+<div block="subscribe-popup" class="remodal" data-remodal-id="subscribe">
+    <button data-remodal-action="close" class="remodal-close"></button>
+    <div elem="section">
+        <div elem="title">Подписка на цветы</div>
+        <form elem="form" class="js-subscribe-popup">
+            <div elem="container">
+                <div elem="group">
+                    <div elem="name">
+                        Выберите, как часто вы хотите дарить цветы. Мы вас проконсультируем
+                        и поможем подобрать цветы так,
+                        чтобы им радовались каждый раз
+                        так же, как и в первый.
+                    </div>
+                    <div elem="options">
+                        <div elem="inputs">
+                            <label block="label-elem-interface" mods="radio">
+                                <input type="radio" name="lifetime">
+                                <span elem="name">Раз в месяц</span>
+                            </label>
+                            <label block="label-elem-interface" mods="radio">
+                                <input type="radio" name="lifetime">
+                                <span elem="name">Раз в две недели</span>
+                                <span elem="bonus">скидка 10%</span>
+                            </label>
+                            <label block="label-elem-interface" mods="radio">
+                                <input type="radio" name="lifetime">
+                                <span elem="name">Раз в неделю</span>
+                                <span elem="bonus">скидка 15%</span>
+                            </label>
+                            <label block="label-elem-interface" mods="radio">
+                                <input type="radio" name="lifetime">
+                                <span elem="name">Другое</span>
+                            </label>
+                        </div>
+                    </div>
+                </div>
+                <div elem="group">
+                    <div elem="name">
+                        Как с вами связаться?
+                    </div>
+                    <div elem="options">
+                        <div elem="inputs">
+                            <label block="label-elem-interface" mods="radio">
+                                <input type="radio" name="check">
+                                <span elem="name">По телефону</span>
+                            </label>
+                            <label block="label-elem-interface" mods="radio">
+                                <input type="radio" name="check">
+                                <span elem="name">По почте</span>
+                            </label>
+                            <label block="label-elem-interface" mods="radio">
+                                <input type="radio" name="check">
+                                <span elem="name">Другой способ (укажите в комментариях)</span>
+                            </label>
+                        </div>
+                    </div>
+                </div>
+                <div elem="group">
+                    <div elem="input">
+                        <input type="text" placeholder="Ваше имя *" required>
+                    </div>
+                    <div elem="input">
+                        <input type="text" placeholder="Номер телефона (почта, если выбрано)">
+                    </div>
+                    <div elem="textarea">
+                        <textarea placeholder="Комментарии и пожелания"></textarea>
+                    </div>
+                    <button elem="btn-send" class="btn-general" type="submit">Обсудить подписку</button>
+                </div>
+            </div>
+        </form>
+    </div>
+    <div block="popup-success">
+        <div elem="section">
+            <div elem="desc">
+                <span>
+                    Спасибо за подписку
+                </span>
+                <strong>Мы свяжимся с Вами!</strong>
+            </div>
+        </div>
+    </div><!-- b:popup-success -->
+</div><!-- subscribe-poup -->
