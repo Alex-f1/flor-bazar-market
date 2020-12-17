@@ -768,7 +768,10 @@ textarea {
   outline: none !important;
   text-align: center;
   padding: 0;
+  -ms-flex: 0 0 25px;
+      flex: 0 0 25px;
   width: 25px;
+  max-width: 25px;
   height: 30px;
   background-color: transparent;
   cursor: pointer;
@@ -781,7 +784,10 @@ textarea {
   text-align: center;
   border: none;
   outline: none !important;
+  -ms-flex: 0 0 20px;
+      flex: 0 0 20px;
   width: 20px;
+  max-width: 20px;
 }
 .card-product-desc__tabs-head {
   display: -ms-flexbox;
@@ -1003,7 +1009,19 @@ textarea {
   margin-right: 15px;
 }
 .card-products__handling .amount__btn-amount {
-  width: 40px;
+  -ms-flex: 0 0 34px;
+      flex: 0 0 34px;
+  width: 34px;
+  max-width: 34px;
+  height: 60px;
+}
+.card-products__handling .amount input {
+  font-size: 16px;
+  -ms-flex: 0 0 30px;
+      flex: 0 0 30px;
+  width: 30px;
+  max-width: 30px;
+  height: 55px;
 }
 .card-products__btn-add-to-cart--out {
   pointer-events: none;
@@ -1849,7 +1867,17 @@ textarea {
   width: 50px;
   margin-top: auto;
 }
+.lot-thumb-cart .amount__btn-amount {
+  -ms-flex: 0 0 15px;
+      flex: 0 0 15px;
+  width: 15px;
+  max-width: 15px;
+}
 .lot-thumb-cart .amount input {
+  -ms-flex: 0 0 18px;
+      flex: 0 0 18px;
+  width: 18px;
+  max-width: 18px;
   font-size: 13px;
 }
 .lot-thumb {
