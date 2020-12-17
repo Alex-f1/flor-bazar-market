@@ -1,0 +1,78 @@
+<div block="card-products" mods="out">
+    <div elem="section">
+        <form elem="form">
+            <div elem="main">
+                <div elem="preview">
+                    {% include "card-product-preview.html" %}
+                </div>
+                <div elem="info">
+                    <h1>101 красная роза (Россия) в белой корзине с зеленью</h1>
+                    <div elem="prices">
+                        <span elem="current-price">5650 ₽</span>
+                    </div>
+                    <div elem="handling">
+                        {% include "amount.html" %}
+                        <button elem="btn-add-to-cart" mods="out" class="btn-general" disabled type="button">Нет в наличии</button>
+                    </div>
+                    <div elem="options">
+                        <div elem="inputs">
+                            <label block="label-elem-interface" mods="radio">
+                                <input type="radio" name="package">
+                                <span elem="name">Без упаковки</span>
+                                <span elem="bonus">+ 0 ₽</span>
+                            </label>
+                            <label block="label-elem-interface" mods="radio">
+                                <input type="radio" name="package">
+                                <span elem="name">Прозрачная плёнка и ленточка</span>
+                                <span elem="bonus">+ 150 ₽</span>
+                            </label>
+                            <label block="label-elem-interface" mods="radio">
+                                <input type="radio" name="package">
+                                <span elem="name">Крафт</span>
+                                <span elem="bonus">+ 250 ₽</span>
+                            </label>
+                            <label block="label-elem-interface" mods="radio">
+                                <input type="radio" name="package">
+                                <span elem="name">Фетр</span>
+                                <span elem="bonus">+ 250 ₽</span>
+                            </label>
+                            <label block="label-elem-interface" mods="radio" class="js-color-pick-interface">
+                                <input type="radio" name="package">
+                                <span elem="name">цветная матовая пленка (корея)</span>
+                                <span elem="bonus">+ 250 ₽</span>
+                                <div elem="color-selection">
+                                    <div elem="color-name">Выберите цвет пленки</div>
+                                    <div elem="color-items">
+                                        <div elem="color-item" class="js-color-pick" data-color=""><img src="img/color-1.png" alt=""></div>
+                                        <div elem="color-item" class="js-color-pick" data-color=""><img src="img/color-2.png" alt=""></div>
+                                        <div elem="color-item" class="js-color-pick" data-color=""><img src="img/color-3.png" alt=""></div>
+                                        <div elem="color-item" class="js-color-pick" data-color=""><img src="img/color-4.png" alt=""></div>
+                                        <div elem="color-item" class="js-color-pick" data-color=""><img src="img/color-5.png" alt=""></div>
+                                        <div elem="color-item" class="js-color-pick" data-color=""><img src="img/color-6.png" alt=""></div>
+                                        <div elem="color-item" class="js-color-pick" data-color=""><img src="img/color-7.png" alt=""></div>
+                                        <div elem="color-item" class="js-color-pick" data-color=""><img src="img/color-8.png" alt=""></div>
+                                        <div elem="color-item" class="js-color-pick" data-color=""><img src="img/color-9.png" alt=""></div>
+                                        <div elem="color-item" class="js-color-pick" data-color=""><img src="img/color-10.png" alt=""></div>
+                                    </div>
+                                </div>
+                            </label>
+                            <label block="label-elem-interface" mods="radio">
+                                <input type="radio" name="package">
+                                <span elem="name">упаковка на усмотрение флориста</span>
+                                <span elem="bonus">+ 250 ₽</span>
+                            </label>
+                            <label block="label-elem-interface" mods="radio">
+                                <input type="radio" name="package">
+                                <span elem="name">Добавить зелень</span>
+                                <span elem="bonus">+ 150 ₽</span>
+                            </label>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </form>
+        <div elem="bottom">
+            {% include "card-product-desc.html" %}
+        </div>
+    </div>
+</div><!-- card-products -->

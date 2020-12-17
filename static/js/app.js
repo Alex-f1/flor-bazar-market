@@ -85,6 +85,46 @@ $(function () {
 
     amountBlock.find('input').val(amountValue);
   });
+  $('.card-product-desc__tabs-head').on('click', '.js-btn-tab-card:not(.is-active-btn-tab-card)', function () {
+    $(this).addClass('is-active-btn-tab-card').siblings().removeClass('is-active-btn-tab-card');
+    $('.card-product-desc__tabs-container').find('.js-tab-content-card').removeClass('is-active-tab-content').hide().eq($(this).index()).fadeIn();
+  });
+  var secondarySlider = new Splide('.js-card-preview-secondary-slider', {
+    rewind: true,
+    fixedWidth: 52,
+    fixedHeight: 52,
+    isNavigation: true,
+    gap: 25,
+    focus: 'center',
+    pagination: false,
+    breakpoints: {
+      '479': {
+        focus: false
+      }
+    }
+  }).mount(); // Create the main slider.
+
+  var primarySlider = new Splide('.js-card-preview-primary-slider', {
+    type: 'fade',
+    // heightRatio: 0.5,
+    pagination: false,
+    arrows: false // cover: true,
+
+  }); // Set the thumbnails slider as a sync target and then call mount.
+
+  primarySlider.sync(secondarySlider).mount();
+  $('.label-elem-interface').on('click', function () {
+    if (!$(this).hasClass('js-color-pick-interface')) {
+      $('.js-color-pick').removeClass('is-active-color-pick');
+    }
+  });
+  $('.js-color-pick').on('click', function (e) {
+    $(this).addClass('is-active-color-pick').siblings().removeClass('is-active-color-pick');
+  });
+  $('.js-btn-card-products-add-to-cart').on('click', function () {
+    $(this).hide();
+    $('.js-checkout-order').show();
+  });
   $('.js-btn-sort').on('click', function (event) {
     event.preventDefault();
     $(this).addClass('is-active-sorting').siblings().removeClass('is-active-sorting');

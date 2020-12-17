@@ -1,0 +1,48 @@
+<div block="card-products">
+    <div elem="section">
+        <form elem="form">
+            <div elem="main">
+                <div elem="preview">
+                    {% include "card-product-preview.html" %}
+                </div>
+                <div elem="info">
+                    <h1>101 красная роза (Россия) в белой корзине с зеленью</h1>
+                    <div elem="prices">
+                        <span elem="current-price">5 650 ₽</span>
+                        <span elem="old-prace">7 060 ₽</span>
+                    </div>
+                    <div elem="handling">
+                        {% include "amount.html" %}
+                        <button elem="btn-add-to-cart" class="btn-general js-btn-card-products-add-to-cart" type="button">Добавить в корзину</button>
+                        <div elem="checkout-order" class="js-checkout-order">
+                            <a elem="btn-add-to-cart" mods="in-cart" class="btn-general" href="#">{{ _icon('completed-icon', { tag: 'i' }) }}Оформить заказ</a>
+                            <div elem="notice">В корзине</div>
+                        </div>
+                    </div>
+                    <div elem="options">
+                        <div elem="inputs">
+                            <label block="label-elem-interface" mods="radio">
+                                <input type="radio" name="package">
+                                <span elem="name">Без упаковки</span>
+                                <span elem="bonus">+ 0 ₽</span>
+                            </label>
+                            <label block="label-elem-interface" mods="radio">
+                                <input type="radio" name="package">
+                                <span elem="name">Прозрачная плёнка и ленточка</span>
+                                <span elem="bonus">+ 150 ₽</span>
+                            </label>
+                            <label block="label-elem-interface" mods="radio">
+                                <input type="radio" name="package">
+                                <span elem="name">Добавить зелень</span>
+                                <span elem="bonus">+ 150 ₽</span>
+                            </label>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </form>
+        <div elem="bottom">
+            {% include "card-product-desc.html" %}
+        </div>
+    </div>
+</div><!-- card-products -->

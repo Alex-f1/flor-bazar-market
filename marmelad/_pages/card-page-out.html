@@ -1,0 +1,28 @@
+= yaml =
+pageTitle: 101 красная роза (россия) в белой корзине с зеленью
+bodyClasses:
+layout: !!map
+    header: true
+    footer: true
+    left: false
+    right: false
+path: [
+    {"title":Главная},
+    {"title":Букеты},
+    {"title":Розы},
+]
+= yaml =
+
+{% extends 'app.html' %}
+
+{% block beforeContent %}
+    <div class="inner-page-head {% if pageTitle == '101 красная роза (россия) в белой корзине с зеленью' %}inner-page-head--mods{% endif %} ">
+        {% include "s-path.html" %}
+    </div>
+{% endblock %}
+
+{% block main %}
+
+    {% include "card-products-out.html" %}
+
+{% endblock %}

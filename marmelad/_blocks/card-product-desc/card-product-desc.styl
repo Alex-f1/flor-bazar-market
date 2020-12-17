@@ -1,0 +1,155 @@
+.card-product-desc
+
+    &__tabs-head
+        display flex
+        border-bottom 1px solid #D2D2CA
+
+    &__btn-tab
+        font-size 14px
+        color #D2D2CA
+        font-weight 400
+        line-height 1.1
+        text-transform uppercase
+        padding 15px 55px
+        border none
+        background-color transparent
+        cursor pointer
+        transition color .3s
+        position relative
+        &:after
+            content ''
+            position absolute
+            bottom -1px
+            left 0
+            width 100%
+            height 1px
+            background-color #6e031f
+            z-index 1
+            opacity 0
+            visibility hidden
+            transition opacity .3s
+
+        &:hover
+            color #6e031f
+
+        &.is-active-btn-tab-card
+            color #6e031f
+            cursor default
+            pointer-events none
+            &:after
+                opacity 1
+                visibility visible
+
+        @media (max-width 1023px)
+            padding-right 15px
+            padding-left 15px        
+
+    &__tab-content
+        padding 45px 0 0 0           
+        display none
+
+        @media (max-width 639px)
+            padding-top 25px
+
+        &.is-active-tab-content
+            display block
+
+        ul
+            font-size 14px
+            color #1B110F
+            font-weight 400
+            line-height 1.1
+            list-style-type none
+            padding-left 0
+            margin-top 0
+            margin-bottom 30px
+
+            li
+                margin-bottom 5px
+
+    &__delivery-info
+        display flex
+
+    &__cols
+        display flex
+
+        @media (max-width 1360px)
+            justify-content space-between
+
+        @media (max-width 767px)
+            display block 
+
+    &__col
+        flex 0 0 60%
+        width 60%
+        max-width 60%
+        margin-right 125px
+
+        @media (max-width 1360px)
+            margin-right 50px
+
+        @media (max-width 767px)
+            margin-right 0
+            width 100% !important
+            max-width 100% !important
+
+        &:nth-child(2)
+            flex 0 0 35%
+            width 35%
+            max-width 35%
+
+    &__params-items
+        display flex
+
+        @media (max-width 479px)
+            display block
+
+    &__params-item
+        margin-right 30px     
+
+    &__params-node
+        margin-bottom 25px
+
+    &__text
+        @media (max-width 767px)
+            margin-bottom 25px    
+
+    &__name
+        font-size 14px
+        font-weight normal
+        color #A79186
+        line-height 1.1
+        text-transform uppercase
+        margin-bottom 15px
+
+    &__params-value
+        font-size 24px
+        color #1B110F    
+        font-family : $headings-font
+        font-weight 400
+        line-height 1.1      
+
+    &__payment-methods
+        padding-top 20px     
+    
+    &__payment-methods-title
+        font-size 18px
+        color #000
+        font-weight 400
+        line-height 1.1
+        text-transform uppercase
+        margin-bottom 15px
+
+    &__map
+        margin-bottom 20px    
+
+    &__delivery-info
+
+        .svg-icon
+            fill #663d37 
+            margin-right 10px
+
+        p
+            line-height 1.4
+            span
+                color #663d37    
