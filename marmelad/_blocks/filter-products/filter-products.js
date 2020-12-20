@@ -133,7 +133,11 @@ $('.filter-products__range').each(function () {
 
 });
 
-$('.js-filter-head').on('click', function () {
-    $(this).toggleClass('is-active-head');
-    $('.js-filter-container').stop().slideToggle();
-})
+if ($(window).width() <= 959) {
+    $('.js-filter-head').on('click', function () {
+        $(this).toggleClass('is-active-head');
+        $('.js-filter-container').stop().slideToggle();
+    })
+} else {
+    $('.js-filter-container').show();
+}

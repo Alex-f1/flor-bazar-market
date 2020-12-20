@@ -85,6 +85,13 @@ $(function () {
 
     amountBlock.find('input').val(amountValue);
   });
+  $('.amount input').keyup(function (e) {
+    if (this.value == "0" || this.value == "-" || this.value == "") {
+      this.value = "1";
+    } else {
+      this.value = this.value.replace(/[^0-9-\.]/g, '');
+    }
+  });
   $('.card-product-desc__tabs-head').on('click', '.js-btn-tab-card:not(.is-active-btn-tab-card)', function () {
     $(this).addClass('is-active-btn-tab-card').siblings().removeClass('is-active-btn-tab-card');
     $('.card-product-desc__tabs-container').find('.js-tab-content-card').removeClass('is-active-tab-content').hide().eq($(this).index()).fadeIn();
@@ -92,7 +99,7 @@ $(function () {
 
   if ($.exists('.js-card-preview-secondary-slider')) {
     var secondarySlider = new Splide('.js-card-preview-secondary-slider', {
-      rewind: true,
+      rewind: false,
       fixedWidth: 52,
       fixedHeight: 52,
       isNavigation: true,
@@ -128,6 +135,9 @@ $(function () {
   $('.js-btn-sort').on('click', function (event) {
     event.preventDefault();
     $(this).addClass('is-active-sorting').siblings().removeClass('is-active-sorting');
+  });
+  $('.js-btn-show-more').on('click', function () {
+    $(this).fadeOut();
   });
   $('.js-filter-name').on('click', function () {
     var $thisElem = $(this);
@@ -238,15 +248,22 @@ $(function () {
       });
     });
   });
-  $('.js-filter-head').on('click', function () {
-    $(this).toggleClass('is-active-head');
-    $('.js-filter-container').stop().slideToggle();
-  });
+
+  if ($(window).width() <= 959) {
+    $('.js-filter-head').on('click', function () {
+      $(this).toggleClass('is-active-head');
+      $('.js-filter-container').stop().slideToggle();
+    });
+  } else {
+    $('.js-filter-container').show();
+  }
 
   if ($.exists('.js-gallery-slider')) {
     new Splide('.js-gallery-slider', {
       perPage: 3,
-      rewind: true,
+      autoplay: 3000,
+      perMove: 1,
+      rewind: false,
       pagination: false,
       breakpoints: {
         960: {
@@ -262,6 +279,7 @@ $(function () {
   if ($.exists('.js-hero-slider')) {
     new Splide('.js-hero-slider', {
       type: 'fade',
+      autoplay: 4000,
       rewind: true,
       pagination: false
     }).mount();
@@ -369,8 +387,11 @@ $(function () {
   if ($.exists('.js-shares-slider')) {
     new Splide('.js-shares-slider', {
       perPage: 4,
-      rewind: true,
+      autoplay: 3000,
+      perMove: 1,
+      rewind: false,
       pagination: false,
+      drag: false,
       breakpoints: {
         1279: {
           perPage: 3

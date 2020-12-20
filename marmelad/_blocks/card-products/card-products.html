@@ -15,7 +15,7 @@
                         {% include "amount.html" %}
                         <button elem="btn-add-to-cart" class="btn-general js-btn-card-products-add-to-cart" type="button">Добавить в корзину</button>
                         <div elem="checkout-order" class="js-checkout-order">
-                            <a elem="btn-add-to-cart" mods="in-cart" class="btn-general" href="#">{{ _icon('completed-icon', { tag: 'i' }) }}Оформить заказ</a>
+                            <a elem="btn-add-to-cart" mods="in-cart" class="btn-general" href="#">{{ _icon('completed-icon', { tag: 'i' }) }}В корзине</a>
                             <div elem="notice">В корзине</div>
                         </div>
                     </div>
@@ -35,6 +35,11 @@
                                 <input type="radio" name="package">
                                 <span elem="name">Добавить зелень</span>
                                 <span elem="bonus">+ 150 ₽</span>
+                            </label>
+                            <label block="label-elem-interface" mods="radio">
+                                <input type="radio" name="package">
+                                <span elem="name">упаковка на усмотрение флориста</span>
+                                <span elem="bonus">+ 250 ₽</span>
                             </label>
                         </div>
                     </div>

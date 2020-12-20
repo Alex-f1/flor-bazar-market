@@ -2,7 +2,9 @@ if ($.exists('.js-gallery-slider')) {
 
     new Splide( '.js-gallery-slider', {
         perPage: 3,
-        rewind : true,
+        autoplay: 3000,
+        perMove: 1,
+        rewind : false,
         pagination: false,
         breakpoints: {
             960: {

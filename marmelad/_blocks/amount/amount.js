@@ -12,3 +12,11 @@ $('.js-btn-amount').on('click', function (event) {
 
     amountBlock.find('input').val(amountValue);
 });
+
+$('.amount input').keyup(function (e) {
+    if (this.value == "0" || this.value == "-" || this.value == "" ) {
+        this.value = "1";
+    } else {
+        this.value = this.value.replace(/[^0-9-\.]/g, '');
+    }
+});

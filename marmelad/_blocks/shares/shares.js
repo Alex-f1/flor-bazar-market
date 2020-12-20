@@ -2,8 +2,11 @@ if ($.exists('.js-shares-slider')) {
 
     new Splide('.js-shares-slider', {
         perPage: 4,
-        rewind: true,
+        autoplay: 3000,
+        perMove: 1,
+        rewind: false,
         pagination: false,
+        drag: false,
         breakpoints: {
             1279: {
                 perPage: 3,

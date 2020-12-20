@@ -1,7 +1,7 @@
 if ($.exists('.js-card-preview-secondary-slider')) {
 
     var secondarySlider = new Splide('.js-card-preview-secondary-slider', {
-        rewind: true,
+        rewind: false,
         fixedWidth: 52,
         fixedHeight: 52,
         isNavigation: true,

@@ -5,3 +5,7 @@ $('.js-btn-sort').on('click', function (event) {
         .siblings()
         .removeClass('is-active-sorting');
 })
+
+$('.js-btn-show-more').on('click', function () {
+    $(this).fadeOut();
+});
