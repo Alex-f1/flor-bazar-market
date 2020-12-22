@@ -159,7 +159,7 @@ p
     //             &:before
     //                 border-radius 2px
 
-    &--radio
+    &--circle
 
         & ^[0]
             &__name
@@ -290,7 +290,8 @@ p
         width 16px
         height 16px
 
-input[type=text]
+input[type=text],
+input[type=email]
     font-size 14px
     color #333
     font-weight 400
@@ -315,3 +316,31 @@ textarea
     border 1px solid #A79186    
     width 100%
     min-height 80px
+
+.btn-up
+    display flex
+    flex-direction column
+    justify-content center
+    align-items center
+    width 50px
+    height 50px
+    padding 0
+    position fixed
+    right 7%
+    bottom 100px
+    background-color #D3B3BC
+    border none
+    border-radius 50%
+    z-index 5
+    display none
+    transition background-color .3s
+    cursor pointer
+    &:hover
+        background-color #6E031F
+
+    .svg-icon
+        fill transparent    
+
+    @media (max-width 1023px)
+        right 15px
+        bottom 15px

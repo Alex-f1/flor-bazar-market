@@ -21,11 +21,16 @@
                     <span elem="old-prace">7 060 ₽</span>
                 </div>
                 <div elem="manage">
-                    <button elem="btn-to-cart" class="js-add-to-cart" data-text="В корзине" type="button">
+                    <button elem="btn-to-cart" class="js-add-to-cart" type="button">
                         {{ _icon('mini-cart-icon', { tag: 'i' }) }}
                         {{ _icon('completed-icon', { tag: 'i' }) }}
                         <span>В корзину</span>
                     </button>
+                    <a elem="btn-to-cart" mods="added-to-cart" href="#">
+                        {{ _icon('mini-cart-icon', { tag: 'i' }) }}
+                        {{ _icon('completed-icon', { tag: 'i' }) }}
+                        <span>В корзине</span>
+                    </a>
                     {% include "amount.html" %}
                 </div>
             </div>

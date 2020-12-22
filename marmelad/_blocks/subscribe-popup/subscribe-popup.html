@@ -13,21 +13,21 @@
                     </div>
                     <div elem="options">
                         <div elem="inputs">
-                            <label block="label-elem-interface" mods="radio">
+                            <label block="label-elem-interface" mods="circle">
                                 <input type="radio" name="lifetime">
                                 <span elem="name">Раз в месяц</span>
                             </label>
-                            <label block="label-elem-interface" mods="radio">
+                            <label block="label-elem-interface" mods="circle">
                                 <input type="radio" name="lifetime">
                                 <span elem="name">Раз в две недели</span>
                                 <span elem="bonus">скидка 10%</span>
                             </label>
-                            <label block="label-elem-interface" mods="radio">
+                            <label block="label-elem-interface" mods="circle">
                                 <input type="radio" name="lifetime">
                                 <span elem="name">Раз в неделю</span>
                                 <span elem="bonus">скидка 15%</span>
                             </label>
-                            <label block="label-elem-interface" mods="radio">
+                            <label block="label-elem-interface" mods="circle">
                                 <input type="radio" name="lifetime">
                                 <span elem="name">Другое</span>
                             </label>
@@ -40,16 +40,16 @@
                     </div>
                     <div elem="options">
                         <div elem="inputs">
-                            <label block="label-elem-interface" mods="radio">
-                                <input type="radio" name="check">
+                            <label block="label-elem-interface" mods="circle" class="js-subscribe-contact subscribe-contact-phone">
+                                <input type="radio" name="contact">
                                 <span elem="name">По телефону</span>
                             </label>
-                            <label block="label-elem-interface" mods="radio">
-                                <input type="radio" name="check">
+                            <label block="label-elem-interface" mods="circle" class="js-subscribe-contact subscribe-contact-email">
+                                <input type="radio" name="contact">
                                 <span elem="name">По почте</span>
                             </label>
-                            <label block="label-elem-interface" mods="radio">
-                                <input type="radio" name="check">
+                            <label block="label-elem-interface" mods="circle" class="js-subscribe-contact subscribe-contact-other">
+                                <input type="radio" name="contact">
                                 <span elem="name">Другой способ (укажите в комментариях)</span>
                             </label>
                         </div>
@@ -59,9 +59,15 @@
                     <div elem="input">
                         <input type="text" placeholder="Ваше имя *" required>
                     </div>
-                    <div elem="input">
-                        <input type="text" placeholder="Номер телефона (почта, если выбрано)">
+                    <div elem="input" mods="contact" class="js-input-contact">
+                        <input type="text" placeholder="Номер телефона (почта, если выбрано)" >
                     </div>
+                    <!-- <div elem="input" mods="contact" class="input-contact-hide js-input-phones">
+                        <input type="text" class="js-phone-mask" disabled placeholder="Номер телефона" maxlength="13" >
+                    </div>
+                    <div elem="input" mods="contact" class="input-contact-hide js-input-email">
+                        <input type="text" class="js-email-mask" disabled placeholder="Почта" >
+                    </div> -->
                     <div elem="textarea">
                         <textarea placeholder="Комментарии и пожелания"></textarea>
                     </div>

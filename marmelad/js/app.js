@@ -73,4 +73,25 @@ $(function() {
   $.exists = (selector) => $(selector).length > 0;
 
   //=require ../_blocks/**/*.js
+
+
+  var btnUp = $('.js-btn-up');
+  $(window).scroll(function () {
+    if ($(this).scrollTop() > 800) {
+      btnUp.fadeIn();
+    } else {
+      btnUp.fadeOut();
+    }
+  });
+  btnUp.on('click', function () {
+    $('body, html').animate({
+      scrollTop: 0
+    }, 1000);
+    return false;
+  });
+
+
+  
+  
+
 });

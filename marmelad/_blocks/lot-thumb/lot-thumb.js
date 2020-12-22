@@ -6,12 +6,14 @@ $('.lot-thumb').each(function () {
     $thisBtnToCart.on('click', function (event) {
         event.preventDefault();
         
-        var $thisElemBtn = $(this),
-            $thisText = $thisElemBtn.find('span'),
-            $thisDataText = $thisElemBtn.data('text');
+        var $thisElemBtn = $(this);
 
-        $thisText.html($thisDataText);
-        $thisElemBtn.addClass('is-added-to-cart');
+        $thisElemBtn
+            .siblings('.lot-thumb__btn-to-cart--added-to-cart')
+            .addClass('is-added-to-cart');
+        
+        $thisElemBtn.hide();
+
         $thisAmount.addClass('is-amount-show');
     });
 

@@ -4,7 +4,7 @@ $('.label-elem-interface').on('click', function () {
     }
 })
 
-$('.js-color-pick').on('click', function (e) {
+$('.js-color-pick').on('click', function () {
     $(this)
         .addClass('is-active-color-pick')
         .siblings()
@@ -16,3 +16,14 @@ $('.js-btn-card-products-add-to-cart').on('click', function () {
     $('.js-checkout-order').show();
 })
 
+// $('.js-interface-radio').on('click', 'input', function () {
+//     var $thisInput = $(this);
+    
+//     if (!$thisInput.attr('checked')) {
+//         $thisInput.attr('checked', 'checked');
+//         $($thisInput).prop("checked", true);
+//     } else {
+//         $thisInput.removeAttr('checked');
+//         $($thisInput).prop("checked", false);
+//     }
+// });
