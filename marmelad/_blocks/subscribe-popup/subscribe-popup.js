@@ -11,7 +11,14 @@ $('.js-subscribe-popup').on('submit', function (event) {
         $('html').removeClass('remodal-is-locked');
         $('body').css('padding-right', 0);
     }, 5000);
+
+    
 });
+
+$('.js-btn-success-ok').on('click', function () {
+    $('.remodal-close').trigger('click')
+})
+
 
 $('.js-subscribe-contact').on('click', function () {
     var $thisElem = $(this);
