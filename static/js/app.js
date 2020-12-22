@@ -436,14 +436,17 @@ $(function () {
     var $thisElem = $(this);
 
     if ($thisElem.hasClass('subscribe-contact-other')) {
-      $('.js-input-contact').hide().find('input').remove();
+      $('.js-input-contact').hide();
     } else if ($thisElem.hasClass('subscribe-contact-email')) {
       $('.js-input-contact').find('input').val('');
+      $('.js-input-contact').show();
       $('.js-phone-mask').mask('+7 (000) 000-00-00').unmask();
       $('.js-input-contact').show().find('input').attr('type', 'email').removeClass('js-phone-mask');
     } else if ($thisElem.hasClass('subscribe-contact-phone')) {
       $('.js-input-contact').find('input').val('');
       $('.js-input-contact').show().find('input').addClass('js-phone-mask');
+      $('.js-input-contact').show().find('input').attr('type', 'text');
+      $('.js-input-contact').show();
       $('.js-phone-mask').mask('+7 (000) 000-00-00');
       $('.js-input-contact').find('input').val('+7');
     }
