@@ -775,6 +775,8 @@ textarea {
 }
 .btn-up .svg-icon {
   fill: transparent;
+  -webkit-transform: translateY(-3px);
+          transform: translateY(-3px);
 }
 .amount {
   width: 70px;
