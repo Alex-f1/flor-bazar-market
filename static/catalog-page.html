@@ -1402,7 +1402,7 @@
                     <div class="subscribe-popup__options">
                         <div class="subscribe-popup__inputs">
                             <label class="label-elem-interface label-elem-interface--circle">
-                                <input type="radio" name="lifetime">
+                                <input type="radio" name="lifetime" checked="">
                                 <span class="label-elem-interface__name">Раз в месяц</span>
                             </label>
                             <label class="label-elem-interface label-elem-interface--circle">
@@ -1448,7 +1448,7 @@
                         <input type="text" placeholder="Ваше имя *" required="">
                     </div>
                     <div class="subscribe-popup__input subscribe-popup__input--contact js-input-contact">
-                        <input type="text" placeholder="Номер телефона (почта, если выбрано)">
+                        <input type="text" class="js-phone-mask" placeholder="Номер телефона (почта, если выбрано)" required="">
                     </div>
                     <!-- <div elem="input" mods="contact" class="input-contact-hide js-input-phones">
                         <input type="text" class="js-phone-mask" disabled placeholder="Номер телефона" maxlength="13" >

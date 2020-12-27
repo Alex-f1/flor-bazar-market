@@ -162,10 +162,6 @@ $(function () {
 
     $('.ss-container').trigger('mauseover');
   });
-  $('#foo').bind('click', function () {
-    alert($(this).text());
-  });
-  $('#foo').trigger('click');
   $('.filter-products__item').each(function () {
     var $thisElem = $(this);
     var $thisElemInputsBlock = $thisElem.find('.filter-products__inputs');
@@ -308,6 +304,21 @@ $(function () {
       $thisAmount.addClass('is-amount-show');
     });
   });
+
+  if ($(window).width() >= 1025) {
+    $('.main-menu__nav > ul').flexMenu({
+      showOnHover: false,
+      linkText: "...",
+      linkTitle: "",
+      linkTextAll: "Меню",
+      linkTitleAll: "Развернуть меню",
+      popupClass: 'more-dropdown'
+    });
+  }
+
+  setTimeout(function () {
+    $('html').trigger('resize');
+  }, 100);
   $.each($('.mobile-main-menu__nav ul').find('> li'), function (index, element) {
     if ($(element).find(' > ul').length) {
       var triggerIcon = ['<span class="trigger-arrow">', '</span>'].join('');

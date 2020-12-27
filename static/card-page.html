@@ -646,40 +646,40 @@
     </div>
     <div class="card-product-preview__items-thumbs js-card-preview-secondary-slider splide">
         <div class="splide__arrows">
-            <div class="splide__arrow splide__arrow--prev">
+            <button class="splide__arrow splide__arrow--prev" type="button">
       <i class="svg-icon svg-icon--arrow-icon" aria-hidden="true">
         <svg class="svg-icon__link">
           <use xlink:href="#arrow-icon"></use>
         </svg>
       </i>
-    </div>
-            <div class="splide__arrow splide__arrow--next">
+    </button>
+            <button class="splide__arrow splide__arrow--next" type="button">
       <i class="svg-icon svg-icon--arrow-icon" aria-hidden="true">
         <svg class="svg-icon__link">
           <use xlink:href="#arrow-icon"></use>
         </svg>
       </i>
-    </div>
+    </button>
         </div>
         <div class="card-product-preview__slider-thumb-track splide__track">
             <div class="card-product-preview__slider-thumb-list splide__list">
                 <div class="card-product-preview__item-thumb splide__slide">
-                    <img src="img/card-product-preview-img.jpg">
+                    <img src="img/card-product-preview-img.jpg" alt="">
                 </div>
                 <div class="card-product-preview__item-thumb splide__slide">
-                    <img src="img/card-product-preview-img.jpg">
+                    <img src="img/card-product-preview-img.jpg" alt="">
                 </div>
                 <div class="card-product-preview__item-thumb splide__slide">
-                    <img src="img/card-product-preview-img.jpg">
+                    <img src="img/card-product-preview-img.jpg" alt="">
                 </div>
                 <div class="card-product-preview__item-thumb splide__slide">
-                    <img src="img/card-product-preview-img.jpg">
+                    <img src="img/card-product-preview-img.jpg" alt="">
                 </div>
                 <div class="card-product-preview__item-thumb splide__slide">
-                    <img src="img/card-product-preview-img.jpg">
+                    <img src="img/card-product-preview-img.jpg" alt="">
                 </div>
                 <div class="card-product-preview__item-thumb splide__slide">
-                    <img src="img/card-product-preview-img.jpg">
+                    <img src="img/card-product-preview-img.jpg" alt="">
                 </div>
             </div>
         </div>
@@ -925,7 +925,7 @@
                     <div class="subscribe-popup__options">
                         <div class="subscribe-popup__inputs">
                             <label class="label-elem-interface label-elem-interface--circle">
-                                <input type="radio" name="lifetime">
+                                <input type="radio" name="lifetime" checked="">
                                 <span class="label-elem-interface__name">Раз в месяц</span>
                             </label>
                             <label class="label-elem-interface label-elem-interface--circle">
@@ -971,7 +971,7 @@
                         <input type="text" placeholder="Ваше имя *" required="">
                     </div>
                     <div class="subscribe-popup__input subscribe-popup__input--contact js-input-contact">
-                        <input type="text" placeholder="Номер телефона (почта, если выбрано)">
+                        <input type="text" class="js-phone-mask" placeholder="Номер телефона (почта, если выбрано)" required="">
                     </div>
                     <!-- <div elem="input" mods="contact" class="input-contact-hide js-input-phones">
                         <input type="text" class="js-phone-mask" disabled placeholder="Номер телефона" maxlength="13" >

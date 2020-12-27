@@ -11,12 +11,6 @@ $('.js-filter-name').on('click', function () {
     $('.ss-container').trigger('mauseover')
 });
 
-$('#foo').bind('click', function () {
-    alert($(this).text());
-});
-
-$('#foo').trigger('click');
-
 $('.filter-products__item').each(function () {
     var $thisElem = $(this);
     var $thisElemInputsBlock = $thisElem.find('.filter-products__inputs');
