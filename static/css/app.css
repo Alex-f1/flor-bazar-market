@@ -985,8 +985,7 @@ textarea {
   background-color: #fff;
 }
 .card-product-preview__items-thumbs .splide__arrow:disabled {
-  opacity: 0.3;
-  cursor: default;
+  display: none;
 }
 .card-product-preview__items-thumbs .splide__arrow .svg-icon {
   width: 30px;
@@ -1678,8 +1677,7 @@ textarea {
   background-size: contain;
 }
 .gallery__items .splide__arrow:disabled {
-  opacity: 0.3;
-  cursor: default;
+  display: none;
 }
 .gallery__items .splide__arrow--prev {
   left: -55px;
@@ -2863,8 +2861,7 @@ textarea {
   background-size: contain;
 }
 .shares__items .splide__arrow:disabled {
-  opacity: 0.3;
-  cursor: default;
+  display: none;
 }
 .shares__items .splide__arrow--prev {
   left: -40px;
