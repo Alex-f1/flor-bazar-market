@@ -562,61 +562,49 @@ p:last-child {
   display: flex;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
-  -ms-flex-align: center;
-      align-items: center;
   cursor: pointer;
   margin-bottom: 15px;
 }
 .label-elem-interface:last-child {
   margin-bottom: 0;
 }
-.label-elem-interface--circle .label-elem-interface__name:before {
-  border-radius: 50%;
+.label-elem-interface .jq-radio,
+.label-elem-interface .jq-checkbox {
+  vertical-align: middle;
 }
-.label-elem-interface:hover .label-elem-interface__name:before {
+.label-elem-interface .jq-radio.checked .jq-radio__div,
+.label-elem-interface .jq-checkbox.checked .jq-radio__div,
+.label-elem-interface .jq-radio.checked .jq-checkbox__div,
+.label-elem-interface .jq-checkbox.checked .jq-checkbox__div {
   background-color: #6e031f;
   border-color: #6e031f;
 }
-.label-elem-interface:hover .label-elem-interface__name:after {
+.label-elem-interface .jq-radio.checked .jq-radio__div:after,
+.label-elem-interface .jq-checkbox.checked .jq-radio__div:after,
+.label-elem-interface .jq-radio.checked .jq-checkbox__div:after,
+.label-elem-interface .jq-checkbox.checked .jq-checkbox__div:after {
   opacity: 1;
   visibility: visible;
 }
-.label-elem-interface input[type=checkbox],
-.label-elem-interface input[type=radio] {
-  display: none;
-}
-.label-elem-interface__name {
-  font-size: 13px;
-  color: #1b110f;
-  font-weight: 400;
-  line-height: 1.2;
-  padding-left: 25px;
-  position: relative;
-}
-.label-elem-interface__name:hover:before {
-  background-color: #6e031f;
-  border-color: #6e031f;
-}
-.label-elem-interface__name:hover:after {
-  opacity: 1;
-  visibility: visible;
-}
-.label-elem-interface__name:before {
-  content: '';
-  position: absolute;
-  top: 0;
-  left: 0;
+.label-elem-interface .jq-radio .jq-radio__div,
+.label-elem-interface .jq-checkbox .jq-radio__div,
+.label-elem-interface .jq-radio .jq-checkbox__div,
+.label-elem-interface .jq-checkbox .jq-checkbox__div {
   width: 16px;
   height: 16px;
   border: 1px solid #d2d2ca;
   border-radius: 2px;
   transition: background-color 0.3s, border-color 0.3s;
+  position: relative;
 }
-.label-elem-interface__name:after {
+.label-elem-interface .jq-radio .jq-radio__div:after,
+.label-elem-interface .jq-checkbox .jq-radio__div:after,
+.label-elem-interface .jq-radio .jq-checkbox__div:after,
+.label-elem-interface .jq-checkbox .jq-checkbox__div:after {
   content: '';
   position: absolute;
-  top: 4px;
-  left: 3px;
+  top: 3px;
+  left: 2px;
   width: 10px;
   height: 7px;
   background-image: url("data:image/svg+xml,%3Csvg width='10' height='7' viewBox='0 0 10 7' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M1 2.66667L4.2 6L9 1' stroke='white' stroke-linecap='round' stroke-linejoin='round'/%3E%3C/svg%3E%0A");
@@ -626,13 +614,33 @@ p:last-child {
   visibility: hidden;
   transition: opacity 0.3s;
 }
-.label-elem-interface input:checked ~ .label-elem-interface__name:before {
+.label-elem-interface--circle .jq-radio .jq-radio__div,
+.label-elem-interface--circle .jq-checkbox .jq-radio__div,
+.label-elem-interface--circle .jq-radio .jq-checkbox__div,
+.label-elem-interface--circle .jq-checkbox .jq-checkbox__div {
+  border-radius: 50%;
+}
+.label-elem-interface:hover .jq-radio .jq-radio__div,
+.label-elem-interface:hover .jq-checkbox .jq-radio__div,
+.label-elem-interface:hover .jq-radio .jq-checkbox__div,
+.label-elem-interface:hover .jq-checkbox .jq-checkbox__div {
   background-color: #6e031f;
   border-color: #6e031f;
 }
-.label-elem-interface input:checked ~ .label-elem-interface__name:after {
+.label-elem-interface:hover .jq-radio .jq-radio__div:after,
+.label-elem-interface:hover .jq-checkbox .jq-radio__div:after,
+.label-elem-interface:hover .jq-radio .jq-checkbox__div:after,
+.label-elem-interface:hover .jq-checkbox .jq-checkbox__div:after {
   opacity: 1;
   visibility: visible;
+}
+.label-elem-interface__name {
+  font-size: 13px;
+  color: #1b110f;
+  font-weight: 400;
+  line-height: 1.1;
+  padding-left: 15px;
+  position: relative;
 }
 .label-elem-interface__bonus,
 .label-elem-interface__color-name {

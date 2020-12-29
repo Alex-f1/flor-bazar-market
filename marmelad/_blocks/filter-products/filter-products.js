@@ -16,13 +16,12 @@ $('.filter-products__item').each(function () {
     var $thisElemInputsBlock = $thisElem.find('.filter-products__inputs');
 
     $thisElemInputsBlock.each(function () {
-        var $thisEleminterface = $(this).find('.label-elem-interface')
-        if ($thisEleminterface.length > 7) {
+        var $thisElemInterface = $(this).find('.label-elem-interface')
+        if ($thisElemInterface.length > 7) {
             $(this).closest($thisElemInputsBlock).addClass('ss-container')
         } else {
             $(this).closest($thisElemInputsBlock).css('height', 'auto')
         }
-        console.log($thisEleminterface.length)
     });
 });
 

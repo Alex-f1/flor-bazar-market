@@ -166,15 +166,13 @@ $(function () {
     var $thisElem = $(this);
     var $thisElemInputsBlock = $thisElem.find('.filter-products__inputs');
     $thisElemInputsBlock.each(function () {
-      var $thisEleminterface = $(this).find('.label-elem-interface');
+      var $thisElemInterface = $(this).find('.label-elem-interface');
 
-      if ($thisEleminterface.length > 7) {
+      if ($thisElemInterface.length > 7) {
         $(this).closest($thisElemInputsBlock).addClass('ss-container');
       } else {
         $(this).closest($thisElemInputsBlock).css('height', 'auto');
       }
-
-      console.log($thisEleminterface.length);
     });
   });
 
@@ -476,4 +474,5 @@ $(function () {
     }, 1000);
     return false;
   });
+  $('input[type=checkbox], input[type=radio], select').styler();
 });
