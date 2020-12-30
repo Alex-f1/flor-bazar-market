@@ -443,21 +443,29 @@ $(function () {
   });
   $('.js-subscribe-contact').on('click', function () {
     var $thisElem = $(this);
+    var $inputContact = $('.js-input-contact');
+    var $textareaComment = $('.js-textarea-comment');
 
     if ($thisElem.hasClass('subscribe-contact-other')) {
-      $('.js-input-contact').hide();
+      $inputContact.hide();
+      $textareaComment.find('textarea').attr('required', 'required');
+      $inputContact.find('input').removeAttr('required');
     } else if ($thisElem.hasClass('subscribe-contact-email')) {
-      $('.js-input-contact').find('input').val('');
-      $('.js-input-contact').show();
+      $inputContact.find('input').attr('required', 'required');
+      $inputContact.find('input').val('');
+      $inputContact.show();
       $('.js-phone-mask').mask('+7 (000) 000-00-00').unmask();
-      $('.js-input-contact').show().find('input').attr('type', 'email').removeClass('js-phone-mask');
+      $inputContact.show().find('input').attr('type', 'email').removeClass('js-phone-mask');
+      $textareaComment.find('textarea').removeAttr('required');
     } else if ($thisElem.hasClass('subscribe-contact-phone')) {
-      $('.js-input-contact').find('input').val('');
-      $('.js-input-contact').show().find('input').addClass('js-phone-mask');
-      $('.js-input-contact').show().find('input').attr('type', 'text');
-      $('.js-input-contact').show();
+      $inputContact.find('input').attr('required', 'required');
+      $inputContact.find('input').val('');
+      $inputContact.show().find('input').addClass('js-phone-mask');
+      $inputContact.show().find('input').attr('type', 'text');
+      $inputContact.show();
       $('.js-phone-mask').mask('+7 (000) 000-00-00');
-      $('.js-input-contact').find('input').val('+7');
+      $inputContact.find('input').val('+7');
+      $textareaComment.find('textarea').removeAttr('required');
     }
   });
   var btnUp = $('.js-btn-up');

@@ -41,15 +41,15 @@
                     <div elem="options">
                         <div elem="inputs">
                             <label block="label-elem-interface" mods="circle" class="js-subscribe-contact subscribe-contact-phone">
-                                <input type="radio" name="contact">
+                                <input type="radio" name="contact" required>
                                 <span elem="name">По телефону</span>
                             </label>
                             <label block="label-elem-interface" mods="circle" class="js-subscribe-contact subscribe-contact-email">
-                                <input type="radio" name="contact">
+                                <input type="radio" name="contact" required>
                                 <span elem="name">По почте</span>
                             </label>
                             <label block="label-elem-interface" mods="circle" class="js-subscribe-contact subscribe-contact-other">
-                                <input type="radio" name="contact">
+                                <input type="radio" name="contact" required>
                                 <span elem="name">Другой способ (укажите в комментариях)</span>
                             </label>
                         </div>
@@ -60,7 +60,7 @@
                         <input type="text" placeholder="Ваше имя *" required>
                     </div>
                     <div elem="input" mods="contact" class="js-input-contact">
-                        <input type="text" class="js-phone-mask" placeholder="Номер телефона (почта, если выбрано)" required>
+                        <input type="text" class="js-phone-mask" placeholder="Номер телефона (почта, если выбрано)" minlength="18" required>
                     </div>
                     <!-- <div elem="input" mods="contact" class="input-contact-hide js-input-phones">
                         <input type="text" class="js-phone-mask" disabled placeholder="Номер телефона" maxlength="13" >
@@ -68,7 +68,7 @@
                     <div elem="input" mods="contact" class="input-contact-hide js-input-email">
                         <input type="text" class="js-email-mask" disabled placeholder="Почта" >
                     </div> -->
-                    <div elem="textarea">
+                    <div elem="textarea" class="js-textarea-comment">
                         <textarea placeholder="Комментарии и пожелания"></textarea>
                     </div>
                     <button elem="btn-send" class="btn-general" type="submit">Обсудить подписку</button>

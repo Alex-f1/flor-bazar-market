@@ -99,6 +99,7 @@
             background-repeat no-repeat
             background-size contain
             margin-left 4px
+            transition transform .3s
 
         &:hover
             span
@@ -110,6 +111,9 @@
             pointer-events none
             span
                 border-bottom 1px dashed transparent
+
+            &:after
+                transform rotate(180deg)    
 
         span
             display block

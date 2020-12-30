@@ -952,15 +952,15 @@
                     <div class="subscribe-popup__options">
                         <div class="subscribe-popup__inputs">
                             <label class="label-elem-interface label-elem-interface--circle js-subscribe-contact subscribe-contact-phone">
-                                <input type="radio" name="contact">
+                                <input type="radio" name="contact" required="">
                                 <span class="label-elem-interface__name">По телефону</span>
                             </label>
                             <label class="label-elem-interface label-elem-interface--circle js-subscribe-contact subscribe-contact-email">
-                                <input type="radio" name="contact">
+                                <input type="radio" name="contact" required="">
                                 <span class="label-elem-interface__name">По почте</span>
                             </label>
                             <label class="label-elem-interface label-elem-interface--circle js-subscribe-contact subscribe-contact-other">
-                                <input type="radio" name="contact">
+                                <input type="radio" name="contact" required="">
                                 <span class="label-elem-interface__name">Другой способ (укажите в комментариях)</span>
                             </label>
                         </div>
@@ -971,7 +971,7 @@
                         <input type="text" placeholder="Ваше имя *" required="">
                     </div>
                     <div class="subscribe-popup__input subscribe-popup__input--contact js-input-contact">
-                        <input type="text" class="js-phone-mask" placeholder="Номер телефона (почта, если выбрано)" required="">
+                        <input type="text" class="js-phone-mask" placeholder="Номер телефона (почта, если выбрано)" minlength="18" required="">
                     </div>
                     <!-- <div elem="input" mods="contact" class="input-contact-hide js-input-phones">
                         <input type="text" class="js-phone-mask" disabled placeholder="Номер телефона" maxlength="13" >
@@ -979,7 +979,7 @@
                     <div elem="input" mods="contact" class="input-contact-hide js-input-email">
                         <input type="text" class="js-email-mask" disabled placeholder="Почта" >
                     </div> -->
-                    <div class="subscribe-popup__textarea">
+                    <div class="subscribe-popup__textarea js-textarea-comment">
                         <textarea placeholder="Комментарии и пожелания"></textarea>
                     </div>
                     <button class="subscribe-popup__btn-send btn-general" type="submit">Обсудить подписку</button>
