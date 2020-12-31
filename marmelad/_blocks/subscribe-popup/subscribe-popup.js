@@ -45,7 +45,17 @@ $('.js-subscribe-contact').on('click', function () {
         $inputContact.show();
         $('.js-phone-mask').mask('+7 (000) 000-00-00');
         $inputContact.find('input').val('+7');
+        $inputContact.find('input').trigger("focus");   
         $textareaComment.find('textarea').removeAttr('required');
+        console.log($inputContact.find('input').trigger("focus"))
     }
 
+})
+
+$('.js-phone-mask').on("keyup change", function (e) {
+    if ($('.js-phone-mask').val().length < 18) {
+        $('.subscribe-popup__btn-send').attr('disabled', 'disabled');
+    } else {
+        $('.subscribe-popup__btn-send').removeAttr('disabled');
+    }
 })

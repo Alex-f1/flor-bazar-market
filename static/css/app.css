@@ -2964,6 +2964,14 @@ textarea {
   min-width: auto;
   width: 100%;
   margin-top: 30px;
+  transition: opacity 0.3s;
+}
+.subscribe-popup__btn-send:disabled {
+  opacity: 0.5;
+  cursor: not-allowed;
+}
+.subscribe-popup__btn-send:disabled:hover {
+  background-color: #6e031f;
 }
 .popup-success {
   color: #333;
