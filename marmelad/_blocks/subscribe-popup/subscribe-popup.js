@@ -37,8 +37,10 @@ $('.js-subscribe-contact').on('click', function () {
         $('.js-phone-mask').mask('+7 (000) 000-00-00').unmask();
         $inputContact.show().find('input').attr('type', 'email').removeClass('js-phone-mask');
         $textareaComment.find('textarea').removeAttr('required');
+        $inputContact.find('input').removeAttr('minlength');
     } else if ($thisElem.hasClass('subscribe-contact-phone')) {
         $inputContact.find('input').attr('required', 'required');
+        $inputContact.find('input').attr('minlength', 18);
         $inputContact.find('input').val('');
         $inputContact.show().find('input').addClass('js-phone-mask');
         $inputContact.show().find('input').attr('type', 'text')
