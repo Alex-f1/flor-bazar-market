@@ -23,33 +23,34 @@ $('.js-btn-success-ok').on('click', function () {
 $('.js-subscribe-contact').on('click', function () {
     var $thisElem = $(this);
 
-    var $inputContact = $('.js-input-contact');
-    var $textareaComment = $('.js-textarea-comment');
+    var $inputContactGroup = $('.js-input-contact');
+    var $inputContact = $('.js-input-contact').find('input');
+    var $textareaCommentGroup = $('.js-textarea-comment');
 
     if ($thisElem.hasClass('subscribe-contact-other')) {
-        $inputContact.hide();
-        $textareaComment.find('textarea').attr('required', 'required')
-        $inputContact.find('input').removeAttr('required');
+        $inputContactGroup.hide();
+        $textareaCommentGroup.find('textarea').attr('required', 'required')
+        $inputContact.removeAttr('required');
     } else if ($thisElem.hasClass('subscribe-contact-email')) {
-        $inputContact.find('input').attr('required', 'required');
-        $inputContact.find('input').val('');
-        $inputContact.show();
+        $inputContact.attr('required', 'required');
+        $inputContact.val('');
+        $inputContactGroup.show();
         $('.js-phone-mask').mask('+7 (000) 000-00-00').unmask();
-        $inputContact.show().find('input').attr('type', 'email').removeClass('js-phone-mask');
-        $textareaComment.find('textarea').removeAttr('required');
-        $inputContact.find('input').removeAttr('minlength');
+        $inputContactGroup.show().find('input').attr('type', 'email').removeClass('js-phone-mask');
+        $textareaCommentGroup.find('textarea').removeAttr('required');
+        $inputContact.removeAttr('minlength');
+        $('.subscribe-popup__btn-send').removeAttr('disabled');
     } else if ($thisElem.hasClass('subscribe-contact-phone')) {
-        $inputContact.find('input').attr('required', 'required');
-        $inputContact.find('input').attr('minlength', 18);
-        $inputContact.find('input').val('');
-        $inputContact.show().find('input').addClass('js-phone-mask');
-        $inputContact.show().find('input').attr('type', 'text')
-        $inputContact.show();
+        $inputContact.attr('required', 'required');
+        $inputContact.attr('minlength', 18);
+        $inputContact.val('');
+        $inputContactGroup.show().find('input').addClass('js-phone-mask');
+        $inputContactGroup.show().find('input').attr('type', 'text')
+        $inputContactGroup.show();
         $('.js-phone-mask').mask('+7 (000) 000-00-00');
-        $inputContact.find('input').val('+7');
-        $inputContact.find('input').trigger("focus");   
-        $textareaComment.find('textarea').removeAttr('required');
-        console.log($inputContact.find('input').trigger("focus"))
+        $inputContact.val('+7');
+        $inputContact.trigger("focus");   
+        $textareaCommentGroup.find('textarea').removeAttr('required');
     }
 
 })
