@@ -317,6 +317,11 @@ $(function () {
   setTimeout(function () {
     $('html').trigger('resize');
   }, 100);
+  $('.js-main-menu-has-img > a').mouseover(function () {
+    $('.menu-level-main-img').addClass('is-hide-menu-level-main-img');
+  }).mouseout(function () {
+    $('.menu-level-main-img').removeClass('is-hide-menu-level-main-img');
+  });
   $.each($('.mobile-main-menu__nav ul').find('> li'), function (index, element) {
     if ($(element).find(' > ul').length) {
       var triggerIcon = ['<span class="trigger-arrow">', '</span>'].join('');

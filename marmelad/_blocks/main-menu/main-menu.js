@@ -12,3 +12,9 @@ if ($(window).width() >= 1025) {
 setTimeout(function () {
     $('html').trigger('resize');
 },100) 
+
+$('.js-main-menu-has-img > a').mouseover(function () {
+    $('.menu-level-main-img').addClass('is-hide-menu-level-main-img');
+}).mouseout(function () {
+    $('.menu-level-main-img').removeClass('is-hide-menu-level-main-img');
+});

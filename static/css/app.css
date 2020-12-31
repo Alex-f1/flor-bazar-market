@@ -2284,11 +2284,13 @@ textarea {
   display: flex;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
+  opacity: 0;
+  visibility: hidden;
   transition: opacity 0.3s, ease 0.3s;
 }
 .main-menu__nav ul li.has-level .menu-level-img span {
   margin-right: 15px;
-  margin-bottom: 0;
+  margin-bottom: 15px;
   display: block;
 }
 .main-menu__nav ul li.has-level .menu-level-img span:last-child {
@@ -2296,6 +2298,33 @@ textarea {
   margin-bottom: 0;
 }
 .main-menu__nav ul li.has-level .menu-level-img span img {
+  display: inline-block;
+  vertical-align: top;
+}
+.main-menu__nav ul li.has-level .menu-level-main-img {
+  position: absolute;
+  top: 0;
+  right: 0;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  transition: opacity 0.1s, ease 0.1s;
+}
+.main-menu__nav ul li.has-level .menu-level-main-img.is-hide-menu-level-main-img {
+  opacity: 0;
+  visibility: hidden;
+}
+.main-menu__nav ul li.has-level .menu-level-main-img span {
+  margin-right: 15px;
+  margin-bottom: 15px;
+  display: block;
+}
+.main-menu__nav ul li.has-level .menu-level-main-img span:last-child {
+  margin-right: 0;
+  margin-bottom: 0;
+}
+.main-menu__nav ul li.has-level .menu-level-main-img span img {
   display: inline-block;
   vertical-align: top;
 }

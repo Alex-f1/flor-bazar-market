@@ -127,13 +127,13 @@
                         right 0
                         display flex      
                         flex-wrap wrap  
-                        // opacity 0
-                        // visibility hidden
+                        opacity 0
+                        visibility hidden
                         transition opacity .3s, ease .3s
 
                         span 
                             margin-right 15px
-                            margin-bottom 0
+                            margin-bottom 15px
                             display block
                             &:last-child
                                 margin-right 0
@@ -142,3 +142,27 @@
                             img 
                                 display inline-block
                                 vertical-align top    
+
+                    .menu-level-main-img
+                        position absolute
+                        top 0
+                        right 0
+                        display flex      
+                        flex-wrap wrap  
+                        transition opacity .1s, ease .1s
+
+                        &.is-hide-menu-level-main-img
+                            opacity 0
+                            visibility hidden
+
+                        span 
+                            margin-right 15px
+                            margin-bottom 15px
+                            display block
+                            &:last-child
+                                margin-right 0
+                                margin-bottom 0
+
+                            img 
+                                display inline-block
+                                vertical-align top      
