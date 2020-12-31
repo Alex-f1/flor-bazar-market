@@ -2976,9 +2976,6 @@ textarea {
 .subscribe-popup__input {
   margin-bottom: 15px;
 }
-.subscribe-popup__input.input-contact-hide {
-  display: none;
-}
 .subscribe-popup__input input {
   outline: none;
 }

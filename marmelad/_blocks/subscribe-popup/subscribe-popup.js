@@ -29,17 +29,21 @@ $('.js-subscribe-contact').on('click', function () {
 
     if ($thisElem.hasClass('subscribe-contact-other')) {
         $inputContactGroup.hide();
-        $textareaCommentGroup.find('textarea').attr('required', 'required')
+        $textareaCommentGroup.find('textarea').attr('required', 'required').addClass('js-textarea-in')
         $inputContact.removeAttr('required');
+        $inputContact.val('');
+        $inputContactGroup.find('input').removeClass('js-email-mask');
+        inputChange();
     } else if ($thisElem.hasClass('subscribe-contact-email')) {
+        $inputContactGroup.show().find('input').addClass('js-email-mask');
         $inputContact.attr('required', 'required');
         $inputContact.val('');
-        $inputContactGroup.show();
         $('.js-phone-mask').mask('+7 (000) 000-00-00').unmask();
         $inputContactGroup.show().find('input').attr('type', 'email').removeClass('js-phone-mask');
-        $textareaCommentGroup.find('textarea').removeAttr('required');
+        $textareaCommentGroup.find('textarea').removeAttr('required').removeClass('js-textarea-in');
         $inputContact.removeAttr('minlength');
-        $('.subscribe-popup__btn-send').removeAttr('disabled');
+        inputChange();
+        $('.subscribe-popup__btn-send').attr('disabled', 'disabled');
     } else if ($thisElem.hasClass('subscribe-contact-phone')) {
         $inputContact.attr('required', 'required');
         $inputContact.attr('minlength', 18);
@@ -49,16 +53,43 @@ $('.js-subscribe-contact').on('click', function () {
         $inputContactGroup.show();
         $('.js-phone-mask').mask('+7 (000) 000-00-00');
         $inputContact.val('+7');
-        $inputContact.trigger("focus");   
-        $textareaCommentGroup.find('textarea').removeAttr('required');
+        $textareaCommentGroup.find('textarea').removeAttr('required').removeClass('js-textarea-in');
+        $inputContactGroup.show().find('input').removeClass('js-email-mask');
+        inputChange();
     }
 
-})
+});
 
-$('.js-phone-mask').on("keyup change", function (e) {
-    if ($('.js-phone-mask').val().length < 18) {
-        $('.subscribe-popup__btn-send').attr('disabled', 'disabled');
-    } else {
-        $('.subscribe-popup__btn-send').removeAttr('disabled');
-    }
-})
+function inputChange() {
+
+    $('.js-input-contact .js-phone-mask').on('click', function () {
+    
+        $('.js-phone-mask').on("keyup change", function (e) {
+            if ($(this).val().length < 18) {
+                $('.subscribe-popup__btn-send').attr('disabled', 'disabled');
+            } else {
+                $('.subscribe-popup__btn-send').removeAttr('disabled');
+            }
+        });
+    });
+    
+    $('.js-textarea-comment .js-textarea-in').on('click', function () {
+        $('.js-textarea-in').on("keyup change", function () {
+            if ($(this).val().length < 1) {
+                $('.subscribe-popup__btn-send').attr('disabled', 'disabled');
+            } else {
+                $('.subscribe-popup__btn-send').removeAttr('disabled');
+            }
+        });
+    });
+    
+    $('.js-input-contact .js-email-mask').on('click', function () {
+        $('.js-email-mask').on("keyup change", function () {
+            if ($(this).val().length < 1) {
+                $('.subscribe-popup__btn-send').attr('disabled', 'disabled');
+            } else {
+                $('.subscribe-popup__btn-send').removeAttr('disabled');
+            }
+        });
+    });
+}
