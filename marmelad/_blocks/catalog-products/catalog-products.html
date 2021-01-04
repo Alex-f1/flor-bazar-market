@@ -4,9 +4,16 @@
             <div elem="faund">Найдено 418 товаров</div>
             <div block="sorting-products">
                 <div elem="section">
-                    <span elem="title">Сортировать по:</span>
-                    <a elem="btn" class="js-btn-sort is-active-sorting" href="#"><span>цене</span></a>
-                    <a elem="btn" class="js-btn-sort" href="#"><span>популярности</span></a>
+                    <span elem="title" class="js-sorting-title">Сортировать по:</span>
+                    <div elem="dropdown" class="js-sorting-dropdown">
+                        <ul elem="dropdown-list">
+                            <li data-sort="recommended">Рекомендованным</li>
+                            <li data-sort="new">Новизне</li>
+                            <li data-sort="price-low-to-high">Цене (от низкой к высокой)</li>
+                            <li data-sort="price-high-to-low">Цене (от высокой к низкой)</li>
+                            <li data-sort="discount-amount">Размеру скидки</li>
+                        </ul>
+                    </div>
                 </div>
             </div><!-- sorting-products -->
         </div>
@@ -151,7 +158,8 @@
                                     <span elem="old-prace">7 060 ₽</span>
                                 </div>
                                 <div elem="manage">
-                                    <button elem="btn-to-cart" class="js-add-to-cart" data-text="В корзине" type="button">
+                                    <button elem="btn-to-cart" class="js-add-to-cart" data-text="В корзине"
+                                        type="button">
                                         {{ _icon('mini-cart-icon', { tag: 'i' }) }}
                                         {{ _icon('completed-icon', { tag: 'i' }) }}
                                         Нет в наличии
@@ -248,12 +256,16 @@
             <!-- <button elem="btn-show-more" class="js-btn-show-more" type="button">Показать ещё</button> -->
             {% include "pogination.html" %}
             <div elem="content">
-                <p>Разнообразный и богатый опыт рамки и место обучения кадров требуют определения и уточнения форм развития. Значимость
-                этих проблем настолько очевидна, что постоянное информационно-пропагандистское обеспечение нашей деятельности позволяет
-                оценить значение форм развития.</p>
-                <p>Идейные соображения высшего порядка, а также постоянный количественный рост и сфера нашей активности играет важную роль
-                в формировании дальнейших направлений развития. Таким образом консультация с широким активом требуют определения и
-                уточнения систем массового участия.</p>
+                <p>Разнообразный и богатый опыт рамки и место обучения кадров требуют определения и уточнения форм
+                    развития. Значимость
+                    этих проблем настолько очевидна, что постоянное информационно-пропагандистское обеспечение нашей
+                    деятельности позволяет
+                    оценить значение форм развития.</p>
+                <p>Идейные соображения высшего порядка, а также постоянный количественный рост и сфера нашей активности
+                    играет важную роль
+                    в формировании дальнейших направлений развития. Таким образом консультация с широким активом требуют
+                    определения и
+                    уточнения систем массового участия.</p>
             </div>
         </div>
     </div>
