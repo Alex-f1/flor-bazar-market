@@ -4,14 +4,17 @@
             <div elem="faund">Найдено 418 товаров</div>
             <div block="sorting-products">
                 <div elem="section">
-                    <span elem="title" class="js-sorting-title">Сортировать по:</span>
+                    <div elem="title" class="js-sorting-title">
+                        <span elem="current-sort" class="js-sort-current" data-carrent-sort="">Сортировать по:</span>
+                    </div>
                     <div elem="dropdown" class="js-sorting-dropdown">
+                        <div elem="dropdown-title">Сортировать по</div>
                         <ul elem="dropdown-list">
-                            <li data-sort="recommended">Рекомендованным</li>
-                            <li data-sort="new">Новизне</li>
-                            <li data-sort="price-low-to-high">Цене (от низкой к высокой)</li>
-                            <li data-sort="price-high-to-low">Цене (от высокой к низкой)</li>
-                            <li data-sort="discount-amount">Размеру скидки</li>
+                            <li class="js-sorting-list-item" data-sort="recommended">Рекомендованным</li>
+                            <li class="js-sorting-list-item" data-sort="new">Новизне</li>
+                            <li class="js-sorting-list-item" data-sort="price-low-to-high">Цене (от низкой к высокой)</li>
+                            <li class="js-sorting-list-item" data-sort="price-high-to-low">Цене (от высокой к низкой)</li>
+                            <li class="js-sorting-list-item" data-sort="discount-amount">Размеру скидки</li>
                         </ul>
                     </div>
                 </div>

@@ -126,7 +126,9 @@ const app = {
     // sortMQ: {},
     // momentumScrolling: [],
     // easingGradients: {},
-    // inlineSvg: {},
+    inlineSvg: {
+      paths: ['marmelad', 'static']
+    },
   },
   bsSP: {
     server: {
