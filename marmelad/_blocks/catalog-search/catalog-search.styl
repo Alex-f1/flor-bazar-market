@@ -1,4 +1,4 @@
-.catalog-products
+.catalog-search
 
     &__top
         display flex
@@ -23,7 +23,6 @@
     &__items    
         display flex
         flex-wrap wrap
-        justify-content space-between
         margin-left -20px
 
         @media (max-width 639px)
@@ -195,3 +194,37 @@
             padding-bottom 1px
             border-bottom 1px dashed #333    
             transition border-color .3s
+
+.search-not-found
+
+    &__found
+        font-size 14px
+        color #333
+        font-weight 400
+        line-height 1.1
+        margin-right 15px
+
+        @media (max-width 639px)
+            margin-right 0
+            margin-bottom 15px
+
+    &__title
+        font-size 24px
+        color #A79186        
+        font-weight 400
+        line-height 1.1
+        text-transform uppercase
+        margin-top 70px
+        margin-bottom 15px
+
+        @media (max-width 767px)
+            margin-top 35px
+            font-size 18px
+
+    &__link-back
+        font-size 14px
+        color #6E031F
+        font-weight 400
+        line-height 17px
+        &:hover
+            text-decoration none

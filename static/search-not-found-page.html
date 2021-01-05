@@ -23,7 +23,7 @@
         <meta name="MobileOptimized" content="320">
         <meta name="HandheldFriendly" content="True">
 
-        <title>Ошибка 404 - Страница не найдена</title>
+        <title>Результаты поиска</title>
         
         <!-- <link rel="preconnect" href="https://fonts.gstatic.com">
         <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@700&family=Playfair+Display&display=swap" rel="stylesheet"> -->
@@ -35,71 +35,10 @@
         <link rel="stylesheet" href="css/app.css">
 
         
-	<style>
-		
-		.container-404 {
-			display: flex;
-			justify-content: center;
-			align-items: center;
-			flex-direction: column;
-			padding-top: 145px;
-			padding-bottom: 145px;
-			margin-bottom: -65px;
-			background-image: url('../img/404-pic.png');
-			background-repeat: no-repeat;
-			background-position: 100% 100%;
-		}
-
-		.title-404 {
-			font-size: 144px;
-			color: #A79186;
-			font-family: 'Montserrat', sans-serif;
-			font-weight: 400;
-			line-height: 1;
-			text-transform: uppercase;
-			margin-bottom: 0;
-		}
-
-		.container-404 p {
-			font-size: 14px;
-			font-weight: 400;
-			color: #A79186;
-			line-height: 1.1;
-		}
-
-		.link-404-back {
-			font-size: 14px;
-			color: #6E031F;
-			font-weight: 400;
-			line-height: 17px;
-			margin-top: 50px;
-		}
-
-		.link-404-back:hover {
-            text-decoration: none;
-		}
-		
-		@media (max-width: 1024px) {
-			.container-404 {
-				padding-top: 100px;
-				margin-bottom: -50px;
-			}
-			
-			.title-404 {
-				font-size: 75px;
-			}
-
-			.link-404-back {
-				margin-top: 25px;
-			}
-		}
-
-	</style>
-
 
     </head>
 
-    <body class="app error404 contain-full">
+    <body class="app  contain-full">
 
         <div class="mobile-panel">
     <div class="mobile-panel__section">
@@ -674,19 +613,29 @@
             
 
             
+    <div class="inner-page-head">
+        <div class="s-path">
+	
+		<a href="#" class="s-path__link">Главная</a><!-- <= link -->
+		<span class="s-path__separator">-</span><!-- <= separator -->
+	
+	Результаты поиска
+</div><!-- s-path -->
+
+        <h1>Результаты поиска</h1>
+    </div>
+
 
             <div class="app__content contain">
 
                 <main class="app__main">
                     
 
-<div class="container">
-	<div class="container-404">
-		<h1 class="title-404">404</h1>
-		<p>Страница не существует</p>
-		<a class="link-404-back" href="catalog-page.html">Перейти в каталог</a>
-	</div>
-</div>
+    <div class="search-not-found">
+        <div class="search-not-found__found">По запросу “розы” найдено 0 товаров</div>
+        <div class="search-not-found__title">Ничего не найдено</div>
+        <a href="catalog-page.html" class="search-not-found__link-back">Перейти в каталог</a>
+    </div>
 
 
                 </main><!-- app__main -->

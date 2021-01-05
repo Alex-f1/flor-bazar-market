@@ -1,0 +1,31 @@
+= yaml =
+pageTitle: Результаты поиска
+bodyClasses:
+layout: !!map
+    header: true
+    footer: true
+    left: false
+    right: false
+path: [
+    {"title":Главная},
+]
+= yaml =
+
+{% extends 'app.html' %}
+
+{% block beforeContent %}
+    <div class="inner-page-head">
+        {% include "s-path.html" %}
+        <h1>Результаты поиска</h1>
+    </div>
+{% endblock %}
+
+{% block main %}
+
+    <div block="search-not-found">
+        <div elem="found">По запросу “розы” найдено 0 товаров</div>
+        <div elem="title">Ничего не найдено</div>
+        <a elem="link-back" href="catalog-page.html">Перейти в каталог</a>
+    </div>
+
+{% endblock %}
