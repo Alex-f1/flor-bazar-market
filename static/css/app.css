@@ -570,6 +570,8 @@ p:last-child {
 }
 .label-elem-interface .jq-radio,
 .label-elem-interface .jq-checkbox {
+  width: 16px;
+  height: 16px;
   vertical-align: middle;
 }
 .label-elem-interface .jq-radio.checked .jq-radio__div,
@@ -711,49 +713,43 @@ input[type=email] {
   font-weight: 400;
   line-height: 1.1;
   width: 100%;
-  height: 25px;
-  border: none;
+  padding: 7px 10px;
   border-bottom: 1px solid #a79186;
+  outline: none;
+  border: 1px solid #e0e0e0;
 }
 ::-webkit-input-placeholder {
-  font-size: 14px;
-  color: #a79186;
+  font-size: 13px;
+  color: #bdbdbd;
   font-weight: 400;
   line-height: 1.1;
 }
 ::-moz-placeholder {
-  font-size: 14px;
-  color: #a79186;
+  font-size: 13px;
+  color: #bdbdbd;
   font-weight: 400;
   line-height: 1.1;
 }
 :-ms-input-placeholder {
-  font-size: 14px;
-  color: #a79186;
+  font-size: 13px;
+  color: #bdbdbd;
   font-weight: 400;
   line-height: 1.1;
 }
 ::-ms-input-placeholder {
-  font-size: 14px;
-  color: #a79186;
+  font-size: 13px;
+  color: #bdbdbd;
   font-weight: 400;
   line-height: 1.1;
 }
 ::placeholder {
-  font-size: 14px;
-  color: #a79186;
+  font-size: 13px;
+  color: #bdbdbd;
   font-weight: 400;
   line-height: 1.1;
 }
 textarea {
-  font-size: 14px;
-  color: #333;
-  font-weight: 400;
-  line-height: 1.1;
-  padding: 12px;
-  border: 1px solid #a79186;
-  width: 100%;
-  min-height: 80px;
+  padding: 12px 15px;
 }
 .btn-up {
   display: -ms-flexbox;
@@ -2361,8 +2357,6 @@ textarea {
   font-weight: normal;
   line-height: 1.2;
   text-decoration: none;
-  width: 165px;
-  max-width: 100%;
   display: block;
   margin-bottom: 25px;
   transition: color 0.3s;
@@ -2522,7 +2516,7 @@ textarea {
   opacity: 0;
   visibility: hidden;
   position: absolute;
-  z-index: 5;
+  z-index: 10;
   width: 100%;
   height: 530px;
   padding-top: 30px;
@@ -3276,15 +3270,63 @@ textarea {
 .subscribe-popup__input {
   margin-bottom: 15px;
 }
-.subscribe-popup__input input {
+.subscribe-popup__input input[type=text],
+.subscribe-popup__input input[type=email] {
+  font-size: 14px;
+  color: #333;
+  font-weight: 400;
+  line-height: 1.1;
+  width: 100%;
+  height: 25px;
+  padding: 0;
+  border: none;
+  border-bottom: 1px solid #a79186;
   outline: none;
+}
+.subscribe-popup__input ::-webkit-input-placeholder {
+  font-size: 14px;
+  color: #a79186;
+  font-weight: 400;
+  line-height: 1.1;
+}
+.subscribe-popup__input ::-moz-placeholder {
+  font-size: 14px;
+  color: #a79186;
+  font-weight: 400;
+  line-height: 1.1;
+}
+.subscribe-popup__input :-ms-input-placeholder {
+  font-size: 14px;
+  color: #a79186;
+  font-weight: 400;
+  line-height: 1.1;
+}
+.subscribe-popup__input ::-ms-input-placeholder {
+  font-size: 14px;
+  color: #a79186;
+  font-weight: 400;
+  line-height: 1.1;
+}
+.subscribe-popup__input ::placeholder {
+  font-size: 14px;
+  color: #a79186;
+  font-weight: 400;
+  line-height: 1.1;
 }
 .subscribe-popup__textarea {
   margin-top: 40px;
 }
 .subscribe-popup__textarea textarea {
-  outline: none;
+  font-size: 14px;
+  color: #333;
+  font-weight: 400;
+  line-height: 1.1;
+  padding: 12px;
+  border: 1px solid #a79186;
+  width: 100%;
   max-width: 100%;
+  min-height: 80px;
+  outline: none;
 }
 .subscribe-popup__btn-send {
   min-width: auto;

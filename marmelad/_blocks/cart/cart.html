@@ -1,0 +1,85 @@
+<div block="cart">
+    <div elem="section">
+        <form elem="form">
+            <div elem="items-title">
+                <div elem="item-title">Фото</div>
+                <div elem="item-title">Название</div>
+                <div elem="item-title">Цена</div>
+                <div elem="item-title">Количество</div>
+                <div elem="item-title">Сумма</div>
+                <div elem="item-title">&nbsp;</div>
+            </div>
+            <div elem="items">
+                <div elem="item">
+                    <div elem="body">
+                        <div elem="img"><img src="img/" alt=""></div>
+                        <div elem="info-product">
+                            <div elem="name-product">
+                                101 красная роза (россия)
+                                в белой корзине с зеленью
+                            </div>
+                            <div elem="options-product">
+                                <span>Количество: 101 шт</span>
+                                <span>Высота: 60 см</span>
+                            </div>
+                        </div>
+                        <div elem="price-product">
+                            <span elem="current-price">5650 ₽</span>
+                            <span elem="old-price">7060 ₽</span>
+                        </div>
+                        <div elem="amount">
+                            {% include "amount.html" %}
+                        </div>
+                        <div elem="total-product">
+                            <span elem="current-price">5650 ₽</span>
+                            <span elem="old-price">7060 ₽</span>
+                        </div>
+                        <button elem="remove-product" type="button">
+                            {{ _icon('close', { tag: 'i' }) }}
+                        </button>
+                    </div>
+                </div>
+            </div>
+            <div elem="items-extra">
+                <div elem="item-extra">
+                    <div elem="body">
+                        <div elem="img"><img src="img/" alt=""></div>
+                        <div elem="info-product">
+                            <div elem="name-product">
+                                Курьер в костюме
+                            </div>
+                        </div>
+                        <div elem="price-product">
+                            <span elem="current-price">500 ₽</span>
+                        </div>
+                        <div elem="append">
+                            <div elem="btn-append" class="btn-general">Добавить</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div elem="total">
+                <div elem="delivery">
+                    <div elem="delivery-prise">
+                        <span>Доставка</span>
+                        <span elem="current-price">500 ₽</span>
+                    </div>
+                    <div block="promo-code">
+                        <div elem="title">Введите промокод</div>
+                        <div elem="input">
+                            <input type="text">
+                            <button elem="btn-promo" class="btn-general" type="button">{{ _icon('check-icon', { tag: 'i' }) }}</button>
+                        </div>
+                    </div>
+                </div>
+                <div elem="sum-total">
+                    <div elem="sum-total-price">
+                        <span>Итого</span>
+                        <span elem="current-price">11430 ₽</span>
+                    </div>
+                    <a elem="btn-checkout" class="btn-general">Перейти к оформлению</a>
+                </div>
+            </div>
+        </form>
+    </div>
+</div><!-- cart -->

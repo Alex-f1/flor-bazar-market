@@ -9,4 +9,10 @@ $('.js-btn-burger').on('click', function (event) {
 
 $('.js-btn-mobile-search').on('click', function () {
     $('.mobile-panel__search .search').toggleClass('is-active-search');
-})
+});
+
+$('.js-overlay-menu').on('click', function () {
+    $(this).removeClass('overlay-is-active')
+    $('.js-sidebar-menu').removeClass('menu-is-active');
+    $('.js-btn-burger').removeClass('btn-burger-is-active');
+});

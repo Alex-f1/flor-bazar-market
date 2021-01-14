@@ -1,0 +1,27 @@
+= yaml =
+pageTitle: Корзина
+bodyClasses:
+layout: !!map
+    header: true
+    footer: true
+    left: false
+    right: false
+path: [
+    {"title":Главная},
+]
+= yaml =
+
+{% extends 'app.html' %}
+
+{% block beforeContent %}
+    <div class="inner-page-head">
+        {% include "s-path.html" %}
+        <h1>Корзина</h1>
+    </div>
+{% endblock %}
+
+{% block main %}
+
+    {% include "cart.html" %}
+
+{% endblock %}

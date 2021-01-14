@@ -364,6 +364,11 @@ $(function () {
   $('.js-btn-mobile-search').on('click', function () {
     $('.mobile-panel__search .search').toggleClass('is-active-search');
   });
+  $('.js-overlay-menu').on('click', function () {
+    $(this).removeClass('overlay-is-active');
+    $('.js-sidebar-menu').removeClass('menu-is-active');
+    $('.js-btn-burger').removeClass('btn-burger-is-active');
+  });
   var PAGE = $('html, body');
   var pageScroller = $('.page-scroller');
   var inMemoryClass = 'page-scroller--memorized';

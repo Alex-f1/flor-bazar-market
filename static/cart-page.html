@@ -23,7 +23,7 @@
         <meta name="MobileOptimized" content="320">
         <meta name="HandheldFriendly" content="True">
 
-        <title>Каталог</title>
+        <title>Корзина</title>
         
         <!-- <link rel="preconnect" href="https://fonts.gstatic.com">
         <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@700&family=Playfair+Display&display=swap" rel="stylesheet"> -->
@@ -619,10 +619,10 @@
 		<a href="#" class="s-path__link">Главная</a><!-- <= link -->
 		<span class="s-path__separator">-</span><!-- <= separator -->
 	
-	Каталог
+	Корзина
 </div><!-- s-path -->
 
-        <h1>Каталог цветов</h1>
+        <h1>Корзина</h1>
     </div>
 
 
@@ -631,711 +631,111 @@
                 <main class="app__main">
                     
 
-    <div class="catalog-products">
-    <div class="catalog-products__section">
-        <div class="catalog-products__top">
-            <div class="catalog-products__found">Найдено 418 товаров</div>
-            <div class="sorting-products">
-                <div class="sorting-products__section">
-                    <div class="sorting-products__title js-sorting-title">
-                        <span class="sorting-products__current-sort js-sort-current" data-carrent-sort="">Сортировать по:</span>
-                    </div>
-                    <div class="sorting-products__dropdown js-sorting-dropdown">
-                        <div class="sorting-products__dropdown-title">Сортировать по</div>
-                        <ul class="sorting-products__dropdown-list">
-                            <li class="js-sorting-list-item" data-sort="recommended">Рекомендованным</li>
-                            <li class="js-sorting-list-item" data-sort="price-low-to-high">Цене (от низкой к высокой)</li>
-                            <li class="js-sorting-list-item" data-sort="price-high-to-low">Цене (от высокой к низкой)</li>
-                        </ul>
+    <div class="cart">
+    <div class="cart__section">
+        <form class="cart__form">
+            <div class="cart__items-title">
+                <div class="cart__item-title">Фото</div>
+                <div class="cart__item-title">Название</div>
+                <div class="cart__item-title">Цена</div>
+                <div class="cart__item-title">Количество</div>
+                <div class="cart__item-title">Сумма</div>
+                <div class="cart__item-title">&nbsp;</div>
+            </div>
+            <div class="cart__items">
+                <div class="cart__item">
+                    <div class="cart__body">
+                        <div class="cart__img"><img src="img/" alt=""></div>
+                        <div class="cart__info-product">
+                            <div class="cart__name-product">
+                                101 красная роза (россия)
+                                в белой корзине с зеленью
+                            </div>
+                            <div class="cart__options-product">
+                                <span>Количество: 101 шт</span>
+                                <span>Высота: 60 см</span>
+                            </div>
+                        </div>
+                        <div class="cart__price-product">
+                            <span class="cart__current-price">5650 ₽</span>
+                            <span class="cart__old-price">7060 ₽</span>
+                        </div>
+                        <div class="cart__amount">
+                            <div class="amount">
+    <button class="amount__btn-amount amount__btn-amount--minus js-btn-amount js-btn--minus">-</button>
+    <input type="text" value="1">
+    <button class="amount__btn-amount amount__btn-amount--plus js-btn-amount js-btn--plus">+</button>
+</div><!-- amount -->
+                        </div>
+                        <div class="cart__total-product">
+                            <span class="cart__current-price">5650 ₽</span>
+                            <span class="cart__old-price">7060 ₽</span>
+                        </div>
+                        <button type="button" class="cart__remove-product">
+                            
+      <i class="svg-icon svg-icon--close" aria-hidden="true">
+        <svg class="svg-icon__link">
+          <use xlink:href="#close"></use>
+        </svg>
+      </i>
+    
+                        </button>
                     </div>
                 </div>
-            </div><!-- sorting-products -->
-        </div>
-        <div class="catalog-products__items">
-            <div class="catalog-products__item">
-                <div class="lot-thumb">
-                    <div class="lot-thumb__body">
-                        <div class="lot-thumb__top">
-                            <a href="#" class="lot-thumb__img-link">
-                                <span class="lot-thumb__img">
-                                    <img src="img/lot-thumb-img.jpg" alt="">
-                                </span>
-                            </a>
-                            <div class="lot-thumb__labels">
-                                <span class="lot-thumb__label lot-thumb__label--share">Акция</span>
-                            </div>
-                        </div>
-                        <div class="lot-thumb__middle">
-                            <a href="#" class="lot-thumb__name">101 красная роза (россия) в бел корзине с зеленью</a>
-                        </div>
-                        <div class="lot-thumb__bottom">
-                            <div class="lot-thumb__info">
-                                <div class="lot-thumb__prices">
-                                    <span class="lot-thumb__current-price">5 650 ₽</span>
-                                    <span class="lot-thumb__old-prace">7 060 ₽</span>
-                                </div>
-                                <div class="lot-thumb__manage">
-                                    <button class="lot-thumb__btn-to-cart js-add-to-cart" type="button">
-                                        
-      <i class="svg-icon svg-icon--mini-cart-icon" aria-hidden="true">
-        <svg class="svg-icon__link">
-          <use xlink:href="#mini-cart-icon"></use>
-        </svg>
-      </i>
-    
-                                        
-      <i class="svg-icon svg-icon--completed-icon" aria-hidden="true">
-        <svg class="svg-icon__link">
-          <use xlink:href="#completed-icon"></use>
-        </svg>
-      </i>
-    
-                                        <span>В корзину</span>
-                                    </button>
-                                    <a href="#" class="lot-thumb__btn-to-cart lot-thumb__btn-to-cart--added-to-cart">
-                                        
-      <i class="svg-icon svg-icon--mini-cart-icon" aria-hidden="true">
-        <svg class="svg-icon__link">
-          <use xlink:href="#mini-cart-icon"></use>
-        </svg>
-      </i>
-    
-                                        
-      <i class="svg-icon svg-icon--completed-icon" aria-hidden="true">
-        <svg class="svg-icon__link">
-          <use xlink:href="#completed-icon"></use>
-        </svg>
-      </i>
-    
-                                        <span>В корзине</span>
-                                    </a>
-                                    <div class="amount">
-    <button class="amount__btn-amount amount__btn-amount--minus js-btn-amount js-btn--minus">-</button>
-    <input type="text" value="1">
-    <button class="amount__btn-amount amount__btn-amount--plus js-btn-amount js-btn--plus">+</button>
-</div><!-- amount -->
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div><!-- lot-thumb -->
             </div>
-            <div class="catalog-products__item">
-                <div class="lot-thumb">
-                    <div class="lot-thumb__body">
-                        <div class="lot-thumb__top">
-                            <a href="#" class="lot-thumb__img-link">
-                                <span class="lot-thumb__img">
-                                    <img src="img/lot-thumb2-img.jpg" alt="">
-                                </span>
-                            </a>
-                            <div class="lot-thumb__labels">
-                                <span class="lot-thumb__label lot-thumb__label--share">Акция</span>
+            <div class="cart__items-extra">
+                <div class="cart__item-extra">
+                    <div class="cart__body">
+                        <div class="cart__img"><img src="img/" alt=""></div>
+                        <div class="cart__info-product">
+                            <div class="cart__name-product">
+                                Курьер в костюме
                             </div>
                         </div>
-                        <div class="lot-thumb__middle">
-                            <a href="#" class="lot-thumb__name">5 белых гортензий в шляпной коробке</a>
+                        <div class="cart__price-product">
+                            <span class="cart__current-price">500 ₽</span>
                         </div>
-                        <div class="lot-thumb__bottom">
-                            <div class="lot-thumb__info">
-                                <div class="lot-thumb__prices">
-                                    <span class="lot-thumb__current-price">5 650 ₽</span>
-                                    <span class="lot-thumb__old-prace">7 060 ₽</span>
-                                </div>
-                                <div class="lot-thumb__manage">
-                                    <button class="lot-thumb__btn-to-cart js-add-to-cart" type="button">
-                                        
-      <i class="svg-icon svg-icon--mini-cart-icon" aria-hidden="true">
-        <svg class="svg-icon__link">
-          <use xlink:href="#mini-cart-icon"></use>
-        </svg>
-      </i>
-    
-                                        
-      <i class="svg-icon svg-icon--completed-icon" aria-hidden="true">
-        <svg class="svg-icon__link">
-          <use xlink:href="#completed-icon"></use>
-        </svg>
-      </i>
-    
-                                        <span>В корзину</span>
-                                    </button>
-                                    <a href="#" class="lot-thumb__btn-to-cart lot-thumb__btn-to-cart--added-to-cart">
-                                        
-      <i class="svg-icon svg-icon--mini-cart-icon" aria-hidden="true">
-        <svg class="svg-icon__link">
-          <use xlink:href="#mini-cart-icon"></use>
-        </svg>
-      </i>
-    
-                                        
-      <i class="svg-icon svg-icon--completed-icon" aria-hidden="true">
-        <svg class="svg-icon__link">
-          <use xlink:href="#completed-icon"></use>
-        </svg>
-      </i>
-    
-                                        <span>В корзине</span>
-                                    </a>
-                                    <div class="amount">
-    <button class="amount__btn-amount amount__btn-amount--minus js-btn-amount js-btn--minus">-</button>
-    <input type="text" value="1">
-    <button class="amount__btn-amount amount__btn-amount--plus js-btn-amount js-btn--plus">+</button>
-</div><!-- amount -->
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div><!-- lot-thumb -->
-            </div>
-            <div class="catalog-products__item">
-                <div class="lot-thumb">
-                    <div class="lot-thumb__body">
-                        <div class="lot-thumb__top">
-                            <a href="#" class="lot-thumb__img-link">
-                                <span class="lot-thumb__img">
-                                    <img src="img/lot-thumb3-img.jpg" alt="">
-                                </span>
-                            </a>
-                            <div class="lot-thumb__labels">
-                                <span class="lot-thumb__label lot-thumb__label--discount">Суперскидка</span>
-                            </div>
-                        </div>
-                        <div class="lot-thumb__middle">
-                            <a href="#" class="lot-thumb__name">Букет из 21 кустовой хризантемы</a>
-                        </div>
-                        <div class="lot-thumb__bottom">
-                            <div class="lot-thumb__info">
-                                <div class="lot-thumb__prices">
-                                    <span class="lot-thumb__current-price">5 650 ₽</span>
-                                    <span class="lot-thumb__old-prace">7 060 ₽</span>
-                                </div>
-                                <div class="lot-thumb__manage">
-                                    <button class="lot-thumb__btn-to-cart js-add-to-cart" type="button">
-                                        
-      <i class="svg-icon svg-icon--mini-cart-icon" aria-hidden="true">
-        <svg class="svg-icon__link">
-          <use xlink:href="#mini-cart-icon"></use>
-        </svg>
-      </i>
-    
-                                        
-      <i class="svg-icon svg-icon--completed-icon" aria-hidden="true">
-        <svg class="svg-icon__link">
-          <use xlink:href="#completed-icon"></use>
-        </svg>
-      </i>
-    
-                                        <span>В корзину</span>
-                                    </button>
-                                    <a href="#" class="lot-thumb__btn-to-cart lot-thumb__btn-to-cart--added-to-cart">
-                                        
-      <i class="svg-icon svg-icon--mini-cart-icon" aria-hidden="true">
-        <svg class="svg-icon__link">
-          <use xlink:href="#mini-cart-icon"></use>
-        </svg>
-      </i>
-    
-                                        
-      <i class="svg-icon svg-icon--completed-icon" aria-hidden="true">
-        <svg class="svg-icon__link">
-          <use xlink:href="#completed-icon"></use>
-        </svg>
-      </i>
-    
-                                        <span>В корзине</span>
-                                    </a>
-                                    <div class="amount">
-    <button class="amount__btn-amount amount__btn-amount--minus js-btn-amount js-btn--minus">-</button>
-    <input type="text" value="1">
-    <button class="amount__btn-amount amount__btn-amount--plus js-btn-amount js-btn--plus">+</button>
-</div><!-- amount -->
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div><!-- lot-thumb -->
-            </div>
-            <div class="catalog-products__item">
-                <div class="lot-thumb">
-                    <div class="lot-thumb__body">
-                        <div class="lot-thumb__top">
-                            <a href="#" class="lot-thumb__img-link">
-                                <span class="lot-thumb__img">
-                                    <img src="img/lot-thumb3-img.jpg" alt="">
-                                </span>
-                            </a>
-                        </div>
-                        <div class="lot-thumb__middle">
-                            <a href="#" class="lot-thumb__name">Букет из 21 кустовой хризантемы</a>
-                        </div>
-                        <div class="lot-thumb__bottom">
-                            <div class="lot-thumb__info lot-thumb__info--out-lot">
-                                <div class="lot-thumb__prices">
-                                    <span class="lot-thumb__current-price">5 650 ₽</span>
-                                    <span class="lot-thumb__old-prace">7 060 ₽</span>
-                                </div>
-                                <div class="lot-thumb__manage">
-                                    <button class="lot-thumb__btn-to-cart js-add-to-cart" data-text="В корзине" type="button">
-                                        
-      <i class="svg-icon svg-icon--mini-cart-icon" aria-hidden="true">
-        <svg class="svg-icon__link">
-          <use xlink:href="#mini-cart-icon"></use>
-        </svg>
-      </i>
-    
-                                        
-      <i class="svg-icon svg-icon--completed-icon" aria-hidden="true">
-        <svg class="svg-icon__link">
-          <use xlink:href="#completed-icon"></use>
-        </svg>
-      </i>
-    
-                                        Нет в наличии
-                                    </button>
-                                    <div class="amount">
-    <button class="amount__btn-amount amount__btn-amount--minus js-btn-amount js-btn--minus">-</button>
-    <input type="text" value="1">
-    <button class="amount__btn-amount amount__btn-amount--plus js-btn-amount js-btn--plus">+</button>
-</div><!-- amount -->
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div><!-- lot-thumb -->
-            </div>
-            <div class="catalog-products__item">
-                <div class="lot-thumb">
-                    <div class="lot-thumb__body">
-                        <div class="lot-thumb__top">
-                            <a href="#" class="lot-thumb__img-link">
-                                <span class="lot-thumb__img">
-                                    <img src="img/lot-thumb2-img.jpg" alt="">
-                                </span>
-                            </a>
-                            <div class="lot-thumb__labels">
-                                <span class="lot-thumb__label lot-thumb__label--discount">Суперскидка</span>
-                            </div>
-                        </div>
-                        <div class="lot-thumb__middle">
-                            <a href="#" class="lot-thumb__name">5 белых гортензий в шляпной коробке</a>
-                        </div>
-                        <div class="lot-thumb__bottom">
-                            <div class="lot-thumb__info">
-                                <div class="lot-thumb__prices">
-                                    <span class="lot-thumb__current-price">5 650 ₽</span>
-                                    <span class="lot-thumb__old-prace">7 060 ₽</span>
-                                </div>
-                                <div class="lot-thumb__manage">
-                                    <button class="lot-thumb__btn-to-cart js-add-to-cart" type="button">
-                                        
-      <i class="svg-icon svg-icon--mini-cart-icon" aria-hidden="true">
-        <svg class="svg-icon__link">
-          <use xlink:href="#mini-cart-icon"></use>
-        </svg>
-      </i>
-    
-                                        
-      <i class="svg-icon svg-icon--completed-icon" aria-hidden="true">
-        <svg class="svg-icon__link">
-          <use xlink:href="#completed-icon"></use>
-        </svg>
-      </i>
-    
-                                        <span>В корзину</span>
-                                    </button>
-                                    <a href="#" class="lot-thumb__btn-to-cart lot-thumb__btn-to-cart--added-to-cart">
-                                        
-      <i class="svg-icon svg-icon--mini-cart-icon" aria-hidden="true">
-        <svg class="svg-icon__link">
-          <use xlink:href="#mini-cart-icon"></use>
-        </svg>
-      </i>
-    
-                                        
-      <i class="svg-icon svg-icon--completed-icon" aria-hidden="true">
-        <svg class="svg-icon__link">
-          <use xlink:href="#completed-icon"></use>
-        </svg>
-      </i>
-    
-                                        <span>В корзине</span>
-                                    </a>
-                                    <div class="amount">
-    <button class="amount__btn-amount amount__btn-amount--minus js-btn-amount js-btn--minus">-</button>
-    <input type="text" value="1">
-    <button class="amount__btn-amount amount__btn-amount--plus js-btn-amount js-btn--plus">+</button>
-</div><!-- amount -->
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div><!-- lot-thumb -->
-            </div>
-            <div class="catalog-products__item">
-                <div class="lot-thumb">
-                    <div class="lot-thumb__body">
-                        <div class="lot-thumb__top">
-                            <a href="#" class="lot-thumb__img-link">
-                                <span class="lot-thumb__img">
-                                    <img src="img/lot-thumb-img.jpg" alt="">
-                                </span>
-                            </a>
-                            <div class="lot-thumb__labels">
-                                <span class="lot-thumb__label lot-thumb__label--share">Акция</span>
-                            </div>
-                        </div>
-                        <div class="lot-thumb__middle">
-                            <a href="#" class="lot-thumb__name">101 красная роза (россия) в бел корзине с зеленью</a>
-                        </div>
-                        <div class="lot-thumb__bottom">
-                            <div class="lot-thumb__info">
-                                <div class="lot-thumb__prices">
-                                    <span class="lot-thumb__current-price">5 650 ₽</span>
-                                    <span class="lot-thumb__old-prace">7 060 ₽</span>
-                                </div>
-                                <div class="lot-thumb__manage">
-                                    <button class="lot-thumb__btn-to-cart js-add-to-cart" type="button">
-                                        
-      <i class="svg-icon svg-icon--mini-cart-icon" aria-hidden="true">
-        <svg class="svg-icon__link">
-          <use xlink:href="#mini-cart-icon"></use>
-        </svg>
-      </i>
-    
-                                        
-      <i class="svg-icon svg-icon--completed-icon" aria-hidden="true">
-        <svg class="svg-icon__link">
-          <use xlink:href="#completed-icon"></use>
-        </svg>
-      </i>
-    
-                                        <span>В корзину</span>
-                                    </button>
-                                    <a href="#" class="lot-thumb__btn-to-cart lot-thumb__btn-to-cart--added-to-cart">
-                                        
-      <i class="svg-icon svg-icon--mini-cart-icon" aria-hidden="true">
-        <svg class="svg-icon__link">
-          <use xlink:href="#mini-cart-icon"></use>
-        </svg>
-      </i>
-    
-                                        
-      <i class="svg-icon svg-icon--completed-icon" aria-hidden="true">
-        <svg class="svg-icon__link">
-          <use xlink:href="#completed-icon"></use>
-        </svg>
-      </i>
-    
-                                        <span>В корзине</span>
-                                    </a>
-                                    <div class="amount">
-    <button class="amount__btn-amount amount__btn-amount--minus js-btn-amount js-btn--minus">-</button>
-    <input type="text" value="1">
-    <button class="amount__btn-amount amount__btn-amount--plus js-btn-amount js-btn--plus">+</button>
-</div><!-- amount -->
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div><!-- lot-thumb -->
-            </div>
-        </div>
-        <div class="catalog-products__bottom">
-            <!-- <button elem="btn-show-more" class="js-btn-show-more" type="button">Показать ещё</button> -->
-            <div class="pogination">
-    <div class="pogination__links">
-        <a href="#" class="pogination__link-prev">Предыдущая</a>
-        <a href="#" class="is-active-pagination">1</a>
-        <a href="#">2</a>
-        <a href="#">3</a>
-        <a href="#">4</a>
-        <a href="#">5</a>
-        <span>...</span>
-        <a href="#">124</a>
-        <a href="#" class="pogination__link-next">Следующая</a>
-    </div>
-</div><!-- pogination -->
-            <div class="catalog-products__content">
-                <p>Разнообразный и богатый опыт рамки и место обучения кадров требуют определения и уточнения форм
-                    развития. Значимость
-                    этих проблем настолько очевидна, что постоянное информационно-пропагандистское обеспечение нашей
-                    деятельности позволяет
-                    оценить значение форм развития.</p>
-                <p>Идейные соображения высшего порядка, а также постоянный количественный рост и сфера нашей активности
-                    играет важную роль
-                    в формировании дальнейших направлений развития. Таким образом консультация с широким активом требуют
-                    определения и
-                    уточнения систем массового участия.</p>
-            </div>
-        </div>
-    </div>
-</div><!-- catalog-products -->
-
-
-                </main><!-- app__main -->
-
-                
-                <aside class="app__aside app__aside--left">
-                    
-
-    <div class="filter-products">
-    <div class="filter-products__section">
-        <form class="filter-products__form">
-            <div class="filter-products__head js-filter-head">
-                <div class="filter-products__title">Фильтр</div>
-                <button type="reset" class="filter-products__btn-reset">Очистить</button>
-            </div>
-            <div class="filter-products__container js-filter-container">
-                <div class="filter-products__items">
-                    <div class="filter-products__item">
-                        <div class="filter-products__item-name js-filter-name">Цена, ₽</div>
-                        <div class="filter-products__options js-filter-options">
-                            <div class="filter-products__range-controlls">
-                                <div class="filter-products__range-inputs">
-                                    <input type="text" class="from">
-                                    <span>-</span>
-                                    <input type="text" class="to">
-                                </div>
-                                <div data-type="double" data-min="0" data-max="20000" data-from="800" data-to="12000" data-step="100" class="filter-products__range"></div>
-                            </div>
-                            <div class="filter-products__inputs">
-                                <label class="label-elem-interface">
-                                    <input type="checkbox" name="price_check">
-                                    <span class="label-elem-interface__name">до 1000 ₽</span>
-                                </label>
-                                <label class="label-elem-interface">
-                                    <input type="checkbox" name="price_check">
-                                    <span class="label-elem-interface__name">1000-2000 ₽</span>
-                                </label>
-                                <label class="label-elem-interface">
-                                    <input type="checkbox" name="price_check">
-                                    <span class="label-elem-interface__name">2000-5000 ₽</span>
-                                </label>
-                                <label class="label-elem-interface">
-                                    <input type="checkbox" name="price_check">
-                                    <span class="label-elem-interface__name">от 5000 ₽</span>
-                                </label>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="filter-products__item">
-                        <div class="filter-products__item-name js-filter-name">Цветы</div>
-                        <div class="filter-products__options js-filter-options">
-                            <div class="filter-products__inputs">
-                                <label class="label-elem-interface label-elem-interface--checkbox">
-                                    <input type="checkbox">
-                                    <span class="label-elem-interface__name">Розы</span>
-                                </label>
-                                <label class="label-elem-interface label-elem-interface--checkbox">
-                                    <input type="checkbox">
-                                    <span class="label-elem-interface__name">Тюльпаны</span>
-                                </label>
-                                <label class="label-elem-interface label-elem-interface--checkbox">
-                                    <input type="checkbox">
-                                    <span class="label-elem-interface__name">Герберы</span>
-                                </label>
-                                <label class="label-elem-interface label-elem-interface--checkbox">
-                                    <input type="checkbox">
-                                    <span class="label-elem-interface__name">Пионы</span>
-                                </label>
-                                <label class="label-elem-interface label-elem-interface--checkbox">
-                                    <input type="checkbox">
-                                    <span class="label-elem-interface__name">Гвоздики</span>
-                                </label>
-                                <label class="label-elem-interface label-elem-interface--checkbox">
-                                    <input type="checkbox">
-                                    <span class="label-elem-interface__name">Лилии</span>
-                                </label>
-                                <label class="label-elem-interface label-elem-interface--checkbox">
-                                    <input type="checkbox">
-                                    <span class="label-elem-interface__name">Хризантемы</span>
-                                </label>
-                                <label class="label-elem-interface label-elem-interface--checkbox">
-                                    <input type="checkbox">
-                                    <span class="label-elem-interface__name">Другие</span>
-                                </label>
-                                <label class="label-elem-interface label-elem-interface--checkbox">
-                                    <input type="checkbox">
-                                    <span class="label-elem-interface__name">Другие</span>
-                                </label>
-                                <label class="label-elem-interface label-elem-interface--checkbox">
-                                    <input type="checkbox">
-                                    <span class="label-elem-interface__name">Другие</span>
-                                </label>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="filter-products__item">
-                        <div class="filter-products__item-name js-filter-name">Цвет</div>
-                        <div class="filter-products__options js-filter-options">
-                            <div class="filter-products__inputs">
-                                <label class="label-elem-interface label-elem-interface--checkbox">
-                                    <input type="checkbox">
-                                    <span class="label-elem-interface__name">Красный</span>
-                                </label>
-                                <label class="label-elem-interface label-elem-interface--checkbox">
-                                    <input type="checkbox">
-                                    <span class="label-elem-interface__name">Белый</span>
-                                </label>
-                                <label class="label-elem-interface label-elem-interface--checkbox">
-                                    <input type="checkbox">
-                                    <span class="label-elem-interface__name">Розовый</span>
-                                </label>
-                                <label class="label-elem-interface label-elem-interface--checkbox">
-                                    <input type="checkbox">
-                                    <span class="label-elem-interface__name">Желтый</span>
-                                </label>
-                                <label class="label-elem-interface label-elem-interface--checkbox">
-                                    <input type="checkbox">
-                                    <span class="label-elem-interface__name">Оранжевый</span>
-                                </label>
-                                <label class="label-elem-interface label-elem-interface--checkbox">
-                                    <input type="checkbox">
-                                    <span class="label-elem-interface__name">Фиолетовый</span>
-                                </label>
-                                <label class="label-elem-interface label-elem-interface--checkbox">
-                                    <input type="checkbox">
-                                    <span class="label-elem-interface__name">Синий</span>
-                                </label>
-                                <label class="label-elem-interface label-elem-interface--checkbox">
-                                    <input type="checkbox">
-                                    <span class="label-elem-interface__name">Другой</span>
-                                </label>
-                                <label class="label-elem-interface label-elem-interface--checkbox">
-                                    <input type="checkbox">
-                                    <span class="label-elem-interface__name">Другой</span>
-                                </label>
-                                <label class="label-elem-interface label-elem-interface--checkbox">
-                                    <input type="checkbox">
-                                    <span class="label-elem-interface__name">Другой</span>
-                                </label>
-                                <label class="label-elem-interface label-elem-interface--checkbox">
-                                    <input type="checkbox">
-                                    <span class="label-elem-interface__name">Другой</span>
-                                </label>
-                                <label class="label-elem-interface label-elem-interface--checkbox">
-                                    <input type="checkbox">
-                                    <span class="label-elem-interface__name">Другой</span>
-                                </label>
-                                <label class="label-elem-interface label-elem-interface--checkbox">
-                                    <input type="checkbox">
-                                    <span class="label-elem-interface__name">Другой</span>
-                                </label>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="filter-products__item">
-                        <div class="filter-products__item-name js-filter-name">Количество</div>
-                        <div class="filter-products__options js-filter-options">
-                            <div class="filter-products__inputs">
-                                <label class="label-elem-interface label-elem-interface--checkbox">
-                                    <input type="checkbox">
-                                    <span class="label-elem-interface__name">5</span>
-                                </label>
-                                <label class="label-elem-interface label-elem-interface--checkbox">
-                                    <input type="checkbox">
-                                    <span class="label-elem-interface__name">10</span>
-                                </label>
-                                <label class="label-elem-interface label-elem-interface--checkbox">
-                                    <input type="checkbox">
-                                    <span class="label-elem-interface__name">15</span>
-                                </label>
-                                <label class="label-elem-interface label-elem-interface--checkbox">
-                                    <input type="checkbox">
-                                    <span class="label-elem-interface__name">20</span>
-                                </label>
-                                <label class="label-elem-interface label-elem-interface--checkbox">
-                                    <input type="checkbox">
-                                    <span class="label-elem-interface__name">25</span>
-                                </label>
-                                <label class="label-elem-interface label-elem-interface--checkbox">
-                                    <input type="checkbox">
-                                    <span class="label-elem-interface__name">30</span>
-                                </label>
-                                <label class="label-elem-interface label-elem-interface--checkbox">
-                                    <input type="checkbox">
-                                    <span class="label-elem-interface__name">35</span>
-                                </label>
-                                <label class="label-elem-interface label-elem-interface--checkbox">
-                                    <input type="checkbox">
-                                    <span class="label-elem-interface__name">40</span>
-                                </label>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="filter-products__item">
-                        <div class="filter-products__item-name js-filter-name">Кому</div>
-                        <div class="filter-products__options js-filter-options">
-                            <div class="filter-products__inputs">
-                                <label class="label-elem-interface label-elem-interface--checkbox">
-                                    <input type="checkbox">
-                                    <span class="label-elem-interface__name">Маме</span>
-                                </label>
-                                <label class="label-elem-interface label-elem-interface--checkbox">
-                                    <input type="checkbox">
-                                    <span class="label-elem-interface__name">Бабушке</span>
-                                </label>
-                                <label class="label-elem-interface label-elem-interface--checkbox">
-                                    <input type="checkbox">
-                                    <span class="label-elem-interface__name">Сестре</span>
-                                </label>
-                                <label class="label-elem-interface label-elem-interface--checkbox">
-                                    <input type="checkbox">
-                                    <span class="label-elem-interface__name">Жене</span>
-                                </label>
-                                <label class="label-elem-interface label-elem-interface--checkbox">
-                                    <input type="checkbox">
-                                    <span class="label-elem-interface__name">Теще</span>
-                                </label>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="filter-products__item">
-                        <div class="filter-products__item-name js-filter-name">Повод</div>
-                        <div class="filter-products__options js-filter-options">
-                            <div class="filter-products__inputs">
-                                <label class="label-elem-interface label-elem-interface--checkbox">
-                                    <input type="checkbox">
-                                    <span class="label-elem-interface__name">Годовщина</span>
-                                </label>
-                                <label class="label-elem-interface label-elem-interface--checkbox">
-                                    <input type="checkbox">
-                                    <span class="label-elem-interface__name">Свадьба</span>
-                                </label>
-                                <label class="label-elem-interface label-elem-interface--checkbox">
-                                    <input type="checkbox">
-                                    <span class="label-elem-interface__name">День рождения</span>
-                                </label>
-                                <label class="label-elem-interface label-elem-interface--checkbox">
-                                    <input type="checkbox">
-                                    <span class="label-elem-interface__name">Просто так</span>
-                                </label>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="filter-products__item filter-products__item--without-category">
-                        <div class="filter-products__options">
-                            <div class="filter-products__inputs">
-                                <label class="label-elem-interface label-elem-interface--checkbox">
-                                    <input type="checkbox">
-                                    <span class="label-elem-interface__name">Есть в наличии</span>
-                                </label>
-                            </div>
+                        <div class="cart__append">
+                            <div class="cart__btn-append btn-general">Добавить</div>
                         </div>
                     </div>
                 </div>
-                <div class="filter-products__bottom">
-                    <button class="filter-products__btn-show btn-general" type="submit">Показать</button>
-                    <button class="filter-products__btn-reset-in-mobile btn-general" type="reset">Очистить</button>
+            </div>
+            <div class="cart__total">
+                <div class="cart__delivery">
+                    <div class="cart__delivery-prise">
+                        <span>Доставка</span>
+                        <span class="cart__current-price">500 ₽</span>
+                    </div>
+                    <div class="promo-code">
+                        <div class="promo-code__title">Введите промокод</div>
+                        <div class="promo-code__input">
+                            <input type="text">
+                            <button class="promo-code__btn-promo btn-general" type="button">
+      <i class="svg-icon svg-icon--check-icon" aria-hidden="true">
+        <svg class="svg-icon__link">
+          <use xlink:href="#check-icon"></use>
+        </svg>
+      </i>
+    </button>
+                        </div>
+                    </div>
+                </div>
+                <div class="cart__sum-total">
+                    <div class="cart__sum-total-price">
+                        <span>Итого</span>
+                        <span class="cart__current-price">11430 ₽</span>
+                    </div>
+                    <a class="cart__btn-checkout btn-general">Перейти к оформлению</a>
                 </div>
             </div>
         </form>
     </div>
-</div><!-- filter-products -->
+</div><!-- cart -->
 
 
-                </aside><!-- app__aside left -->
+                </main><!-- app__main -->
+
                 
 
                 
