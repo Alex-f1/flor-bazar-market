@@ -574,6 +574,15 @@ p:last-child {
   height: 16px;
   vertical-align: middle;
 }
+.label-elem-interface .jq-radio input,
+.label-elem-interface .jq-checkbox input {
+  width: 0;
+  margin: 0;
+  padding: 0;
+  position: absolute;
+  opacity: 0;
+  z-index: -1;
+}
 .label-elem-interface .jq-radio.checked .jq-radio__div,
 .label-elem-interface .jq-checkbox.checked .jq-radio__div,
 .label-elem-interface .jq-radio.checked .jq-checkbox__div,
