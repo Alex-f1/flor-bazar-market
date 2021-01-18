@@ -12,6 +12,10 @@ layout: !!map
 
 {% block inlineStyles %}
 	<style>
+
+		.container {
+			height: 100%;
+		}
 		
 		.container-404 {
 			display: flex;
@@ -20,10 +24,10 @@ layout: !!map
 			flex-direction: column;
 			padding-top: 145px;
 			padding-bottom: 145px;
-			margin-bottom: -65px;
 			background-image: url('img/404-pic.png');
 			background-repeat: no-repeat;
 			background-position: 100% 100%;
+			height: 100%;
 		}
 
 		.title-404 {
@@ -58,7 +62,6 @@ layout: !!map
 		@media (max-width: 1024px) {
 			.container-404 {
 				padding-top: 100px;
-				margin-bottom: -50px;
 			}
 			
 			.title-404 {
