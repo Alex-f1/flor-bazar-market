@@ -65,23 +65,24 @@
                 </div>
             </div>
             <div elem="total">
-                <div elem="delivery">
-                    <div elem="delivery-prise">
-                        <span>Доставка</span>
-                        <span elem="current-price">500 ₽</span>
+                <div block="promo-code">
+                    <div elem="title">Введите промокод</div>
+                    <div elem="input">
+                        <input type="text">
+                        <button elem="btn-promo" class="btn-general" type="button">
+                            {{ _icon('check-icon', { tag: 'i' }) }}
+                        </button>
                     </div>
-                    <div block="promo-code">
-                        <div elem="title">Введите промокод</div>
-                        <div elem="input">
-                            <input type="text">
-                            <button elem="btn-promo" class="btn-general" type="button">{{ _icon('check-icon', { tag: 'i' }) }}</button>
-                        </div>
+                    <div elem="info">
+                        <span elem="name">Скидка по промокоду:</span>
+                        <span elem="price">4 000 ₽</span>
                     </div>
                 </div>
                 <div elem="sum-total">
                     <div elem="sum-total-price">
-                        <span>Итого</span>
-                        <span elem="current-price">11430 ₽</span>
+                        <span elem="sum-total-name">Итого</span>
+                        <span elem="current-price">11 430 ₽</span>
+                        <span elem="old-price">15 650 ₽</span>
                     </div>
                     <a elem="btn-checkout" class="btn-general">Перейти к оформлению</a>
                 </div>

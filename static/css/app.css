@@ -1255,8 +1255,8 @@ textarea {
   margin-right: 30px;
 }
 .cart__item-title:nth-child(4) {
-  -ms-flex: 0 0 200px;
-      flex: 0 0 200px;
+  -ms-flex: 0 0 230px;
+      flex: 0 0 230px;
   margin-right: 30px;
 }
 .cart__item-title:nth-child(5) {
@@ -1348,13 +1348,13 @@ textarea {
   display: block;
 }
 .cart__amount {
-  -ms-flex: 0 0 200px;
-      flex: 0 0 200px;
+  -ms-flex: 0 0 230px;
+      flex: 0 0 230px;
   margin-right: 30px;
 }
 .cart__amount--extra {
-  -ms-flex: 0 0 100px;
-      flex: 0 0 100px;
+  -ms-flex: 0 0 160px;
+      flex: 0 0 160px;
 }
 .cart__amount .amount {
   width: 100px;
@@ -1375,8 +1375,8 @@ textarea {
   height: 30px;
 }
 .cart__total-product {
-  -ms-flex: 0 0 270px;
-      flex: 0 0 270px;
+  -ms-flex: 0 0 240px;
+      flex: 0 0 240px;
   margin-right: 30px;
 }
 .cart__remove-product {
@@ -1392,6 +1392,9 @@ textarea {
   height: 15px;
   fill: #6e031f;
 }
+.cart__items-extra {
+  margin-bottom: 40px;
+}
 .cart__items-extra .cart__body {
   padding-top: 25px;
 }
@@ -1400,6 +1403,83 @@ textarea {
   padding-top: 13px;
   padding-bottom: 13px;
   min-width: 240px;
+}
+.cart__total {
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: justify;
+      justify-content: space-between;
+  padding: 45px 40px 45px 30px;
+  background-color: #f6f6f4;
+}
+.cart__sum-total .cart__current-price {
+  font-size: 24px;
+}
+.cart__sum-total .cart__old-price {
+  font-size: 18px;
+  margin-left: 8px;
+}
+.cart__sum-total-price {
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-align: center;
+      align-items: center;
+  margin-bottom: 25px;
+}
+.cart__sum-total-name {
+  font-size: 14px;
+  color: #b4b1af;
+  font-weight: 400;
+  line-height: 1.1;
+  margin-right: 10px;
+}
+.cart__btn-checkout {
+  min-width: 330px;
+}
+.promo-code__title {
+  font-size: 13px;
+  color: #1b110f;
+  font-weight: 400;
+  line-height: 1.1;
+  margin-bottom: 10px;
+}
+.promo-code__input {
+  width: 290px;
+  max-width: 100%;
+  display: -ms-flexbox;
+  display: flex;
+}
+.promo-code__btn-promo {
+  min-width: 47px;
+  padding: 10px 18px;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-align: center;
+      align-items: center;
+}
+.promo-code__btn-promo:after {
+  display: none;
+}
+.promo-code__btn-promo .svg-icon--check-icon {
+  width: 12px;
+  height: 12px;
+  fill: none;
+}
+.promo-code__info {
+  margin-top: 30px;
+}
+.promo-code__name {
+  font-size: 14px;
+  color: #b4b1af;
+  font-weight: 400;
+  line-height: 1.1;
+}
+.promo-code__price {
+  font-size: 14px;
+  color: #1b110f;
+  font-weight: 400;
+  line-height: 1.1;
+  margin-left: 10px;
 }
 .catalog-main {
   -ms-flex: none;
