@@ -1,5 +1,9 @@
 <div block="cart">
     <div elem="section">
+        <div elem="empty">
+            <span>Корзина пуста</span>
+            <a href="catalog-page.html">Перейти в каталог</a>
+        </div>
         <form elem="form">
             <div elem="items-title">
                 <div elem="item-title">Фото</div>
@@ -28,6 +32,7 @@
                             </div>
                         </div>
                         <div elem="price-product">
+                            <div elem="item-title-mob">Цена</div>
                             <span elem="current-price">5650 ₽</span>
                             <span elem="old-price">7060 ₽</span>
                         </div>
@@ -35,10 +40,81 @@
                             {% include "amount.html" %}
                         </div>
                         <div elem="total-product">
+                            <div elem="item-title-mob">Сумма</div>
                             <span elem="current-price">5650 ₽</span>
                             <span elem="old-price">7060 ₽</span>
                         </div>
-                        <button elem="remove-product" type="button">
+                        <button elem="remove-product" class="js-btn-remove-product" type="button">
+                            {{ _icon('close', { tag: 'i' }) }}
+                        </button>
+                    </div>
+                </div>
+                <div elem="item">
+                    <div elem="body">
+                        <div elem="img">
+                            <a elem="img-link" href="#">
+                                <img src="img/lot-thumb2-img.jpg" alt="">
+                            </a>
+                        </div>
+                        <div elem="info-product">
+                            <a elem="name-product" href="#">
+                                101 красная роза (россия)
+                                в белой корзине с зеленью
+                            </a>
+                            <div elem="options-product">
+                                <span>Количество: 101 шт</span>
+                                <span>Высота: 60 см</span>
+                            </div>
+                        </div>
+                        <div elem="price-product">
+                            <div elem="item-title-mob">Цена</div>
+                            <span elem="current-price">5650 ₽</span>
+                            <span elem="old-price">7060 ₽</span>
+                        </div>
+                        <div elem="amount">
+                            {% include "amount.html" %}
+                        </div>
+                        <div elem="total-product">
+                            <div elem="item-title-mob">Сумма</div>
+                            <span elem="current-price">5650 ₽</span>
+                            <span elem="old-price">7060 ₽</span>
+                        </div>
+                        <button elem="remove-product" class="js-btn-remove-product" type="button">
+                            {{ _icon('close', { tag: 'i' }) }}
+                        </button>
+                    </div>
+                </div>
+                <div elem="item">
+                    <div elem="body">
+                        <div elem="img">
+                            <a elem="img-link" href="#">
+                                <img src="img/lot-thumb3-img.jpg" alt="">
+                            </a>
+                        </div>
+                        <div elem="info-product">
+                            <a elem="name-product" href="#">
+                                101 красная роза (россия)
+                                в белой корзине с зеленью
+                            </a>
+                            <div elem="options-product">
+                                <span>Количество: 101 шт</span>
+                                <span>Высота: 60 см</span>
+                            </div>
+                        </div>
+                        <div elem="price-product">
+                            <div elem="item-title-mob">Цена</div>
+                            <span elem="current-price">5650 ₽</span>
+                            <span elem="old-price">7060 ₽</span>
+                        </div>
+                        <div elem="amount">
+                            {% include "amount.html" %}
+                        </div>
+                        <div elem="total-product">
+                            <div elem="item-title-mob">Сумма</div>
+                            <span elem="current-price">5650 ₽</span>
+                            <span elem="old-price">7060 ₽</span>
+                        </div>
+                        <button elem="remove-product" class="js-btn-remove-product" type="button">
                             {{ _icon('close', { tag: 'i' }) }}
                         </button>
                     </div>
