@@ -183,6 +183,17 @@ $(function () {
   $('.js-btn-show-more').on('click', function () {
     $(this).fadeOut();
   });
+  $('.js-btn-your-order').on('click', function () {
+    $('.js-your-order').toggleClass('is-show-your-order');
+  });
+  $(window).scroll(function () {
+    if ($(this).scrollTop() > 780) {
+      $('.js-btn-your-order').addClass('position-bottom');
+    } else {
+      $('.js-btn-your-order').removeClass('position-bottom');
+    }
+  });
+  $('.js-phone-mask-checkout').mask('+7 (000) 000-00-00');
   $('.js-filter-name').on('click', function () {
     var $thisElem = $(this);
     $thisElem.toggleClass('is-active-name');
@@ -550,6 +561,15 @@ $(function () {
         }
       });
     });
+  }
+
+  if (window.matchMedia("(min-width: 768px)").matches) {
+    if ($('.js-your-order').length) {
+      var sidebar = new StickySidebar('.js-your-order', {
+        topSpacing: 50,
+        bottomSpacing: 50
+      });
+    }
   }
 
   var btnUp = $('.js-btn-up');

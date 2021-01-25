@@ -671,8 +671,8 @@
                     <label class="label-elem-interface label-elem-interface--confirm-sms">
                         <input type="checkbox" name="payment-sms" checked="">
                         <span class="label-elem-interface__name">Подтверждение заказа по СМС без звонка</span>
-                        <span class="label-elem-interface__note">Доступно при онлайн-оплате</span>
                     </label>
+                    <span class="checkout-form__note">Доступно при онлайн-оплате</span>
                 </div>
             </div>
             <div class="checkout-form__group">
@@ -680,13 +680,13 @@
                 <div class="checkout-form__input">
                     <label class="checkout-form__label">
                         <div class="checkout-form__name">Имя отправителя<span>*</span></div>
-                        <input type="text">
+                        <input type="text" required="">
                     </label>
                 </div>
                 <div class="checkout-form__input">
                     <label class="checkout-form__label">
                         <div class="checkout-form__name">Номер телефона отправителя<span>*</span></div>
-                        <input type="text" class="js-phone-mask-checkout" placeholder="+7 ___ _________">
+                        <input type="text" class="js-phone-mask-checkout" placeholder="+7 ___ _________" required="">
                     </label>
                 </div>
                 <div class="checkout-form__input">
@@ -708,7 +708,7 @@
                 <div class="checkout-form__input">
                     <label class="checkout-form__label">
                         <div class="checkout-form__name">Адрес доставки<span>*</span></div>
-                        <input type="text">
+                        <input type="text" required="">
                     </label>
                 </div>
                 <div class="checkout-form__input">
@@ -722,14 +722,17 @@
                         <div class="checkout-form__name">Время доставки</div>
                         <select>
                             <option>14:00-16:00</option>
-                            <option>15:00-17:00</option>
+                            <option>15:00-17:00</option> 
                             <option>16:00-18:00</option>
                             <option>17:00-19:00</option>
                         </select>
                     </label>
                 </div>
-                <div class="checkout-form__textarea">
-                    <textarea placeholder="Напишите ваши пожелания или текст в записке"></textarea>
+                <div class="checkout-form__group">
+                    <label class="checkout-form__label">
+                        <div class="checkout-form__name">Комментарий</div>
+                        <textarea placeholder="Напишите ваши пожелания или текст в записке"></textarea>
+                    </label>
                 </div>
                 <div class="checkout-form__bottom">
                     <label class="label-elem-interface label-elem-interface--policy">
@@ -740,14 +743,20 @@
                 </div>
             </div>
         </form>
-    </div>
-</div><!-- checkout-form -->
 
-    <div class="your-order js-your-order">
+        <button class="checkout-form__btn-your-order js-btn-your-order" type="button">
+      <i class="svg-icon svg-icon--completed-icon" aria-hidden="true">
+        <svg class="svg-icon__link">
+          <use xlink:href="#completed-icon"></use>
+        </svg>
+      </i>
+    </button>
+
+        <div class="your-order js-your-order">
     <div class="your-order__section">
         <div class="your-order__head">
-            <div class="your-order__title"></div>
-            <a href="cart-page.html" class="your-order__link-change"></a>
+            <div class="your-order__title">Ваш заказ</div>
+            <a href="cart-page.html" class="your-order__link-change">Изменить</a>
         </div>
         <div class="your-order__body">
             <div class="your-order__info">
@@ -772,7 +781,7 @@
         </div>
         <di v="" class="your-order__sum-total">
             <div class="your-order__info">
-                <div class="your-order__name">Доставка</div>
+                <div class="your-order__name">Итого</div>
                 <div class="your-order__prices">
                     <div class="your-order__old-price">14 390 ₽</div>
                     <div class="your-order__current-price">11 430 ₽</div>
@@ -781,6 +790,8 @@
         </di>
     </div>
 </div><!-- your-order -->
+    </div>
+</div><!-- checkout-form -->
 
 
                 </main><!-- app__main -->
@@ -924,6 +935,10 @@
                     <div class="subscribe-popup__textarea js-textarea-comment">
                         <textarea class="" placeholder="Комментарии и пожелания"></textarea>
                     </div>
+                    <label class="label-elem-interface label-elem-interface--policy">
+                        <input type="checkbox" name="policy" checked="">
+                        <span class="label-elem-interface__name">Я согласен на обработку моих персональных данных</span>
+                    </label>
                     <button class="subscribe-popup__btn-send btn-general" disabled="" type="submit">Обсудить подписку</button>
                 </div>
             </div>

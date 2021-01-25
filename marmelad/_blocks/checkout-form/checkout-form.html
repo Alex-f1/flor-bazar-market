@@ -38,8 +38,8 @@
                     <label block="label-elem-interface" mods="confirm-sms">
                         <input type="checkbox" name="payment-sms" checked>
                         <span elem="name">Подтверждение заказа по СМС без звонка</span>
-                        <span elem="note">Доступно при онлайн-оплате</span>
                     </label>
+                    <span elem="note">Доступно при онлайн-оплате</span>
                 </div>
             </div>
             <div elem="group">
@@ -47,13 +47,13 @@
                 <div elem="input">
                     <label elem="label">
                         <div elem="name">Имя отправителя<span>*</span></div>
-                        <input type="text">
+                        <input type="text" required>
                     </label>
                 </div>
                 <div elem="input">
                     <label elem="label">
                         <div elem="name">Номер телефона отправителя<span>*</span></div>
-                        <input type="text" class="js-phone-mask-checkout" placeholder="+7 ___ _________">
+                        <input type="text" class="js-phone-mask-checkout" placeholder="+7 ___ _________" required>
                     </label>
                 </div>
                 <div elem="input">
@@ -75,7 +75,7 @@
                 <div elem="input">
                     <label elem="label">
                         <div elem="name">Адрес доставки<span>*</span></div>
-                        <input type="text">
+                        <input type="text" required>
                     </label>
                 </div>
                 <div elem="input">
@@ -89,14 +89,17 @@
                         <div elem="name">Время доставки</div>
                         <select>
                             <option>14:00-16:00</option>
-                            <option>15:00-17:00</option>
+                            <option>15:00-17:00</option> 
                             <option>16:00-18:00</option>
                             <option>17:00-19:00</option>
                         </select>
                     </label>
                 </div>
-                <div elem="textarea">
-                    <textarea placeholder="Напишите ваши пожелания или текст в записке"></textarea>
+                <div elem="group">
+                    <label elem="label">
+                        <div elem="name">Комментарий</div>
+                        <textarea placeholder="Напишите ваши пожелания или текст в записке"></textarea>
+                    </label>
                 </div>
                 <div elem="bottom">
                     <label block="label-elem-interface" mods="policy">
@@ -107,5 +110,9 @@
                 </div>
             </div>
         </form>
+
+        <button elem="btn-your-order" class="js-btn-your-order" type="button">{{ _icon('completed-icon', { tag: 'i' }) }}</button>
+
+        {% include "your-order.html" %}
     </div>
 </div><!-- checkout-form -->

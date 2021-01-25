@@ -52,13 +52,11 @@ img
     max-width 100%
     height auto        
 
-h1, h2, h3, h4, h5, h6
-    font-family : $headings-font
-    font-weight 400
-
 h1
     font-size 48px
     color #333
+    font-family : $headings-font
+    font-weight 400
     line-height 1.1
     margin-top 0
     margin-bottom 30px
@@ -66,6 +64,27 @@ h1
     @media (max-width 767px)
         font-size 38px
         margin-bottom 15px
+
+h2
+    font-size 24px
+    color #A79186
+    font-weight 400
+    line-height 1.1
+    text-transform uppercase
+    margin-top 35px
+    margin-bottom 25px
+
+h3
+    font-size 14px
+    color #333
+    font-weight 600
+    line-height 1.1
+
+h4, h5, h6
+    font-size 12px
+    color #333
+    font-weight 600
+    line-height 1.1
 
 button
     outline none
@@ -145,7 +164,6 @@ p
 
 .label-elem-interface
     display flex
-    flex-wrap wrap
     cursor pointer
     margin-bottom 15px
     &:last-child
@@ -153,7 +171,9 @@ p
 
     .jq-radio,
     .jq-checkbox
+        flex 0 0 16px
         width 16px
+        max-width 16px
         height 16px
         vertical-align middle
 
@@ -200,16 +220,30 @@ p
             .jq-checkbox__div
                 border-radius 50%         
 
+    &--policy
+
+        & ^[0]
+            
+            &__name
+                color #a79186
+
     &:hover
         .jq-radio,
         .jq-checkbox
             .jq-radio__div,
             .jq-checkbox__div
-                background-color #6E031F
-                border-color #6E031F
+                @media (min-width 1025px)
+                    background-color #6E031F
+                    border-color #6E031F
                 &:after
-                    opacity 1
-                    visibility visible
+                    @media (min-width 1025px)
+                        opacity 1
+                        visibility visible
+
+    &--confirm-sms
+        width 335px
+        max-width 100%         
+        margin-bottom 10px  
 
     &__name
         font-size 13px
@@ -226,6 +260,13 @@ p
         font-weight 400
         line-height 1.1
         margin-left 5px
+
+    &__note
+        font-size 13px
+        display block
+        padding-left 30px
+        margin-top 5px    
+        margin-left 0
     
     &__color-selection
         flex none    
@@ -287,7 +328,6 @@ input[type=email]
     line-height 1.1
     width 100%
     padding 7px 10px
-    border-bottom 1px solid #A79186    
     outline none
     border 1px solid #E0E0E0
 
@@ -298,8 +338,13 @@ input[type=email]
     line-height 1.1
 
 textarea
-
+    width 100%
+    max-width 100%
+    padding 12px 15px
+    border 1px solid #E0E0E0
+    min-height 125px
     padding 12px 15px    
+    outline none
 
 .btn-up
     display flex
@@ -329,3 +374,56 @@ textarea
     @media (max-width 1023px)
         right 15px
         bottom 15px
+
+.jq-selectbox
+    width 100%
+
+    &.opened
+        
+        .jq-selectbox__trigger-arrow
+            transform rotate(0)
+
+    .jq-selectbox__select
+        padding 7px 10px
+        outline none
+        border 1px solid #E0E0E0
+
+    .jq-selectbox__select-text
+        font-size 13px
+        color #D2D2CA
+        font-weight normal
+        line-height 1.1
+
+    .jq-selectbox__trigger
+        position absolute
+        top 10px
+        right 10px    
+
+    .jq-selectbox__trigger-arrow
+        width 14px
+        height 8px
+        background-image: svg-load('img/arr-top.svg', stroke\=#1B110F)  
+        background-repeat no-repeat
+        background-size contain
+        transform rotate(180deg)
+        transition transform .3s
+
+    .jq-selectbox__dropdown
+        background-color #fff
+        border 1px solid #E0E0E0
+        width 100%
+        padding 10px
+
+        ul
+            padding-left 0
+            margin 0
+
+            li
+                font-size 14px
+                color #333
+                font-weight normal
+                line-height 1.1
+                margin-bottom 10px
+                
+                &:hover
+                    color #6e031f
