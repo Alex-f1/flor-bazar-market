@@ -308,6 +308,11 @@ img {
 }
 .footer-menu__nav ul li {
   margin-bottom: 20px;
+  padding-left: 0;
+  position: static;
+}
+.footer-menu__nav ul li:before {
+  display: none;
 }
 .footer-menu__nav ul li:last-child {
   margin-bottom: 0;
@@ -401,6 +406,11 @@ img {
 }
 .top-menu__nav ul li {
   margin-right: 25px;
+  margin-bottom: 0;
+  padding-left: 0;
+}
+.top-menu__nav ul li:before {
+  display: none;
 }
 .top-menu__nav ul li a {
   font-size: 11px;
@@ -514,6 +524,47 @@ p {
 }
 p:last-child {
   margin-bottom: 0;
+}
+ul,
+ol {
+  list-style-type: none;
+  padding-left: 0;
+  margin: 0;
+}
+ul li,
+ol li {
+  font-size: 14px;
+  color: #333;
+  font-weight: 400;
+  line-height: 1.1;
+  padding-left: 15px;
+  margin-bottom: 10px;
+  position: relative;
+}
+ul li:last-child,
+ol li:last-child {
+  margin-bottom: 0;
+}
+ul li:before,
+ol li:before {
+  content: '';
+  position: absolute;
+  top: 5px;
+  left: 0;
+  width: 4px;
+  height: 4px;
+  background-color: #a79186;
+  border-radius: 50%;
+}
+ol {
+  list-style-type: decimal;
+  padding-left: 15px;
+}
+ol li {
+  padding-left: 5px;
+}
+ol li:before {
+  display: none;
 }
 .contain-full {
   width: 1920px;
@@ -650,6 +701,10 @@ p:last-child {
   width: 335px;
   max-width: 100%;
   margin-bottom: 10px;
+}
+.label-elem-interface.label-elem-interface--color {
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
 }
 .label-elem-interface__name {
   font-size: 13px;
@@ -967,7 +1022,12 @@ textarea {
   margin-bottom: 30px;
 }
 .card-product-desc__tab-content ul li {
+  padding-left: 0;
   margin-bottom: 5px;
+  position: static;
+}
+.card-product-desc__tab-content ul li:before {
+  display: none;
 }
 .card-product-desc__delivery-info {
   display: -ms-flexbox;
@@ -2999,9 +3059,17 @@ textarea {
   padding-left: 0;
   margin: 0;
 }
+.main-menu__nav ul li {
+  margin-bottom: 0;
+  padding-left: 0;
+  position: static;
+}
 .main-menu__nav ul li:hover > a {
   color: #fff;
   background-color: #a79186;
+}
+.main-menu__nav ul li:before {
+  display: none;
 }
 .main-menu__nav ul li a {
   font-size: 11px;
@@ -3163,6 +3231,10 @@ textarea {
 .mobile-main-menu__nav ul li {
   margin-bottom: 5px;
   position: relative;
+  padding-left: 0;
+}
+.mobile-main-menu__nav ul li:before {
+  display: none;
 }
 .mobile-main-menu__nav ul li.haschild > ul {
   display: none;
@@ -3211,6 +3283,11 @@ textarea {
 }
 .mobile-menu__nav ul li {
   margin-bottom: 5px;
+  position: static;
+  padding-left: 0;
+}
+.mobile-menu__nav ul li:before {
+  display: none;
 }
 .mobile-menu__nav ul li a {
   font-size: 14px;
