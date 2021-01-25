@@ -1,0 +1,20 @@
+= yaml =
+pageTitle: Оформление заказа
+bodyClasses:
+layout: !!map
+    header: true
+    footer: true
+    left: false
+    right: false
+path: [
+    {"title":Главная},
+]
+= yaml =
+
+{% extends 'app.html' %}
+
+{% block main %}
+
+    {% include "checkout-ok.html" %}
+
+{% endblock %}

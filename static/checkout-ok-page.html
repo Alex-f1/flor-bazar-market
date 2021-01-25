@@ -613,185 +613,24 @@
             
 
             
-    <div class="inner-page-head inner-page-head--mods">
-        <div class="s-path">
-	
-		<a href="#" class="s-path__link">Главная</a><!-- <= link -->
-		<span class="s-path__separator">-</span><!-- <= separator -->
-	
-	Оформление заказа
-</div><!-- s-path -->
-
-        <h1>Оформление заказа</h1>
-    </div>
-
 
             <div class="app__content contain">
 
                 <main class="app__main">
                     
 
-    <div class="checkout-form">
-    <div class="checkout-form__section">
-        <form action="checkout-ok-page.html" class="checkout-form__form">
-            <div class="checkout-form__input">
-                <label class="checkout-form__label">
-                    <div class="checkout-form__name">Регион доставки</div>
-                    <input type="text" placeholder="Г. Санкт-Петербург">
-                </label>
-            </div>
-            <div class="checkout-form__group">
-                <h2>Способ доставки</h2>
-                <div class="checkout-form__options">
-                    <label class="label-elem-interface label-elem-interface--circle">
-                        <input type="radio" name="delivery-method" checked="">
-                        <span class="label-elem-interface__name">Срочная доставка в течение 2-х часов</span>
-                    </label>
-                    <label class="label-elem-interface label-elem-interface--circle">
-                        <input type="radio" name="delivery-method">
-                        <span class="label-elem-interface__name">Обычная доставка в диапазоне 4-х часов</span>
-                    </label>
-                    <label class="label-elem-interface label-elem-interface--circle">
-                        <input type="radio" name="delivery-method">
-                        <span class="label-elem-interface__name">Доставка к точному времени</span>
-                    </label>
-                </div>
-            </div>
-            <div class="checkout-form__group">
-                <h2>Оплата</h2>
-                <div class="checkout-form__options">
-                    <label class="label-elem-interface label-elem-interface--circle">
-                        <input type="radio" name="payment" checked="">
-                        <span class="label-elem-interface__name">Онлайн на сайте</span>
-                    </label>
-                    <label class="label-elem-interface label-elem-interface--circle">
-                        <input type="radio" name="payment">
-                        <span class="label-elem-interface__name">Наличными при получении</span>
-                    </label>
-                    <label class="label-elem-interface label-elem-interface--confirm-sms">
-                        <input type="checkbox" name="payment-sms" checked="">
-                        <span class="label-elem-interface__name">Подтверждение заказа по СМС без звонка</span>
-                    </label>
-                    <span class="checkout-form__note">Доступно при онлайн-оплате</span>
-                </div>
-            </div>
-            <div class="checkout-form__group">
-                <h2>Необходимые данные</h2>
-                <div class="checkout-form__input">
-                    <label class="checkout-form__label">
-                        <div class="checkout-form__name">Имя отправителя<span>*</span></div>
-                        <input type="text" required="">
-                    </label>
-                </div>
-                <div class="checkout-form__input">
-                    <label class="checkout-form__label">
-                        <div class="checkout-form__name">Номер телефона отправителя<span>*</span></div>
-                        <input type="text" class="js-phone-mask-checkout" placeholder="+7 ___ _________" required="">
-                    </label>
-                </div>
-                <div class="checkout-form__input">
-                    <label class="checkout-form__label">
-                        <div class="checkout-form__name">E-mail отправителя</div>
-                        <input type="text">
-                    </label>
-                    <label class="label-elem-interface label-elem-interface--anonym label-elem-interface--">
-                        <input type="checkbox" name="anonym">
-                        <span class="label-elem-interface__name">Анонимно</span>
-                    </label>
-                </div>
-                <div class="checkout-form__input">
-                    <label class="checkout-form__label">
-                        <div class="checkout-form__name">Имя получателя</div>
-                        <input type="text">
-                    </label>
-                </div>
-                <div class="checkout-form__input">
-                    <label class="checkout-form__label">
-                        <div class="checkout-form__name">Адрес доставки<span>*</span></div>
-                        <input type="text" required="">
-                    </label>
-                </div>
-                <div class="checkout-form__input">
-                    <label class="checkout-form__label">
-                        <div class="checkout-form__name">Дата доставки</div>
-                        <input type="text">
-                    </label>
-                </div>
-                <div class="checkout-form__input">
-                    <label class="checkout-form__label">
-                        <div class="checkout-form__name">Время доставки</div>
-                        <select>
-                            <option>14:00-16:00</option>
-                            <option>15:00-17:00</option> 
-                            <option>16:00-18:00</option>
-                            <option>17:00-19:00</option>
-                        </select>
-                    </label>
-                </div>
-                <div class="checkout-form__group">
-                    <label class="checkout-form__label">
-                        <div class="checkout-form__name">Комментарий</div>
-                        <textarea placeholder="Напишите ваши пожелания или текст в записке"></textarea>
-                    </label>
-                </div>
-                <div class="checkout-form__bottom">
-                    <label class="label-elem-interface label-elem-interface--policy">
-                        <input type="checkbox" name="policy" checked="">
-                        <span class="label-elem-interface__name">Я согласен на обработку моих персональных данных</span>
-                    </label>
-                    <button class="checkout-form__btn-checkout btn-general" type="submit">Оформить заказ</button>
-                </div>
-            </div>
-        </form>
-
-        <button class="checkout-form__btn-your-order js-btn-your-order" type="button">
-      <i class="svg-icon svg-icon--completed-icon" aria-hidden="true">
-        <svg class="svg-icon__link">
-          <use xlink:href="#completed-icon"></use>
-        </svg>
-      </i>
-    </button>
-
-        <div class="your-order js-your-order">
-    <div class="your-order__section">
-        <div class="your-order__head">
-            <div class="your-order__title">Ваш заказ</div>
-            <a href="cart-page.html" class="your-order__link-change">Изменить</a>
+    <div class="checkout-ok">
+    <div class="checkout-ok__section">
+        <div class="checkout-ok__title">Спасибо!</div>
+        <div class="checkout-ok__info">
+            Ваш заказ №20842 от 18.12.2020 19:29 сформирован. <br>
+            На Ваш E-mail отправлено письмо с подробностями заказа.
         </div>
-        <div class="your-order__body">
-            <div class="your-order__info">
-                <div class="your-order__name">Товаров на сумму</div>
-                <div class="your-order__prices">
-                    <div class="your-order__current-price">11 430 ₽</div>
-                    <div class="your-order__old-price">14 390 ₽</div>
-                </div>
-            </div>
-            <div class="your-order__info">
-                <div class="your-order__name">Экономия</div>
-                <div class="your-order__prices">
-                    <div class="your-order__current-price">2 960 ₽</div>
-                </div>
-            </div>
-            <div class="your-order__info">
-                <div class="your-order__name">Доставка</div>
-                <div class="your-order__prices">
-                    <div class="your-order__current-price">бесплатно</div>
-                </div>
-            </div>
-        </div>
-        <di v="" class="your-order__sum-total">
-            <div class="your-order__info">
-                <div class="your-order__name">Итого</div>
-                <div class="your-order__prices">
-                    <div class="your-order__old-price">14 390 ₽</div>
-                    <div class="your-order__current-price">11 430 ₽</div>
-                </div>
-            </div>
-        </di>
+        <div class="checkout-ok__payment">Оплата заказа: Яндекс.Касса</div>
+        <div class="checkout-ok__note">Если окно с платежной информацией не открылось автоматически, нажмите на ссылку</div>
+        <a href="#" class="checkout-ok__link">Оплатить заказ</a>
     </div>
-</div><!-- your-order -->
-    </div>
-</div><!-- checkout-form -->
+</div><!-- checkout-ok -->
 
 
                 </main><!-- app__main -->
