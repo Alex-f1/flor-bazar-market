@@ -1,0 +1,29 @@
+= yaml =
+pageTitle: Оформление заказа
+bodyClasses:
+layout: !!map
+    header: true
+    footer: true
+    left: false
+    right: false
+path: [
+    {"title":Главная},
+]
+= yaml =
+
+{% extends 'app.html' %}
+
+{% block beforeContent %}
+    <div class="inner-page-head inner-page-head--mods">
+        {% include "s-path.html" %}
+        <h1>Оформление заказа</h1>
+    </div>
+{% endblock %}
+
+{% block main %}
+
+    {% include "checkout-form.html" %}
+
+    {% include "your-order.html" %}
+
+{% endblock %}

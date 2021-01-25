@@ -1,0 +1,111 @@
+<div block="checkout-form">
+    <div elem="section">
+        <form elem="form">
+            <div elem="input">
+                <label elem="label">
+                    <div elem="name">Регион доставки</div>
+                    <input type="text" placeholder="Г. Санкт-Петербург">
+                </label>
+            </div>
+            <div elem="group">
+                <h2>Способ доставки</h2>
+                <div elem="options">
+                    <label block="label-elem-interface" mods="circle">
+                        <input type="radio" name="delivery-method" checked>
+                        <span elem="name">Срочная доставка в течение 2-х часов</span>
+                    </label>
+                    <label block="label-elem-interface" mods="circle">
+                        <input type="radio" name="delivery-method">
+                        <span elem="name">Обычная доставка в диапазоне 4-х часов</span>
+                    </label>
+                    <label block="label-elem-interface" mods="circle">
+                        <input type="radio" name="delivery-method">
+                        <span elem="name">Доставка к точному времени</span>
+                    </label>
+                </div>
+            </div>
+            <div elem="group">
+                <h2>Оплата</h2>
+                <div elem="options">
+                    <label block="label-elem-interface" mods="circle">
+                        <input type="radio" name="payment" checked>
+                        <span elem="name">Онлайн на сайте</span>
+                    </label>
+                    <label block="label-elem-interface" mods="circle">
+                        <input type="radio" name="payment">
+                        <span elem="name">Наличными при получении</span>
+                    </label>
+                    <label block="label-elem-interface" mods="confirm-sms">
+                        <input type="checkbox" name="payment-sms" checked>
+                        <span elem="name">Подтверждение заказа по СМС без звонка</span>
+                        <span elem="note">Доступно при онлайн-оплате</span>
+                    </label>
+                </div>
+            </div>
+            <div elem="group">
+                <h2>Необходимые данные</h2>
+                <div elem="input">
+                    <label elem="label">
+                        <div elem="name">Имя отправителя<span>*</span></div>
+                        <input type="text">
+                    </label>
+                </div>
+                <div elem="input">
+                    <label elem="label">
+                        <div elem="name">Номер телефона отправителя<span>*</span></div>
+                        <input type="text" class="js-phone-mask-checkout" placeholder="+7 ___ _________">
+                    </label>
+                </div>
+                <div elem="input">
+                    <label elem="label">
+                        <div elem="name">E-mail отправителя</div>
+                        <input type="text">
+                    </label>
+                    <label block="label-elem-interface" mods="anonym ">
+                        <input type="checkbox" name="anonym">
+                        <span elem="name">Анонимно</span>
+                    </label>
+                </div>
+                <div elem="input">
+                    <label elem="label">
+                        <div elem="name">Имя получателя</div>
+                        <input type="text">
+                    </label>
+                </div>
+                <div elem="input">
+                    <label elem="label">
+                        <div elem="name">Адрес доставки<span>*</span></div>
+                        <input type="text">
+                    </label>
+                </div>
+                <div elem="input">
+                    <label elem="label">
+                        <div elem="name">Дата доставки</div>
+                        <input type="text">
+                    </label>
+                </div>
+                <div elem="input">
+                    <label elem="label">
+                        <div elem="name">Время доставки</div>
+                        <select>
+                            <option>14:00-16:00</option>
+                            <option>15:00-17:00</option>
+                            <option>16:00-18:00</option>
+                            <option>17:00-19:00</option>
+                        </select>
+                    </label>
+                </div>
+                <div elem="textarea">
+                    <textarea placeholder="Напишите ваши пожелания или текст в записке"></textarea>
+                </div>
+                <div elem="bottom">
+                    <label block="label-elem-interface" mods="policy">
+                        <input type="checkbox" name="policy" checked>
+                        <span elem="name">Я согласен на обработку моих персональных данных</span>
+                    </label>
+                    <button elem="btn-checkout" class="btn-general" type="submit">Оформить заказ</button>
+                </div>
+            </div>
+        </form>
+    </div>
+</div><!-- checkout-form -->

@@ -2043,6 +2043,10 @@ textarea {
 .search-not-found__link-back:hover {
   text-decoration: none;
 }
+.checkout-form__section {
+  width: 600px;
+  max-width: 100%;
+}
 .filter-products__head {
   display: -ms-flexbox;
   display: flex;
