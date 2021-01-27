@@ -13,3 +13,23 @@ $(window).scroll(function () {
 
 
 $('.js-phone-mask-checkout').mask('+7 (000) 000-00-00');
+
+if ($('.js-payment-online').attr('checked', 'checked')) {
+    $('.js-confirm-sms').fadeIn();
+    $('.js-confirm-sms-note').fadeIn();
+} else {
+    $('.js-confirm-sms').fadeOut();
+    $('.js-confirm-sms-note').fadeOut();
+}
+
+$('.js-payment-interface').on('click', function () {
+    var thisInput = $(this).find('.js-payment-online');
+
+    if (thisInput.attr('checked', 'checked') && thisInput.hasClass('js-payment-online')) {
+        $('.js-confirm-sms').fadeIn();
+        $('.js-confirm-sms-note').fadeIn();
+    } else {
+        $('.js-confirm-sms').fadeOut();
+        $('.js-confirm-sms-note').fadeOut();
+    }
+})

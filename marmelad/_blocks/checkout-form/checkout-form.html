@@ -27,19 +27,19 @@
             <div elem="group">
                 <h2>Оплата</h2>
                 <div elem="options">
-                    <label block="label-elem-interface" mods="circle">
-                        <input type="radio" name="payment" checked>
+                    <label block="label-elem-interface" class="js-payment-interface" mods="circle">
+                        <input type="radio" name="payment" class="js-payment-online" checked>
                         <span elem="name">Онлайн на сайте</span>
                     </label>
-                    <label block="label-elem-interface" mods="circle">
+                    <label block="label-elem-interface" class="js-payment-interface" mods="circle">
                         <input type="radio" name="payment">
                         <span elem="name">Наличными при получении</span>
                     </label>
-                    <label block="label-elem-interface" mods="confirm-sms">
+                    <label block="label-elem-interface" class="js-confirm-sms" mods="confirm-sms">
                         <input type="checkbox" name="payment-sms" checked>
                         <span elem="name">Подтверждение заказа по СМС без звонка</span>
                     </label>
-                    <span elem="note">Доступно при онлайн-оплате</span>
+                    <span elem="note" class="js-confirm-sms-note">Доступно при онлайн-оплате</span>
                 </div>
             </div>
             <div elem="group">

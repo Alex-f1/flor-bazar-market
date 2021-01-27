@@ -660,19 +660,19 @@
             <div class="checkout-form__group">
                 <h2>Оплата</h2>
                 <div class="checkout-form__options">
-                    <label class="label-elem-interface label-elem-interface--circle">
-                        <input type="radio" name="payment" checked="">
+                    <label class="label-elem-interface label-elem-interface--circle js-payment-interface">
+                        <input type="radio" name="payment" class="js-payment-online" checked="">
                         <span class="label-elem-interface__name">Онлайн на сайте</span>
                     </label>
-                    <label class="label-elem-interface label-elem-interface--circle">
+                    <label class="label-elem-interface label-elem-interface--circle js-payment-interface">
                         <input type="radio" name="payment">
                         <span class="label-elem-interface__name">Наличными при получении</span>
                     </label>
-                    <label class="label-elem-interface label-elem-interface--confirm-sms">
+                    <label class="label-elem-interface label-elem-interface--confirm-sms js-confirm-sms">
                         <input type="checkbox" name="payment-sms" checked="">
                         <span class="label-elem-interface__name">Подтверждение заказа по СМС без звонка</span>
                     </label>
-                    <span class="checkout-form__note">Доступно при онлайн-оплате</span>
+                    <span class="checkout-form__note js-confirm-sms-note">Доступно при онлайн-оплате</span>
                 </div>
             </div>
             <div class="checkout-form__group">
