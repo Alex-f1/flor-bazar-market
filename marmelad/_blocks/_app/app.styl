@@ -462,6 +462,163 @@ textarea
                 font-weight normal
                 line-height 1.1
                 margin-bottom 10px
-                
+                padding-left 0
+                &:before
+                    display none
+
                 &:hover
                     color #6e031f
+
+table
+    width 100%
+    border-spacing 0
+    border 1px solid #D2D2CA
+
+    @media (max-width 1023px)
+        display flex
+
+    thead,
+    tbody
+        display block
+    
+    thead
+        width 100%
+
+        @media (max-width 1023px)
+            flex 0 0 150px
+            width 150px
+            max-width 150px
+
+        @media (max-width 639px)
+            flex 0 0 90px
+            width 90px
+            max-width 90px
+        
+        tr
+            display block
+            padding 15px 0
+            box-shadow 10px 10px 50px rgba(155, 155, 155, 0.1)
+
+            @media (max-width 1023px)
+                padding 0
+
+        th 
+            font-size 14px
+            color #333
+            font-weight 400
+            line-height 2
+            text-align left
+            display inline-block
+            vertical-align middle
+
+            @media (max-width 1023px)
+                line-height 1.1
+                width auto !important
+                display block
+                padding-top 11px
+                padding-bottom 12px
+                padding-left 15px
+                border-bottom 1px solid #D2D2CA
+
+            &:nth-child(1)
+                text-align center
+                width 7.5%
+
+                @media (max-width 1023px)
+                    text-align left
+            
+            &:nth-child(2)
+                width 23%
+            
+            &:nth-child(3)
+                width 14.5%
+            
+            &:nth-child(4)
+                width 16.5%
+            
+            &:nth-child(5)
+                width auto     
+
+                @media (max-width 1023px)
+                    border none
+
+    tbody
+
+        &.table-body
+            height 440px
+            padding-right 12px 
+            overflow-y auto        
+            overflow-x hidden   
+
+        @media (max-width 1023px)
+            height auto
+            white-space nowrap
+            overflow-x auto
+            padding-right 0
+
+        tr
+            @media (max-width 1023px)
+                display inline-block    
+                margin-right -5px
+
+            &:nth-child(odd)
+
+                @media (max-width 1023px)
+                    background-color #f9f9f9
+
+            &:last-child
+
+                td
+                    @media (min-width 1024px)
+                        border none
+
+                    &:last-child
+                        @media (min-width 1024px)
+                            border-right 2px solid #D2D2CA      
+
+        td
+            font-size 12px
+            color #333
+            font-weight 400
+            border-bottom 1px solid #D2D2CA
+            padding-top 10px
+            padding-bottom 10px
+            vertical-align middle
+
+            @media (max-width 1023px)
+                width auto !important
+                display block
+                padding-right 15px
+                padding-left 15px
+
+            &:nth-child(1)
+                text-align center
+                width 7.5%
+            
+            &:nth-child(2)
+                width 24%
+            
+            &:nth-child(3)
+                width 15%
+
+                @media (max-width 639px)
+                    padding-top 17px
+                    padding-bottom 18px
+            
+            &:nth-child(4)
+                width 17%
+            
+            &:nth-child(5)
+                width auto
+                border-right 2px solid #D2D2CA        
+
+                @media (max-width 1023px)
+                    border none
+
+        .ss-scroll
+            width 3px
+            background #D2D2CA
+            transform translateX(-4px)
+            opacity 1 !important
+            cursor default
+   

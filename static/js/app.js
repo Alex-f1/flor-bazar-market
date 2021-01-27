@@ -204,7 +204,7 @@ $(function () {
       SimpleScrollbar.initEl(el[i]);
     }
 
-    $('.ss-container').trigger('mauseover');
+    $('.ss-container').trigger('mouseover');
   });
   $('.filter-products__item').each(function () {
     var $thisElem = $(this);
@@ -587,4 +587,19 @@ $(function () {
     return false;
   });
   $('input[type=checkbox], input[type=radio], select').styler();
+  $('table').each(function () {
+    var tableBody = $(this).find('tbody').addClass('ss-container');
+
+    if ($(window).width() >= 1024) {
+      if (tableBody.height() > 529) {
+        tableBody.addClass('table-body');
+      }
+    }
+
+    var el = document.querySelectorAll('.ss-container');
+
+    for (var i = 0, len = el.length; i < len; i++) {
+      SimpleScrollbar.initEl(el[i]);
+    }
+  });
 });

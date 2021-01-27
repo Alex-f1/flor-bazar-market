@@ -8,7 +8,7 @@ $('.js-filter-name').on('click', function () {
         SimpleScrollbar.initEl(el[i]);
     }
 
-    $('.ss-container').trigger('mauseover')
+    $('.ss-container').trigger('mouseover')
 });
 
 $('.filter-products__item').each(function () {

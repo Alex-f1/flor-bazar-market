@@ -91,7 +91,23 @@ $(function() {
   });
 
 
-  $('input[type=checkbox], input[type=radio], select').styler();
-  
+  $('input[type=checkbox], input[type=radio], select').styler();  
 
+  $('table').each(function () {
+    var tableBody = $(this).find('tbody').addClass('ss-container');
+
+    if ($(window).width() >= 1024) {
+      
+      if (tableBody.height() > 529) {
+        tableBody.addClass('table-body')
+      }
+      
+    }
+
+    var el = document.querySelectorAll('.ss-container');
+    for (var i = 0, len = el.length; i < len; i++) {
+      SimpleScrollbar.initEl(el[i]);
+    }
+  })
+  
 });
