@@ -1,11 +1,14 @@
 = yaml =
-pageTitle: Текст
+pageTitle: Любая текстовая страница
 bodyClasses: 
 layout: !!map
     header: true
     footer: true
     left: false
     right: false
+path: [
+    {"title":Главная},
+]
 = yaml =
 
 {% extends 'app.html' %}
@@ -21,6 +24,13 @@ layout: !!map
 
     </style>
 
+{% endblock %}
+
+{% block beforeContent %}
+<div class="inner-page-head">
+    {% include "s-path.html" %}
+    <h1>Результаты поиска</h1>
+</div>
 {% endblock %}
 
 {% block main %}
