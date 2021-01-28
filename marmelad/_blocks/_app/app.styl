@@ -469,10 +469,11 @@ textarea
                 &:hover
                     color #6e031f
 
-table
+table.table-style
     width 100%
     border-spacing 0
     border 1px solid #D2D2CA
+    margin-bottom 25px
 
     @media (max-width 1023px)
         display flex
@@ -510,6 +511,7 @@ table
             text-align left
             display inline-block
             vertical-align middle
+            padding 0 15px
 
             @media (max-width 1023px)
                 line-height 1.1
@@ -621,4 +623,40 @@ table
             transform translateX(-4px)
             opacity 1 !important
             cursor default
-   
+
+table
+    width 100%
+    border-spacing 0
+    border 1px solid #D2D2CA
+    margin-bottom 15px
+    
+    thead
+        
+        tr
+            box-shadow 10px 10px 50px rgba(155, 155, 155, 0.1)
+
+        th 
+            font-size 14px
+            color #333
+            font-weight 400
+            line-height 2
+            text-align left
+            padding 15px
+
+            // &:nth-child(1)
+            //     text-align center
+
+    tbody
+
+        td
+            font-size 12px
+            color #333
+            font-weight 400
+            border-bottom 1px solid #D2D2CA
+            padding-top 10px
+            padding-bottom 10px
+
+            padding 15px
+
+            &:nth-child(1)
+                text-align center

@@ -93,7 +93,7 @@ $(function() {
 
   $('input[type=checkbox], input[type=radio], select').styler();  
 
-  $('table').each(function () {
+  $('.table-style').each(function () {
     var tableBody = $(this).find('tbody').addClass('ss-container');
 
     if ($(window).width() >= 1024) {
