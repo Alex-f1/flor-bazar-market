@@ -109,5 +109,9 @@ $(function() {
       SimpleScrollbar.initEl(el[i]);
     }
   })
+
+  $('table').each(function () {
+    $(this).wrap('<div class="table-wrp"></div>');
+  })
   
 });

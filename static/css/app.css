@@ -536,7 +536,7 @@ ol li {
   font-size: 14px;
   color: #333;
   font-weight: 400;
-  line-height: 1.1;
+  line-height: 1.4;
   padding-left: 15px;
   margin-bottom: 10px;
   position: relative;
@@ -623,6 +623,7 @@ ol li:before {
 }
 .inner-page-head.inner-page-head--mods {
   border-bottom: none;
+  margin-bottom: 0;
 }
 .label-elem-interface {
   display: -ms-flexbox;
@@ -1025,6 +1026,9 @@ table thead th {
   text-align: left;
   padding: 15px;
 }
+table thead th:nth-child(1) {
+  text-align: center;
+}
 table tbody td {
   font-size: 12px;
   color: #333;
@@ -1284,6 +1288,9 @@ table tbody td:nth-child(1) {
   display: -ms-flexbox;
   display: flex;
   margin-bottom: 120px;
+}
+.card-products__mobile-title {
+  display: none;
 }
 .card-products__info {
   padding-top: 20px;
@@ -1588,7 +1595,7 @@ table tbody td:nth-child(1) {
 .cart__img--extra {
   padding: 25px;
   border: 2px solid #a79186;
-  margin-right: 20px !important;
+  margin-right: 35px !important;
 }
 .cart__img-link {
   display: block;
@@ -1671,10 +1678,10 @@ table tbody td:nth-child(1) {
   margin-right: 30px;
 }
 .cart__amount--extra {
-  -ms-flex: 0 0 235px;
-      flex: 0 0 235px;
-  width: 235px;
-  max-width: 235px;
+  -ms-flex: 0 0 160px;
+      flex: 0 0 160px;
+  width: 160px;
+  max-width: 160px;
 }
 .cart__amount .amount {
   width: 100px;
@@ -1729,10 +1736,10 @@ table tbody td:nth-child(1) {
   padding-top: 25px;
 }
 .cart__items-extra .cart__info-product {
-  -ms-flex: 0 0 225px;
-      flex: 0 0 225px;
-  width: 225px;
-  max-width: 225px;
+  -ms-flex: 0 0 285px;
+      flex: 0 0 285px;
+  width: 285px;
+  max-width: 285px;
 }
 .cart__btn-append {
   font-size: 11px;
@@ -2333,6 +2340,10 @@ table tbody td:nth-child(1) {
 }
 .checkout-form__input {
   margin-bottom: 15px;
+}
+.checkout-form__input--city-delivery {
+  width: 330px;
+  max-width: 100%;
 }
 .checkout-form__name {
   font-size: 13px;
@@ -4134,10 +4145,12 @@ table tbody td:nth-child(1) {
 }
 .subscribe__title {
   font-size: 36px;
+  color: #fff;
+  font-family: "Playfair Display", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji" !important;
   font-weight: 400;
   line-height: 1.1;
   margin-top: 0;
-  margin-bottom: 10px;
+  margin-bottom: 15px;
 }
 .subscribe__desc {
   font-size: 16px;
@@ -4231,6 +4244,10 @@ table tbody td:nth-child(1) {
 .your-order__sum-total .your-order__current-price {
   font-size: 24px;
 }
+.your-order__sum-total .your-order__info {
+  -ms-flex-align: end;
+      align-items: flex-end;
+}
 @-webkit-keyframes spinner {
   from {
     -webkit-transform: rotate(0deg);
@@ -4249,6 +4266,11 @@ table tbody td:nth-child(1) {
   to {
     -webkit-transform: rotate(360deg);
             transform: rotate(360deg);
+  }
+}
+@media (min-width: 768px) {
+  .checkout-form__btn-your-order {
+    display: none;
   }
 }
 @media (min-width: 1024px) {
@@ -4341,6 +4363,13 @@ table tbody td:nth-child(1) {
   .inner-page-head {
     padding-left: 15px;
     padding-right: 15px;
+  }
+  table {
+    width: 1200px;
+  }
+  .table-wrp {
+    overflow-y: auto;
+    -webkit-overflow-scrolling: touch;
   }
   .card-product-desc__params-item {
     -ms-flex: 0 0 45%;
@@ -4443,7 +4472,6 @@ table tbody td:nth-child(1) {
   }
   .inner-page-head {
     padding-top: 100px;
-    margin-bottom: 30px;
   }
   .cart-mini__container {
     top: 61px;
@@ -4552,6 +4580,10 @@ table tbody td:nth-child(1) {
     padding-right: 15px;
     padding-left: 15px;
   }
+  table.table-style tbody td:nth-child(3) {
+    padding-top: 17px;
+    padding-bottom: 18px;
+  }
   table.table-style tbody td:nth-child(5) {
     border: none;
   }
@@ -4649,12 +4681,24 @@ table tbody td:nth-child(1) {
     max-width: 100%;
     margin: 0 auto;
   }
+  .card-products h1 {
+    display: none;
+  }
   .card-products__main {
     -ms-flex-direction: column;
         flex-direction: column;
     -ms-flex-align: center;
         align-items: center;
     margin-bottom: 50px;
+  }
+  .card-products__mobile-title {
+    margin-bottom: 0;
+    display: block !important;
+  }
+  .card-products__info {
+    -ms-flex-order: 1;
+        order: 1;
+    margin-top: 25px;
   }
   .card-products__preview {
     -ms-flex: none;
@@ -4764,6 +4808,9 @@ table tbody td:nth-child(1) {
   }
   .card-product-desc__text {
     margin-bottom: 25px;
+  }
+  .card-products__info {
+    width: 100%;
   }
   .cart__items {
     display: block;
@@ -4902,10 +4949,6 @@ table tbody td:nth-child(1) {
         flex: 0 0 90px;
     width: 90px;
     max-width: 90px;
-  }
-  table.table-style tbody td:nth-child(3) {
-    padding-top: 17px;
-    padding-bottom: 18px;
   }
   .card-product-desc__tab-content {
     padding-top: 25px;

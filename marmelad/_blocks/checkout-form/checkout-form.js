@@ -32,4 +32,12 @@ $('.js-payment-interface').on('click', function () {
         $('.js-confirm-sms').fadeOut();
         $('.js-confirm-sms-note').fadeOut();
     }
-})
+});
+
+$(document).on('click', function (e) {
+    if ($(e.target).closest('.js-btn-your-order').length) {
+        return;
+    }
+
+    $('.is-show-your-order').removeClass('is-show-your-order');
+});

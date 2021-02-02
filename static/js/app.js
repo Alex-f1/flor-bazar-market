@@ -214,6 +214,13 @@ $(function () {
       $('.js-confirm-sms-note').fadeOut();
     }
   });
+  $(document).on('click', function (e) {
+    if ($(e.target).closest('.js-btn-your-order').length) {
+      return;
+    }
+
+    $('.is-show-your-order').removeClass('is-show-your-order');
+  });
   $('.js-filter-name').on('click', function () {
     var $thisElem = $(this);
     $thisElem.toggleClass('is-active-name');
@@ -621,5 +628,8 @@ $(function () {
     for (var i = 0, len = el.length; i < len; i++) {
       SimpleScrollbar.initEl(el[i]);
     }
+  });
+  $('table').each(function () {
+    $(this).wrap('<div class="table-wrp"></div>');
   });
 });
