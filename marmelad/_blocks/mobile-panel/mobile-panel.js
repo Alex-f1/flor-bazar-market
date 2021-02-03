@@ -15,4 +15,5 @@ $('.js-overlay-menu').on('click', function () {
     $(this).removeClass('overlay-is-active')
     $('.js-sidebar-menu').removeClass('menu-is-active');
     $('.js-btn-burger').removeClass('btn-burger-is-active');
+    $('html, body').removeClass('is-scroll-hide');
 });
