@@ -951,6 +951,7 @@ table.table-style thead th {
   display: inline-block;
   vertical-align: middle;
   padding: 0 15px;
+  background-color: transparent;
 }
 table.table-style thead th:nth-child(1) {
   text-align: center;
@@ -983,6 +984,7 @@ table.table-style tbody td {
   padding-top: 10px;
   padding-bottom: 10px;
   vertical-align: middle;
+  background-color: transparent;
 }
 table.table-style tbody td:nth-child(1) {
   text-align: center;
@@ -1025,6 +1027,7 @@ table thead th {
   line-height: 2;
   text-align: left;
   padding: 15px;
+  background-color: #fff;
 }
 table thead th:nth-child(1) {
   text-align: center;
@@ -1036,6 +1039,7 @@ table tbody td {
   border-bottom: 1px solid #d2d2ca;
   padding-top: 10px;
   padding-bottom: 10px;
+  background-color: #fdfdfd;
   padding: 15px;
 }
 table tbody td:nth-child(1) {
