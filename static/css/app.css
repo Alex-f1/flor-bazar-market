@@ -952,6 +952,7 @@ table.table-style thead th {
   vertical-align: middle;
   padding: 0 15px;
   background-color: transparent;
+  border-bottom: none;
 }
 table.table-style thead th:nth-child(1) {
   text-align: center;
@@ -1028,6 +1029,7 @@ table thead th {
   text-align: left;
   padding: 15px;
   background-color: #fff;
+  border-bottom: 1px solid #d2d2ca;
 }
 table thead th:nth-child(1) {
   text-align: center;
