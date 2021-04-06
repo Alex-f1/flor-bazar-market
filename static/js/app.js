@@ -118,6 +118,10 @@ $(function () {
       arrows: false
     });
     primarySlider.sync(secondarySlider).mount();
+
+    if ($('.card-product-preview__item-thumb').length < 2) {
+      $('.card-product-preview__items-thumbs').remove();
+    }
   } // $('.label-elem-interface').on('click', function () {
   //     if (!$(this).hasClass('js-color-pick-interface')) {
   //         $('.js-color-pick').removeClass('is-active-color-pick');
@@ -142,6 +146,10 @@ $(function () {
   //         $($thisInput).prop("checked", false);
   //     }
   // });
+  // var el = document.querySelectorAll('.cart-mini__container');
+  // for (var i = 0, len = el.length; i < len; i++) {
+  //     SimpleScrollbar.initEl(el[i]);
+  // }
 
   $('.js-btn-remove-product').on('click', function () {
     var $this = $(this);

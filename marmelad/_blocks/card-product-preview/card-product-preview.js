@@ -1,5 +1,6 @@
 if ($.exists('.js-card-preview-secondary-slider')) {
 
+    
     var secondarySlider = new Splide('.js-card-preview-secondary-slider', {
         rewind: false,
         fixedWidth: 52,
@@ -22,5 +23,9 @@ if ($.exists('.js-card-preview-secondary-slider')) {
     });
 
     primarySlider.sync(secondarySlider).mount();
+
+    if ($('.card-product-preview__item-thumb').length < 2) {
+        $('.card-product-preview__items-thumbs').remove();
+    }
 
 }

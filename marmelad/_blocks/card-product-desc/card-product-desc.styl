@@ -54,22 +54,24 @@
         &.is-active-tab-content
             display block
 
-        ul
-            font-size 14px
-            color #1B110F
-            font-weight 400
-            line-height 1.1
-            list-style-type none
-            padding-left 0
-            margin-top 0
-            margin-bottom 30px
+    
 
-            li
-                padding-left 0
-                margin-bottom 5px
-                position static
-                &:before
-                    display none
+    &__payment-methods-list
+        font-size 14px
+        color #1B110F
+        font-weight 400
+        line-height 1.1
+        list-style-type none
+        padding-left 0
+        margin-top 0
+        margin-bottom 30px
+
+        li
+            padding-left 0
+            margin-bottom 5px
+            position static
+            &:before
+                display none !important
 
     &__delivery-info
         display flex
@@ -143,6 +145,30 @@
     &__text
         @media (max-width 767px)
             margin-bottom 25px    
+
+        ul 
+            margin-top 15px        
+
+        li
+            font-size 14px
+            color #333
+            font-weight 400
+            line-height 1.4
+            padding-left 15px
+            margin-bottom 10px
+            position relative
+            &:last-child
+                margin-bottom 0
+
+            &:before
+                content ''
+                position absolute
+                top 5px
+                left 0
+                width 4px
+                height 4px
+                background-color #A79186
+                border-radius 50%    
 
     &__name
         font-size 14px

@@ -46,6 +46,19 @@
         opacity 0
         visibility hidden
         transition opacity .3s, ease .5s
+        max-height calc(100vh - 215px)
+        overflow auto 
+        
+        &.ss-container
+            border-right 2px solid #d2d2ca
+
+        .ss-scroll
+            width 2px
+            background #6e031f
+            transform translateX(2px)
+            opacity 1 !important
+            top 0%
+        
         &:hover
             opacity 1
             visibility visible
