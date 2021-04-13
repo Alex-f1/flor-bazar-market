@@ -61,10 +61,11 @@
                     &.has-level--category
 
                         li
-                            margin-bottom 2px !important
+                            // margin-bottom 2px !important
                             &:first-child
-                                margin-bottom 10px !important
+                                // margin-bottom 10px !important
                                 a
+                                    padding-bottom 10px !important
                                     text-transform uppercase
                             a
                                 text-transform none 
@@ -104,6 +105,12 @@
                             width 350px
                             max-width 100%     
 
+                        .menu-level-list
+                            li
+
+                                a
+                                    padding 0    
+
                     .menu-level-list
                         display block
                         padding-top 20px
@@ -111,7 +118,7 @@
                         max-width 100%
 
                         li
-                            margin-bottom 15px
+                            // margin-bottom 15px
                             &:hover
                                 .menu-level-img
                                     opacity 1
@@ -120,10 +127,13 @@
                                 a
                                     color #A79186
                                     background-color transparent   
+                                    
                             a   
                                 font-size 14px
                                 padding 0
                                 display inline-block
+                                padding-top 7px
+                                padding-bottom 8px
                                 &:hover
                                     background-color transparent
                                     color #A79186
@@ -151,11 +161,12 @@
                                 vertical-align top    
 
                     .menu-level-main-img
-                        position absolute
-                        top 0
-                        right 0
+                        // position absolute
+                        // top 0
+                        // right 0
                         display flex      
-                        flex-wrap wrap  
+                        flex-wrap wrap
+                        flex 1 1  
                         transition opacity .1s, ease .1s
 
                         &.is-hide-menu-level-main-img

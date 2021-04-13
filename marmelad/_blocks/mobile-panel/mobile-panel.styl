@@ -31,6 +31,13 @@
         display flex
         align-items center    
 
+        & ^[0]
+
+            &__additional-link
+                margin-bottom 0
+                padding-right 0
+                margin-left 10px
+
     &__btn-burger
         display block
         width 30px
@@ -118,6 +125,13 @@
         background-color #fff    
         padding-bottom 75px
         transition left .3s
+
+        & ^[0]
+
+            &__additional-link
+
+                &--phone
+                    display none
 
         &.menu-is-active
             left 0
