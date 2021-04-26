@@ -122,6 +122,8 @@ $(function () {
     if ($('.card-product-preview__item-thumb').length < 2) {
       $('.card-product-preview__items-thumbs').remove();
     }
+
+    $('.card-product-preview__slider-thumb-list').find('.card-product-preview__item').remove();
   } // $('.label-elem-interface').on('click', function () {
   //     if (!$(this).hasClass('js-color-pick-interface')) {
   //         $('.js-color-pick').removeClass('is-active-color-pick');

@@ -1268,6 +1268,12 @@ table tbody td:nth-child(1) {
   display: block;
   height: 425px;
 }
+.card-product-preview__item img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
 .card-product-preview__slider-thumb-track {
   display: -ms-flexbox;
   display: flex;
@@ -1308,6 +1314,12 @@ table tbody td:nth-child(1) {
   transition: border-color 0.3s;
   border-width: 2px !important;
   cursor: pointer;
+}
+.card-product-preview__item-thumb img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
 }
 .card-product-preview__item-thumb.is-active {
   border-color: #6e031f !important;

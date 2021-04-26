@@ -28,4 +28,5 @@ if ($.exists('.js-card-preview-secondary-slider')) {
         $('.card-product-preview__items-thumbs').remove();
     }
 
+    $('.card-product-preview__slider-thumb-list').find('.card-product-preview__item').remove();
 }
