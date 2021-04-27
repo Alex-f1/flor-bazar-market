@@ -3323,7 +3323,7 @@ table tbody td:nth-child(1) {
   top: 110px;
   left: 0;
   overflow-y: auto;
-  transition: opacity 0.3s, ease 0.5s;
+  transition: opacity 0.3s, ease 0.3s;
   -webkit-overflow-scrolling: touch;
 }
 .main-menu__nav ul li.has-level .menu-level-inner {

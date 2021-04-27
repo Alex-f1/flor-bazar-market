@@ -403,6 +403,13 @@ $(function () {
   }).mouseout(function () {
     $('.menu-level-main-img').removeClass('is-hide-menu-level-main-img');
   });
+  $('.has-level').mouseover(function () {
+    var getThisMainImg = $(this).find('.menu-level-main-img').find('span');
+
+    if (getThisMainImg.length > 1) {
+      getThisMainImg.css('width', '45%');
+    }
+  });
   $.each($('.mobile-main-menu__nav ul').find('> li'), function (index, element) {
     if ($(element).find(' > ul').length) {
       var triggerIcon = ['<span class="trigger-arrow">', '</span>'].join('');

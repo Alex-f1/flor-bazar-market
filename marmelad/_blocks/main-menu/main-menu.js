@@ -18,3 +18,15 @@ $('.js-main-menu-has-img > a').mouseover(function () {
 }).mouseout(function () {
     $('.menu-level-main-img').removeClass('is-hide-menu-level-main-img');
 });
+
+
+
+$('.has-level').mouseover(function () {
+
+    var getThisMainImg = $(this).find('.menu-level-main-img').find('span');
+
+    if (getThisMainImg.length > 1) {
+        getThisMainImg.css('width', '45%')
+    }
+
+});
